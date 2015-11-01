@@ -1,0 +1,12 @@
+D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll.config
+D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll
+D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
+D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
+D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb
+D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
+D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll.config
+D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll
+D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
+D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
+D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
+D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb

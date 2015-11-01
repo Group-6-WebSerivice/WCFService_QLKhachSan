@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceDichVu" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServiceDichVu.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceDichVu.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceDichVu.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceDichVu_CountListdv_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListdv" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_CountListdv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListdvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListDichVuAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListDichVuAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListDichVuAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListDichVuAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListDichVuLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListDichVuLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListDichVuLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListDichVuLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getDichVuByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDichVuByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getDichVuByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDichVuByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListDichVuByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListDichVuByName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListDichVuByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListDichVuByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getLikeDichVuByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeDichVuByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getLikeDichVuByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeDichVuByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListLikeDichVuByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeDichVuByName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_getListLikeDichVuByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeDichVuByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_insertDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_insertDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_deleteDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_deleteDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_updateDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceDichVu_updateDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDichVuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceDichVu">
+    <wsdl:operation name="CountListdv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/CountListdv" message="tns:IServiceDichVu_CountListdv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/CountListdvResponse" message="tns:IServiceDichVu_CountListdv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListDichVuAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/getListDichVuAll" message="tns:IServiceDichVu_getListDichVuAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/getListDichVuAllResponse" message="tns:IServiceDichVu_getListDichVuAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListDichVuLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/getListDichVuLMAll" message="tns:IServiceDichVu_getListDichVuLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/getListDichVuLMAllResponse" message="tns:IServiceDichVu_getListDichVuLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDichVuByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/getDichVuByID" message="tns:IServiceDichVu_getDichVuByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/getDichVuByIDResponse" message="tns:IServiceDichVu_getDichVuByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListDichVuByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/getListDichVuByName" message="tns:IServiceDichVu_getListDichVuByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/getListDichVuByNameResponse" message="tns:IServiceDichVu_getListDichVuByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikeDichVuByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/getLikeDichVuByID" message="tns:IServiceDichVu_getLikeDichVuByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/getLikeDichVuByIDResponse" message="tns:IServiceDichVu_getLikeDichVuByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeDichVuByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/getListLikeDichVuByName" message="tns:IServiceDichVu_getListLikeDichVuByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/getListLikeDichVuByNameResponse" message="tns:IServiceDichVu_getListLikeDichVuByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/insertDichVu" message="tns:IServiceDichVu_insertDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/insertDichVuResponse" message="tns:IServiceDichVu_insertDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/deleteDichVu" message="tns:IServiceDichVu_deleteDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/deleteDichVuResponse" message="tns:IServiceDichVu_deleteDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceDichVu/updateDichVu" message="tns:IServiceDichVu_updateDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceDichVu/updateDichVuResponse" message="tns:IServiceDichVu_updateDichVu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceDichVu" type="tns:IServiceDichVu">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListdv">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/CountListdv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListDichVuAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/getListDichVuAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListDichVuLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/getListDichVuLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDichVuByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/getDichVuByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListDichVuByName">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/getListDichVuByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikeDichVuByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/getLikeDichVuByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeDichVuByName">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/getListLikeDichVuByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertDichVu">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/insertDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDichVu">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/deleteDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDichVu">
+      <soap:operation soapAction="http://tempuri.org/IServiceDichVu/updateDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceDichVu">
+    <wsdl:port name="BasicHttpBinding_IServiceDichVu" binding="tns:BasicHttpBinding_IServiceDichVu">
+      <soap:address location="http://localhost:7429/ServiceDichVu.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

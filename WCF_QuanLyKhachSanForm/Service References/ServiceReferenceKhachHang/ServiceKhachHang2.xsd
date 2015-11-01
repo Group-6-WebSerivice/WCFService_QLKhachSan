@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfKhachHangDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KhachHangDTO" nillable="true" type="tns:KhachHangDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKhachHangDTO" nillable="true" type="tns:ArrayOfKhachHangDTO" />
+  <xs:complexType name="KhachHangDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CMND_PASSPORT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Coquan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Diachi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gioitinh" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Makhachhang" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sodienthoai" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tenkhachhang" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KhachHangDTO" nillable="true" type="tns:KhachHangDTO" />
+</xs:schema>

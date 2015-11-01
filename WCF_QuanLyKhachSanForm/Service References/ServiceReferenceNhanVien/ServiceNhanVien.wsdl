@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceNhanVien" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServiceNhanVien.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceNhanVien.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceNhanVien.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceNhanVien_CountListNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListNV" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_CountListNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_CountChucvuQL_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountChucvuQL" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_CountChucvuQL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountChucvuQLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_CountChucvuNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountChucvuNV" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_CountChucvuNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountChucvuNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getNhanVienByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getNhanVienByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getNhanVienByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getNhanVienByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienByName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienByChucvu_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienByChucvu" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListNhanVienByChucvu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListNhanVienByChucvuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getLikeNhanVienByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeNhanVienByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getLikeNhanVienByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeNhanVienByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListLikeNhanVienByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeNhanVienByName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_getListLikeNhanVienByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeNhanVienByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_insertNhanVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_insertNhanVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_deleteNhanVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_deleteNhanVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_updateNhanVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="IServiceNhanVien_updateNhanVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceNhanVien">
+    <wsdl:operation name="CountListNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/CountListNV" message="tns:IServiceNhanVien_CountListNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/CountListNVResponse" message="tns:IServiceNhanVien_CountListNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountChucvuQL">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/CountChucvuQL" message="tns:IServiceNhanVien_CountChucvuQL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/CountChucvuQLResponse" message="tns:IServiceNhanVien_CountChucvuQL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountChucvuNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/CountChucvuNV" message="tns:IServiceNhanVien_CountChucvuNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/CountChucvuNVResponse" message="tns:IServiceNhanVien_CountChucvuNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienAll" message="tns:IServiceNhanVien_getListNhanVienAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienAllResponse" message="tns:IServiceNhanVien_getListNhanVienAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienLMAll" message="tns:IServiceNhanVien_getListNhanVienLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienLMAllResponse" message="tns:IServiceNhanVien_getListNhanVienLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getNhanVienByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getNhanVienByID" message="tns:IServiceNhanVien_getNhanVienByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getNhanVienByIDResponse" message="tns:IServiceNhanVien_getNhanVienByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienByName" message="tns:IServiceNhanVien_getListNhanVienByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienByNameResponse" message="tns:IServiceNhanVien_getListNhanVienByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienByChucvu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienByChucvu" message="tns:IServiceNhanVien_getListNhanVienByChucvu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getListNhanVienByChucvuResponse" message="tns:IServiceNhanVien_getListNhanVienByChucvu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikeNhanVienByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getLikeNhanVienByID" message="tns:IServiceNhanVien_getLikeNhanVienByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getLikeNhanVienByIDResponse" message="tns:IServiceNhanVien_getLikeNhanVienByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeNhanVienByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/getListLikeNhanVienByName" message="tns:IServiceNhanVien_getListLikeNhanVienByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/getListLikeNhanVienByNameResponse" message="tns:IServiceNhanVien_getListLikeNhanVienByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertNhanVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/insertNhanVien" message="tns:IServiceNhanVien_insertNhanVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/insertNhanVienResponse" message="tns:IServiceNhanVien_insertNhanVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteNhanVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/deleteNhanVien" message="tns:IServiceNhanVien_deleteNhanVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/deleteNhanVienResponse" message="tns:IServiceNhanVien_deleteNhanVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateNhanVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceNhanVien/updateNhanVien" message="tns:IServiceNhanVien_updateNhanVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceNhanVien/updateNhanVienResponse" message="tns:IServiceNhanVien_updateNhanVien_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceNhanVien" type="tns:IServiceNhanVien">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListNV">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/CountListNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountChucvuQL">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/CountChucvuQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountChucvuNV">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/CountChucvuNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getListNhanVienAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getListNhanVienLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNhanVienByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getNhanVienByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienByName">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getListNhanVienByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListNhanVienByChucvu">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getListNhanVienByChucvu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikeNhanVienByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getLikeNhanVienByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeNhanVienByName">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/getListLikeNhanVienByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhanVien">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/insertNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteNhanVien">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/deleteNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateNhanVien">
+      <soap:operation soapAction="http://tempuri.org/IServiceNhanVien/updateNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceNhanVien">
+    <wsdl:port name="BasicHttpBinding_IServiceNhanVien" binding="tns:BasicHttpBinding_IServiceNhanVien">
+      <soap:address location="http://localhost:7429/ServiceNhanVien.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceLoaiPhong" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServiceLoaiPhong.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceLoaiPhong.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceLoaiPhong.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceLoaiPhong_CountListLP_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListLP" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_CountListLP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListLPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getListLoaiPhongAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLoaiPhongAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getListLoaiPhongAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLoaiPhongAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getListLoaiPhongLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLoaiPhongLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getListLoaiPhongLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLoaiPhongLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getLoaiPhongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLoaiPhongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getLoaiPhongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLoaiPhongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getLikeLoaiPhongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeLoaiPhongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_getLikeLoaiPhongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeLoaiPhongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_insertLoaiPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_insertLoaiPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_deleteLoaiPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_deleteLoaiPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_updateLoaiPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLoaiPhong_updateLoaiPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceLoaiPhong">
+    <wsdl:operation name="CountListLP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/CountListLP" message="tns:IServiceLoaiPhong_CountListLP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/CountListLPResponse" message="tns:IServiceLoaiPhong_CountListLP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhongAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getListLoaiPhongAll" message="tns:IServiceLoaiPhong_getListLoaiPhongAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getListLoaiPhongAllResponse" message="tns:IServiceLoaiPhong_getListLoaiPhongAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhongLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getListLoaiPhongLMAll" message="tns:IServiceLoaiPhong_getListLoaiPhongLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getListLoaiPhongLMAllResponse" message="tns:IServiceLoaiPhong_getListLoaiPhongLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLoaiPhongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getLoaiPhongByID" message="tns:IServiceLoaiPhong_getLoaiPhongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getLoaiPhongByIDResponse" message="tns:IServiceLoaiPhong_getLoaiPhongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikeLoaiPhongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getLikeLoaiPhongByID" message="tns:IServiceLoaiPhong_getLikeLoaiPhongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/getLikeLoaiPhongByIDResponse" message="tns:IServiceLoaiPhong_getLikeLoaiPhongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertLoaiPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/insertLoaiPhong" message="tns:IServiceLoaiPhong_insertLoaiPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/insertLoaiPhongResponse" message="tns:IServiceLoaiPhong_insertLoaiPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteLoaiPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/deleteLoaiPhong" message="tns:IServiceLoaiPhong_deleteLoaiPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/deleteLoaiPhongResponse" message="tns:IServiceLoaiPhong_deleteLoaiPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateLoaiPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLoaiPhong/updateLoaiPhong" message="tns:IServiceLoaiPhong_updateLoaiPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLoaiPhong/updateLoaiPhongResponse" message="tns:IServiceLoaiPhong_updateLoaiPhong_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceLoaiPhong" type="tns:IServiceLoaiPhong">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListLP">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/CountListLP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhongAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/getListLoaiPhongAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLoaiPhongLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/getListLoaiPhongLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLoaiPhongByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/getLoaiPhongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikeLoaiPhongByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/getLikeLoaiPhongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/insertLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/deleteLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/IServiceLoaiPhong/updateLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceLoaiPhong">
+    <wsdl:port name="BasicHttpBinding_IServiceLoaiPhong" binding="tns:BasicHttpBinding_IServiceLoaiPhong">
+      <soap:address location="http://localhost:7429/ServiceLoaiPhong.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
