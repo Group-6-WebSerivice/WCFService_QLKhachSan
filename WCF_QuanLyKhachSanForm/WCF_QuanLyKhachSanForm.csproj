@@ -88,6 +88,12 @@
     <Compile Include="FormNhanVien.designer.cs">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPhieuDatphong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuDatphong.designer.cs">
+      <DependentUpon>FormPhieuDatphong.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>qlks3lopDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferenceChiTietDatPhong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferenceChiTietThuePhong\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -132,6 +143,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferenceKiemTraPhong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferenceLoaiPhong\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,6 +164,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\ServiceReferencePhieuDatPhong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferencePhieuThuePhong\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -185,6 +206,9 @@
     <EmbeddedResource Include="FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuDatphong.resx">
+      <DependentUpon>FormPhieuDatphong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPhong.resx">
       <DependentUpon>FormPhong.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,6 +239,19 @@
     </None>
     <None Include="qlks3lopDataSet.xss">
       <DependentUpon>qlks3lopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong.wsdl" />
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\WCF_QuanLyKhachSanForm.ServiceReferenceChiTietDatPhong.ChiTietDatPhongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.wsdl" />
     <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.xsd">
@@ -266,6 +303,19 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReferenceKhachHang\WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong.wsdl" />
+    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\WCF_QuanLyKhachSanForm.ServiceReferenceKiemTraPhong.KiemTraPhongDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReferenceLoaiPhong\ServiceLoaiPhong.wsdl" />
@@ -320,6 +370,19 @@
     <None Include="Service References\ServiceReferencePhieuDatPhong\WCF_QuanLyKhachSanForm.ServiceReferencePhieuDatPhong.PhieuDatPhongDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong.wsdl" />
+    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\WCF_QuanLyKhachSanForm.ServiceReferencePhieuThuePhong.PhieuThuePhongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReferencePhong\ServicePhong.wsdl" />
     <None Include="Service References\ServiceReferencePhong\ServicePhong.xsd">
       <SubType>Designer</SubType>
@@ -371,14 +434,17 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietDatPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietThuePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietVatTu\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceDichVu\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceKhachHang\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceKiemTraPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceLoaiPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceLogin\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceNhanVien\" />
     <WCFMetadataStorage Include="Service References\ServiceReferencePhieuDatPhong\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferencePhieuThuePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferencePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceVatTu\" />
   </ItemGroup>
@@ -550,6 +616,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferencePhieuDatPhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

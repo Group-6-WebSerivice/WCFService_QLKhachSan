@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Security.Cryptography;
-//using WCF_QuanLyKhachSanForm.ServiceReferenceChiTietDatPhong;
-//using WCF_QuanLyKhachSanForm.ServiceReferencePhieuDatPhong;
-//using WCF_QuanLyKhachSanForm.ServiceReferencePhieuThuePhong;
+using WCF_QuanLyKhachSanForm.ServiceReferenceChiTietDatPhong;
+using WCF_QuanLyKhachSanForm.ServiceReferencePhieuDatPhong;
+using WCF_QuanLyKhachSanForm.ServiceReferencePhieuThuePhong;
 using WCF_QuanLyKhachSanForm.ServiceReferencePhong;
 
 namespace WCF_QuanLyKhachSanForm
@@ -27,9 +27,9 @@ namespace WCF_QuanLyKhachSanForm
 
         
         ServicePhongClient client = new ServicePhongClient();
-        //ServiceChiTietDatPhongClient client1 = new ServiceChiTietDatPhongClient();
-        //ServicePhieuDatPhongClient client2 = new ServicePhieuDatPhongClient();
-        //ServicePhieuThuePhongClient client3 = new ServicePhieuThuePhongClient();
+        ServiceChiTietDatPhongClient client1 = new ServiceChiTietDatPhongClient();
+        ServicePhieuDatPhongClient client2 = new ServicePhieuDatPhongClient();
+        ServicePhieuThuePhongClient client3 = new ServicePhieuThuePhongClient();
 
         private bool num;
 
@@ -67,61 +67,61 @@ namespace WCF_QuanLyKhachSanForm
                 MainEnNhanVien();
             }
             labUser.Text = "Hi! " + m_username;
-            //capnhatphong();
+            capnhatphong();
         }
 
-        //public void capnhatphong()
-        //{
-        //    lsvMain.Items.Clear();
-        //    IList<PhieuDatPhongDTO> listpdp = client2.getListPhieuDatPhongAll();
-        //    if (listpdp != null)
-        //    {
-        //        foreach (PhieuDatPhongDTO pdp in listpdp)
-        //        {
-        //            if (pdp.Tinhtrang == "waitting")
-        //            {
-                        
-        //                IList<ChiTietDatPhongDTO> listctdp = client1.getChiTietDatPhongByID(pdp.Maphieudat);
-        //                foreach (ChiTietDatPhongDTO ctdp in listctdp)
-        //                {
+        public void capnhatphong()
+        {
+            lsvMain.Items.Clear();
+            IList<PhieuDatPhongDTO> listpdp = client2.getListPhieuDatPhongAll();
+            if (listpdp != null)
+            {
+                foreach (PhieuDatPhongDTO pdp in listpdp)
+                {
+                    if (pdp.Tinhtrang == "waitting")
+                    {
 
-        //                    PhongDTO p = client.getPhongByID(ctdp.Maphong);
-        //                    if (p.Dadat == false && p.Danhan == false)
-        //                    {
-        //                        PhongDTO pDTO = new PhongDTO();
-        //                        pDTO.Maphong = p.Maphong;
-        //                        pDTO.Maloai = p.Maloai;
-        //                        pDTO.Dadat = true;
-        //                        pDTO.Danhan = false;
-        //                        client.updatePhong(pDTO);
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
+                        IList<ChiTietDatPhongDTO> listctdp = client1.getChiTietDatPhongByID(pdp.Maphieudat);
+                        foreach (ChiTietDatPhongDTO ctdp in listctdp)
+                        {
 
-            
-        //    IList<PhongDTO> listp = client.getListPhongAll();
-        //    foreach (PhongDTO dread in listp)
-        //    {
-        //        int i = lsvMain.Items.Count;
-        //        lsvMain.Items.Add(dread.Maphong);
-        //        string dat = "", nhan = "";
-        //        int imgidx = 0;
-        //        dat = dread.Dadat.ToString();
-        //        nhan = dread.Danhan.ToString();
-        //        if (dat == "False" && nhan == "False")
-        //            imgidx = 0;
-        //        else if (dat == "True" && nhan == "False")
-        //            imgidx = 1;
-        //        else if (dat == "False" && nhan == "True")
-        //            imgidx = 2;
-        //        else if (dat == "True" && nhan == "True")
-        //            imgidx = 3;
-        //        lsvMain.Items[i].ImageIndex = imgidx;
+                            PhongDTO p = client.getPhongByID(ctdp.Maphong);
+                            if (p.Dadat == false && p.Danhan == false)
+                            {
+                                PhongDTO pDTO = new PhongDTO();
+                                pDTO.Maphong = p.Maphong;
+                                pDTO.Maloai = p.Maloai;
+                                pDTO.Dadat = true;
+                                pDTO.Danhan = false;
+                                client.updatePhong(pDTO);
+                            }
+                        }
+                    }
+                }
+            }
 
-        //    }
-        //}
+
+            IList<PhongDTO> listp = client.getListPhongAll();
+            foreach (PhongDTO dread in listp)
+            {
+                int i = lsvMain.Items.Count;
+                lsvMain.Items.Add(dread.Maphong);
+                string dat = "", nhan = "";
+                int imgidx = 0;
+                dat = dread.Dadat.ToString();
+                nhan = dread.Danhan.ToString();
+                if (dat == "False" && nhan == "False")
+                    imgidx = 0;
+                else if (dat == "True" && nhan == "False")
+                    imgidx = 1;
+                else if (dat == "False" && nhan == "True")
+                    imgidx = 2;
+                else if (dat == "True" && nhan == "True")
+                    imgidx = 3;
+                lsvMain.Items[i].ImageIndex = imgidx;
+
+            }
+        }
 
 
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -206,9 +206,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void phiếuĐặtPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormPhieuDatphong frmPhieuDatPhong = new FormPhieuDatphong();
-            //frmPhieuDatPhong.frmMain = this;
-            //frmPhieuDatPhong.ShowDialog();
+            FormPhieuDatphong frmPhieuDatPhong = new FormPhieuDatphong();
+            frmPhieuDatPhong.frmMain = this;
+            frmPhieuDatPhong.ShowDialog();
         }
 
         private void phiếuThuêToolStripMenuItem_Click(object sender, EventArgs e)

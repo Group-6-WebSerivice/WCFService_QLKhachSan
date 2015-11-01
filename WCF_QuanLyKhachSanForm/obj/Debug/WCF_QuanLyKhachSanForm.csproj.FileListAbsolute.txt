@@ -61,3 +61,17 @@ D:\GITHUB\WCFService_HotelManager\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKha
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.exe.config
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.exe
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.pdb
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.exe
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.pdb
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormAbout.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormDichVu.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormKhachHang.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormLogin.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormMain.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormNhanVien.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormPhieuDatphong.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormPhong.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormVatTu.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.Properties.Resources.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csproj.GenerateResource.Cache
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csprojResolveAssemblyReference.cache

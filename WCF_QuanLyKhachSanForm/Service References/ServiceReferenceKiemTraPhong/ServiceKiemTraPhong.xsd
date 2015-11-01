@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfKiemTraPhongDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KiemTraPhongDTO" nillable="true" type="tns:KiemTraPhongDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKiemTraPhongDTO" nillable="true" type="tns:ArrayOfKiemTraPhongDTO" />
+  <xs:complexType name="KiemTraPhongDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Maphieudat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Maphong" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ngayden" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Ngaydi" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Tinhtrang" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KiemTraPhongDTO" nillable="true" type="tns:KiemTraPhongDTO" />
+</xs:schema>
