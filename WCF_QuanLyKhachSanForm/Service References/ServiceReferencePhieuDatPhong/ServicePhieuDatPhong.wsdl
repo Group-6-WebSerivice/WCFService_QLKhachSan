@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePhieuDatPhong" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServicePhieuDatPhong.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServicePhieuDatPhong.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServicePhieuDatPhong.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicePhieuDatPhong_CountListPDP_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListPDP" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_CountListPDP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListPDPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListPhieuDatPhongAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListPhieuDatPhongAll" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListPhieuDatPhongAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListPhieuDatPhongAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListPhieuDatPhongLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListPhieuDatPhongLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListPhieuDatPhongLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListPhieuDatPhongLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getPhieuDatPhongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPhieuDatPhongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getPhieuDatPhongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPhieuDatPhongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListPhieuDatPhongByMKH_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListPhieuDatPhongByMKH" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListPhieuDatPhongByMKH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListPhieuDatPhongByMKHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getLikePhieuDatPhongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikePhieuDatPhongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getLikePhieuDatPhongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikePhieuDatPhongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListLikePhieuDatPhongByMKH_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikePhieuDatPhongByMKH" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_getListLikePhieuDatPhongByMKH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikePhieuDatPhongByMKHResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_insertPhieuDatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertPhieuDatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_insertPhieuDatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertPhieuDatPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_deletePhieuDatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletePhieuDatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_deletePhieuDatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletePhieuDatPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_updatePhieuDatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatePhieuDatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuDatPhong_updatePhieuDatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatePhieuDatPhongResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicePhieuDatPhong">
+    <wsdl:operation name="CountListPDP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/CountListPDP" message="tns:IServicePhieuDatPhong_CountListPDP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/CountListPDPResponse" message="tns:IServicePhieuDatPhong_CountListPDP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuDatPhongAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongAll" message="tns:IServicePhieuDatPhong_getListPhieuDatPhongAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongAllResponse" message="tns:IServicePhieuDatPhong_getListPhieuDatPhongAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuDatPhongLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongLMAll" message="tns:IServicePhieuDatPhong_getListPhieuDatPhongLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongLMAllResponse" message="tns:IServicePhieuDatPhong_getListPhieuDatPhongLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPhieuDatPhongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getPhieuDatPhongByID" message="tns:IServicePhieuDatPhong_getPhieuDatPhongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getPhieuDatPhongByIDResponse" message="tns:IServicePhieuDatPhong_getPhieuDatPhongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuDatPhongByMKH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongByMKH" message="tns:IServicePhieuDatPhong_getListPhieuDatPhongByMKH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongByMKHResponse" message="tns:IServicePhieuDatPhong_getListPhieuDatPhongByMKH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikePhieuDatPhongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getLikePhieuDatPhongByID" message="tns:IServicePhieuDatPhong_getLikePhieuDatPhongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getLikePhieuDatPhongByIDResponse" message="tns:IServicePhieuDatPhong_getLikePhieuDatPhongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLikePhieuDatPhongByMKH">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListLikePhieuDatPhongByMKH" message="tns:IServicePhieuDatPhong_getListLikePhieuDatPhongByMKH_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/getListLikePhieuDatPhongByMKHResponse" message="tns:IServicePhieuDatPhong_getListLikePhieuDatPhongByMKH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertPhieuDatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/insertPhieuDatPhong" message="tns:IServicePhieuDatPhong_insertPhieuDatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/insertPhieuDatPhongResponse" message="tns:IServicePhieuDatPhong_insertPhieuDatPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletePhieuDatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/deletePhieuDatPhong" message="tns:IServicePhieuDatPhong_deletePhieuDatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/deletePhieuDatPhongResponse" message="tns:IServicePhieuDatPhong_deletePhieuDatPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatePhieuDatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/updatePhieuDatPhong" message="tns:IServicePhieuDatPhong_updatePhieuDatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuDatPhong/updatePhieuDatPhongResponse" message="tns:IServicePhieuDatPhong_updatePhieuDatPhong_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicePhieuDatPhong" type="tns:IServicePhieuDatPhong">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListPDP">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/CountListPDP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuDatPhongAll">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuDatPhongLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPhieuDatPhongByID">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/getPhieuDatPhongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListPhieuDatPhongByMKH">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/getListPhieuDatPhongByMKH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikePhieuDatPhongByID">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/getLikePhieuDatPhongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLikePhieuDatPhongByMKH">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/getListLikePhieuDatPhongByMKH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertPhieuDatPhong">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/insertPhieuDatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePhieuDatPhong">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/deletePhieuDatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePhieuDatPhong">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuDatPhong/updatePhieuDatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePhieuDatPhong">
+    <wsdl:port name="BasicHttpBinding_IServicePhieuDatPhong" binding="tns:BasicHttpBinding_IServicePhieuDatPhong">
+      <soap:address location="http://localhost:7429/ServicePhieuDatPhong.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

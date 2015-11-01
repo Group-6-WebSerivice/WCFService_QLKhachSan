@@ -67,6 +67,7 @@
     <Content Include="ServiceLoaiPhong.svc" />
     <Content Include="ServiceLogin.svc" />
     <Content Include="ServiceNhanVien.svc" />
+    <Content Include="ServicePhieuDatPhong.svc" />
     <Content Include="ServicePhong.svc" />
     <Content Include="ServiceVatTu.svc" />
     <Content Include="Web.config" />
@@ -84,6 +85,7 @@
     <Compile Include="IServiceLoaiPhong.cs" />
     <Compile Include="IServiceLogin.cs" />
     <Compile Include="IServiceNhanVien.cs" />
+    <Compile Include="IServicePhieuDatPhong.cs" />
     <Compile Include="IServicePhong.cs" />
     <Compile Include="IServiceVatTu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +109,9 @@
     </Compile>
     <Compile Include="ServiceNhanVien.svc.cs">
       <DependentUpon>ServiceNhanVien.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServicePhieuDatPhong.svc.cs">
+      <DependentUpon>ServicePhieuDatPhong.svc</DependentUpon>
     </Compile>
     <Compile Include="ServicePhong.svc.cs">
       <DependentUpon>ServicePhong.svc</DependentUpon>

@@ -112,6 +112,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>qlks3lopDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferenceChiTietThuePhong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferenceChiTietVatTu\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -205,6 +210,19 @@
     </None>
     <None Include="qlks3lopDataSet.xss">
       <DependentUpon>qlks3lopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.wsdl" />
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\WCF_QuanLyKhachSanForm.ServiceReferenceChiTietThuePhong.ChiTietThuePhongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReferenceChiTietVatTu\ServiceChiTietVatTu.wsdl" />
     <None Include="Service References\ServiceReferenceChiTietVatTu\ServiceChiTietVatTu.xsd">
@@ -335,6 +353,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietThuePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietVatTu\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceDichVu\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceKhachHang\" />
@@ -482,6 +501,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceLogin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
