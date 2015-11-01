@@ -10,3 +10,9 @@ D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyK
 D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
 D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
 D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll.config
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb

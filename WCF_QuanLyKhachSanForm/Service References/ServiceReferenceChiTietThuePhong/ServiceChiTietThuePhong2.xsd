@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfChiTietThuePhongDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChiTietThuePhongDTO" nillable="true" type="tns:ChiTietThuePhongDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChiTietThuePhongDTO" nillable="true" type="tns:ArrayOfChiTietThuePhongDTO" />
+  <xs:complexType name="ChiTietThuePhongDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Madichvu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Maphieuthue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Maphong" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ngay" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Soluong" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChiTietThuePhongDTO" nillable="true" type="tns:ChiTietThuePhongDTO" />
+</xs:schema>
