@@ -147,6 +147,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferencePhieuDatPhong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferencePhong\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -302,6 +307,19 @@
     <None Include="Service References\ServiceReferenceNhanVien\WCF_QuanLyKhachSanForm.ServiceReferenceNhanVien.NhanVienDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong.wsdl" />
+    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\WCF_QuanLyKhachSanForm.ServiceReferencePhieuDatPhong.PhieuDatPhongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReferencePhong\ServicePhong.wsdl" />
     <None Include="Service References\ServiceReferencePhong\ServicePhong.xsd">
       <SubType>Designer</SubType>
@@ -360,6 +378,7 @@
     <WCFMetadataStorage Include="Service References\ServiceReferenceLoaiPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceLogin\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceNhanVien\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferencePhieuDatPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferencePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceVatTu\" />
   </ItemGroup>
@@ -516,6 +535,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceChiTietThuePhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
