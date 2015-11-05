@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceHoaDon" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceHoaDon_CountListHD_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListHD" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_CountListHD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListHDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getListHoaDonAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListHoaDonAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getListHoaDonAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListHoaDonAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getListHoaDonLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListHoaDonLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getListHoaDonLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListHoaDonLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getHoaDonByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHoaDonByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getHoaDonByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHoaDonByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getListHoaDonByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListHoaDonByDate" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getListHoaDonByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListHoaDonByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getLikeHoaDonByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeHoaDonByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_getLikeHoaDonByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeHoaDonByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_insertHoaDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_insertHoaDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertHoaDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_deleteHoaDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_deleteHoaDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_updateHoaDon_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateHoaDon" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_updateHoaDon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateHoaDonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceHoaDon">
+    <wsdl:operation name="CountListHD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/CountListHD" message="tns:IServiceHoaDon_CountListHD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/CountListHDResponse" message="tns:IServiceHoaDon_CountListHD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListHoaDonAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/getListHoaDonAll" message="tns:IServiceHoaDon_getListHoaDonAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/getListHoaDonAllResponse" message="tns:IServiceHoaDon_getListHoaDonAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListHoaDonLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/getListHoaDonLMAll" message="tns:IServiceHoaDon_getListHoaDonLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/getListHoaDonLMAllResponse" message="tns:IServiceHoaDon_getListHoaDonLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHoaDonByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/getHoaDonByID" message="tns:IServiceHoaDon_getHoaDonByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/getHoaDonByIDResponse" message="tns:IServiceHoaDon_getHoaDonByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListHoaDonByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/getListHoaDonByDate" message="tns:IServiceHoaDon_getListHoaDonByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/getListHoaDonByDateResponse" message="tns:IServiceHoaDon_getListHoaDonByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikeHoaDonByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/getLikeHoaDonByID" message="tns:IServiceHoaDon_getLikeHoaDonByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/getLikeHoaDonByIDResponse" message="tns:IServiceHoaDon_getLikeHoaDonByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/insertHoaDon" message="tns:IServiceHoaDon_insertHoaDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/insertHoaDonResponse" message="tns:IServiceHoaDon_insertHoaDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/deleteHoaDon" message="tns:IServiceHoaDon_deleteHoaDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/deleteHoaDonResponse" message="tns:IServiceHoaDon_deleteHoaDon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/updateHoaDon" message="tns:IServiceHoaDon_updateHoaDon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/updateHoaDonResponse" message="tns:IServiceHoaDon_updateHoaDon_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceHoaDon" type="tns:IServiceHoaDon">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListHD">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/CountListHD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListHoaDonAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/getListHoaDonAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListHoaDonLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/getListHoaDonLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHoaDonByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/getHoaDonByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListHoaDonByDate">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/getListHoaDonByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikeHoaDonByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/getLikeHoaDonByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDon">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/insertHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDon">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/deleteHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDon">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/updateHoaDon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceHoaDon">
+    <wsdl:port name="BasicHttpBinding_IServiceHoaDon" binding="tns:BasicHttpBinding_IServiceHoaDon">
+      <soap:address location="http://localhost:7429/ServiceHoaDon.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

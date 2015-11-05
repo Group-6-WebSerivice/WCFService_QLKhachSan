@@ -64,6 +64,7 @@
     <Content Include="ServiceChiTietThuePhong.svc" />
     <Content Include="ServiceChiTietVatTu.svc" />
     <Content Include="ServiceDichVu.svc" />
+    <Content Include="ServiceHoaDon.svc" />
     <Content Include="ServiceKhachHang.svc" />
     <Content Include="ServiceKiemTraPhong.svc" />
     <Content Include="ServiceLoaiPhong.svc" />
@@ -85,6 +86,7 @@
     <Compile Include="IServiceChiTietThuePhong.cs" />
     <Compile Include="IServiceChiTietVatTu.cs" />
     <Compile Include="IServiceDichVu.cs" />
+    <Compile Include="IServiceHoaDon.cs" />
     <Compile Include="IServiceKhachHang.cs" />
     <Compile Include="IServiceKiemTraPhong.cs" />
     <Compile Include="IServiceLoaiPhong.cs" />
@@ -106,6 +108,9 @@
     </Compile>
     <Compile Include="ServiceDichVu.svc.cs">
       <DependentUpon>ServiceDichVu.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceHoaDon.svc.cs">
+      <DependentUpon>ServiceHoaDon.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceKhachHang.svc.cs">
       <DependentUpon>ServiceKhachHang.svc</DependentUpon>

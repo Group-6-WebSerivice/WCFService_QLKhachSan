@@ -15,7 +15,9 @@ namespace WcfServiceQuanLyKhachSan
     public class ServiceKiemTraPhong : IServiceKiemTraPhong
     {
         HotelDataContext htDataContext = new HotelDataContext();
+
         List<KiemTraPhongDTO> a = new List<KiemTraPhongDTO>();
+
         public List<KiemTraPhongDTO> KiemTraPhong(DateTime ngayden, DateTime ngaydi)
         {
 

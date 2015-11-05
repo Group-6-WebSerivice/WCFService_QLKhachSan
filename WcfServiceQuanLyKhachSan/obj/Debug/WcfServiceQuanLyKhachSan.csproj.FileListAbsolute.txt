@@ -15,3 +15,4 @@ D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKha
 D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
 D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
 D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb
+D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
