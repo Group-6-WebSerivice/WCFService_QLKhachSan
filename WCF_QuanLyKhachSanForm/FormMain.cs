@@ -213,9 +213,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void phiếuThuêToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormPhieuThuePhong frmPhieuThuePhong = new FormPhieuThuePhong();
-            //frmPhieuThuePhong.frmMain = this;
-            //frmPhieuThuePhong.ShowDialog();
+            FormPhieuThuePhong frmPhieuThuePhong = new FormPhieuThuePhong();
+            frmPhieuThuePhong.frmMain = this;
+            frmPhieuThuePhong.ShowDialog();
         }
 
         private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -368,11 +368,11 @@ namespace WCF_QuanLyKhachSanForm
 
         private void đạtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (lsvMain.SelectedItems.Count <= 0)
-            {
-                MessageBox.Show("chon mot phong!!!");
-                return;
-            }
+            //if (lsvMain.SelectedItems.Count <= 0)
+            //{
+            //    MessageBox.Show("chon mot phong!!!");
+            //    return;
+            //}
 
             //FormPhieuDatphong frmPDP = new FormPhieuDatphong();
             //frmPDP.frmMain = this;
@@ -386,21 +386,21 @@ namespace WCF_QuanLyKhachSanForm
             //    MessageBox.Show("chon mot phong!!!");
             //    return;
             //}
-            //string maphieudat="";
-            
+            //string maphieudat = "";
+
             //PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
-            //if (pDTO.Dadat == true && pDTO.Danhan==false)
+            //if (pDTO.Dadat == true && pDTO.Danhan == false)
             //{
-                
+
             //    IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
-            //    foreach(ChiTietDatPhongDTO ctdp in listctdp)
+            //    foreach (ChiTietDatPhongDTO ctdp in listctdp)
             //    {
-            //        maphieudat=ctdp.Maphieudat;
+            //        maphieudat = ctdp.Maphieudat;
             //    }
-                //FormPhieuDatphong frmPDP = new FormPhieuDatphong();
-                //frmPDP.frmMain = this;
-                //frmPDP.maphieudatT = maphieudat;
-                ////MessageBox.Show(maphieudat);
+            //    FormPhieuDatphong frmPDP = new FormPhieuDatphong();
+            //    frmPDP.frmMain = this;
+            //    frmPDP.maphieudatT = maphieudat;
+            //    //MessageBox.Show(maphieudat);
             //    //frmPDP.ShowDialog();
             //}
             //else if (pDTO.Dadat == true && pDTO.Danhan == true)
@@ -422,16 +422,16 @@ namespace WCF_QuanLyKhachSanForm
             //    MessageBox.Show("chon mot phong!!!");
             //    return;
             //}
-            
+
             //PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
             //if (pDTO.Danhan == true)
             //{
-            //    string mpt="";
-                
+            //    string mpt = "";
+
             //    IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
             //    foreach (ChiTietDatPhongDTO ctdp in listctdp)
             //    {
-                    
+
             //        PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
             //        IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
             //        if (ptp != null)
@@ -442,11 +442,11 @@ namespace WCF_QuanLyKhachSanForm
             //            }
             //        }
             //    }
-                //FormPhieuThuePhong frmPTP = new FormPhieuThuePhong();
-                //frmPTP.frmMain = this;
-                //frmPTP.maphong = pDTO.Maphong;
-                //frmPTP.maphieuthue = mpt;
-                //frmPTP.ShowDialog();
+            //    FormPhieuThuePhong frmPTP = new FormPhieuThuePhong();
+            //    frmPTP.frmMain = this;
+            //    frmPTP.maphong = pDTO.Maphong;
+            //    frmPTP.maphieuthue = mpt;
+            //    frmPTP.ShowDialog();
 
             //}
             //else
@@ -458,42 +458,42 @@ namespace WCF_QuanLyKhachSanForm
 
         private void trảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (lsvMain.SelectedItems.Count <= 0)
-            //{
-            //    MessageBox.Show("chon mot phong!!!");
-            //    return;
-            //}
-            
-            //PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
-            //if (pDTO.Danhan == true)
-            //{
-            //    string mpt = "";
-                
-            //    IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
-            //    foreach (ChiTietDatPhongDTO ctdp in listctdp)
-            //    {
-                    
-            //        PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
-            //        IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
-            //        if (ptp != null)
-            //        {
-            //            foreach (PhieuThuePhongDTO pt in ptp)
-            //            {
-            //                mpt = pt.Maphieuthue;
-            //            }
-            //        }
-            //    }
-            //    //FormHoaDon frmHD = new FormHoaDon();
-            //    //frmHD.frmMain = this;
-            //    //frmHD.maphieuthue = mpt;
-            //    //frmHD.ShowDialog();
+        //    if (lsvMain.SelectedItems.Count <= 0)
+        //    {
+        //        MessageBox.Show("chon mot phong!!!");
+        //        return;
+        //    }
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Phòng chưa có người!");
-            //    return;
-            //}
+        //    PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
+        //    if (pDTO.Danhan == true)
+        //    {
+        //        string mpt = "";
+
+        //        IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
+        //        foreach (ChiTietDatPhongDTO ctdp in listctdp)
+        //        {
+
+        //            PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
+        //            IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
+        //            if (ptp != null)
+        //            {
+        //                foreach (PhieuThuePhongDTO pt in ptp)
+        //                {
+        //                    mpt = pt.Maphieuthue;
+        //                }
+        //            }
+        //        }
+        //        //FormHoaDon frmHD = new FormHoaDon();
+        //        //frmHD.frmMain = this;
+        //        //frmHD.maphieuthue = mpt;
+        //        //frmHD.ShowDialog();
+
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Phòng chưa có người!");
+        //        return;
+        //    }
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)

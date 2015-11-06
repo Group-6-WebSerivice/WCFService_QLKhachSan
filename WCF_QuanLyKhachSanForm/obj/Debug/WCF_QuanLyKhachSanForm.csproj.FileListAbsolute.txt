@@ -74,4 +74,4 @@ D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhach
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormVatTu.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.Properties.Resources.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csproj.GenerateResource.Cache
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csprojResolveAssemblyReference.cache
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormPhieuThuePhong.resources
