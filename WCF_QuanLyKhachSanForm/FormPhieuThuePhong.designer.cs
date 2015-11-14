@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Khách hàng", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("Mã khách hàng:");
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("Tên khách hàng:");
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("CMND/Passport");
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("Địa chỉ");
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("Cơ quan:");
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("Số điện thoại:");
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("Email:");
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Khách hàng", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Mã khách hàng:");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Tên khách hàng:");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("CMND/Passport");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Địa chỉ");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Mật khẩu:");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Số điện thoại:");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Email:");
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -256,26 +256,26 @@
             this.columnHeader3});
             this.lsvKH.FullRowSelect = true;
             this.lsvKH.GridLines = true;
-            listViewGroup3.Header = "Khách hàng";
-            listViewGroup3.Name = "lsvgKH";
+            listViewGroup1.Header = "Khách hàng";
+            listViewGroup1.Name = "lsvgKH";
             this.lsvKH.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3});
+            listViewGroup1});
             this.lsvKH.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            listViewItem15.Group = listViewGroup3;
-            listViewItem16.Group = listViewGroup3;
-            listViewItem17.Group = listViewGroup3;
-            listViewItem18.Group = listViewGroup3;
-            listViewItem19.Group = listViewGroup3;
-            listViewItem20.Group = listViewGroup3;
-            listViewItem21.Group = listViewGroup3;
+            listViewItem1.Group = listViewGroup1;
+            listViewItem2.Group = listViewGroup1;
+            listViewItem3.Group = listViewGroup1;
+            listViewItem4.Group = listViewGroup1;
+            listViewItem5.Group = listViewGroup1;
+            listViewItem6.Group = listViewGroup1;
+            listViewItem7.Group = listViewGroup1;
             this.lsvKH.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem15,
-            listViewItem16,
-            listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20,
-            listViewItem21});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6,
+            listViewItem7});
             this.lsvKH.Location = new System.Drawing.Point(369, 37);
             this.lsvKH.MultiSelect = false;
             this.lsvKH.Name = "lsvKH";

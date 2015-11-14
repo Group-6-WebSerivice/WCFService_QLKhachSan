@@ -36,7 +36,7 @@
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Giới tính");
             System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("CMND/Passport");
             System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Địa chỉ");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Cơ quan");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Mật khẩu");
             System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Điện thoại");
             System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("E-mail");
             System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Ngày đến");
@@ -393,8 +393,8 @@
             // 
             this.tabPage1.Controls.Add(this.btnSua);
             this.tabPage1.Controls.Add(this.lsvViewPhong);
-            this.tabPage1.Controls.Add(this.button1_datphong);
             this.tabPage1.Controls.Add(this.lsvChiTiet);
+            this.tabPage1.Controls.Add(this.button1_datphong);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);

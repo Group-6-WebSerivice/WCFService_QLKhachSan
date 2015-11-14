@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="009f531d-a28d-4021-81b6-b81ff17d03ee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="04b98d5e-cb0c-4f22-9ccc-a9f7b4d3bdab" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:7429/ServiceHoaDon.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceHoaDon.disco" MetadataType="Disco" ID="18131e16-6dc7-4ca0-b6b0-6770f47b8630" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?disco" />
-    <MetadataFile FileName="ServiceHoaDon.xsd" MetadataType="Schema" ID="ce51e2f7-6a73-4c95-bbc2-ac5550eb32a5" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceHoaDon1.xsd" MetadataType="Schema" ID="a286c771-d632-4cbb-9c70-a84863ad690c" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceHoaDon2.xsd" MetadataType="Schema" ID="7a247d9a-e7d1-4bf6-b4d9-0a9d6f08363b" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceHoaDon.wsdl" MetadataType="Wsdl" ID="8a7dd1e9-3bf5-4766-a45f-4d2c8689a8ba" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?wsdl" />
+    <MetadataFile FileName="ServiceHoaDon.disco" MetadataType="Disco" ID="ed1534ca-611b-49a4-baec-73e5010ad8ba" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?disco" />
+    <MetadataFile FileName="ServiceHoaDon.xsd" MetadataType="Schema" ID="8a3d5cac-b114-4ce0-af07-66144e6376a9" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceHoaDon1.xsd" MetadataType="Schema" ID="038e2485-9f64-44e5-8330-d2398b606ff1" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceHoaDon2.xsd" MetadataType="Schema" ID="5d4089ef-c486-4833-983b-5860e47dbc10" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceHoaDon.wsdl" MetadataType="Wsdl" ID="2d221c4d-183c-49be-80c4-f1f721b06ed2" SourceId="1" SourceUrl="http://localhost:7429/ServiceHoaDon.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

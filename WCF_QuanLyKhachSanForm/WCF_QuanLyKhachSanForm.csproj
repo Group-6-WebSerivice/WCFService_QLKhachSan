@@ -64,6 +64,24 @@
     <Compile Include="FormDichVu.designer.cs">
       <DependentUpon>FormDichVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiMatKhau.designer.cs">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHeThong.designer.cs">
+      <DependentUpon>FormHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoaDon.designer.cs">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,7 +162,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferenceHeThong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferenceHoaDon\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceInHoaDonDichVu\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceInHoaDonPhong\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -204,6 +237,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDichVu.resx">
       <DependentUpon>FormDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiMatKhau.resx">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHeThong.resx">
+      <DependentUpon>FormHeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoaDon.resx">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKhachHang.resx">
       <DependentUpon>FormKhachHang.cs</DependentUpon>
@@ -306,6 +348,19 @@
     <None Include="Service References\ServiceReferenceDichVu\WCF_QuanLyKhachSanForm.ServiceReferenceDichVu.DichVuDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReferenceHeThong\ServiceHeThong.wsdl" />
+    <None Include="Service References\ServiceReferenceHeThong\ServiceHeThong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHeThong\ServiceHeThong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHeThong\ServiceHeThong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceHeThong\WCF_QuanLyKhachSanForm.ServiceReferenceHeThong.HeThongDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReferenceHoaDon\ServiceHoaDon.wsdl" />
     <None Include="Service References\ServiceReferenceHoaDon\ServiceHoaDon.xsd">
       <SubType>Designer</SubType>
@@ -317,6 +372,32 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReferenceHoaDon\WCF_QuanLyKhachSanForm.ServiceReferenceHoaDon.HoaDonDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu.wsdl" />
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\WCF_QuanLyKhachSanForm.ServiceReferenceInHoaDonDichVu.InHoaDonDichVuDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong.wsdl" />
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\WCF_QuanLyKhachSanForm.ServiceReferenceInHoaDonPhong.InHoaDonPhongDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReferenceKhachHang\ServiceKhachHang.wsdl" />
@@ -465,7 +546,10 @@
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietThuePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietVatTu\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceDichVu\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceHeThong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceHoaDon\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceInHoaDonDichVu\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceInHoaDonPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceKhachHang\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceKiemTraPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceLoaiPhong\" />
@@ -487,6 +571,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceNhanVien\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietDatPhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceChiTietThuePhong\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -517,6 +631,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceDichVu\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHeThong\ServiceHeThong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHeThong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHeThong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHeThong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoaDon\ServiceHoaDon.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoaDon\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoaDon\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceHoaDon\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -571,6 +715,51 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\ServiceReferenceLogin\ServiceLogin.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceLogin\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceLogin\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceLogin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuDatPhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferencePhieuThuePhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Service References\ServiceReferencePhong\ServicePhong.disco" />
   </ItemGroup>
   <ItemGroup>
@@ -601,79 +790,31 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceLogin\ServiceLogin.disco" />
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceLogin\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceLogin\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceLogin\Reference.svcmap">
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietThuePhong\ServiceChiTietThuePhong.disco" />
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietThuePhong\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietThuePhong\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietThuePhong\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuDatPhong\ServicePhieuDatPhong.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuDatPhong\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuDatPhong\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuDatPhong\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietDatPhong\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietDatPhong\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceChiTietDatPhong\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuThuePhong\ServicePhieuThuePhong.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuThuePhong\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuThuePhong\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferencePhieuThuePhong\Reference.svcmap">
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -694,19 +835,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReferenceHoaDon\ServiceHoaDon.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceHoaDon\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceHoaDon\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceHoaDon\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

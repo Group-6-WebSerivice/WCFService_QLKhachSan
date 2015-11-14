@@ -17,7 +17,7 @@ namespace WCF_QuanLyKhachSanForm
     {
         public bool flag;
         public FormMain frmMain;
-        //public FormPhieuDatphong frmPhieuDatPhong;
+        public FormPhieuDatphong frmPhieuDatPhong;
         private int limit;
         ServiceKhachHangClient khg = new ServiceKhachHangClient();
         KhachHangDTO khDTO;
@@ -68,7 +68,7 @@ namespace WCF_QuanLyKhachSanForm
                     }
                     lsvKhachhang.Items[i].SubItems.Add(read.CMND_PASSPORT);
                     lsvKhachhang.Items[i].SubItems.Add(read.Diachi);
-                    lsvKhachhang.Items[i].SubItems.Add(read.Diachi);
+                    lsvKhachhang.Items[i].SubItems.Add(read.Pass);
                     lsvKhachhang.Items[i].SubItems.Add(read.Sodienthoai);
                     lsvKhachhang.Items[i].SubItems.Add(read.Email);
                 }
@@ -102,7 +102,7 @@ namespace WCF_QuanLyKhachSanForm
                     }
                     lsvKhachhang.Items[i].SubItems.Add(read.CMND_PASSPORT);
                     lsvKhachhang.Items[i].SubItems.Add(read.Diachi);
-                    lsvKhachhang.Items[i].SubItems.Add(read.Coquan);
+                    lsvKhachhang.Items[i].SubItems.Add(read.Pass);
                     lsvKhachhang.Items[i].SubItems.Add(read.Sodienthoai);
                     lsvKhachhang.Items[i].SubItems.Add(read.Email);
 
@@ -121,7 +121,7 @@ namespace WCF_QuanLyKhachSanForm
                 khDTO.Gioitinh = rdNam.Checked;
                 khDTO.CMND_PASSPORT = txtCMND.Text;
                 khDTO.Diachi = txtDiachi.Text;
-                khDTO.Coquan = txtCoquan.Text;
+                khDTO.Pass = txtPass.Text;
                 khDTO.Sodienthoai = txtSoDT.Text;
                 khDTO.Email = txtEmail.Text;
                 if (khg.insertKhachHang(khDTO) == 1)
@@ -180,7 +180,7 @@ namespace WCF_QuanLyKhachSanForm
                 khDTO.Gioitinh = rdNam.Checked;
                 khDTO.CMND_PASSPORT = txtCMND.Text;
                 khDTO.Diachi = txtDiachi.Text;
-                khDTO.Coquan = txtCoquan.Text;
+                khDTO.Pass = txtPass.Text;
                 khDTO.Sodienthoai = txtSoDT.Text;
                 khDTO.Email = txtEmail.Text;
                 khg.updateKhachHang(khDTO);
@@ -409,7 +409,7 @@ namespace WCF_QuanLyKhachSanForm
             }
             txtCMND.Text = lsvKhachhang.SelectedItems[0].SubItems[3].Text;
             txtDiachi.Text = lsvKhachhang.SelectedItems[0].SubItems[4].Text;
-            txtCoquan.Text = lsvKhachhang.SelectedItems[0].SubItems[5].Text;
+            txtPass.Text = lsvKhachhang.SelectedItems[0].SubItems[5].Text;
             txtSoDT.Text = lsvKhachhang.SelectedItems[0].SubItems[6].Text;
             txtEmail.Text = lsvKhachhang.SelectedItems[0].SubItems[7].Text;
         }

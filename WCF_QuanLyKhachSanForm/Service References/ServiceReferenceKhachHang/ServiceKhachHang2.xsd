@@ -9,11 +9,11 @@
   <xs:complexType name="KhachHangDTO">
     <xs:sequence>
       <xs:element minOccurs="0" name="CMND_PASSPORT" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Coquan" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Diachi" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Gioitinh" type="xs:boolean" />
       <xs:element minOccurs="0" name="Makhachhang" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Sodienthoai" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Tenkhachhang" nillable="true" type="xs:string" />
     </xs:sequence>

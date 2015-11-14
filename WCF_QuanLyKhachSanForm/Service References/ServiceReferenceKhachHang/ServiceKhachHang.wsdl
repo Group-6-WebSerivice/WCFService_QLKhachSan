@@ -37,6 +37,12 @@
   <wsdl:message name="IServiceKhachHang_getListKhachHangByName_OutputMessage">
     <wsdl:part name="parameters" element="tns:getListKhachHangByNameResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceKhachHang_getlistKhachHangbypass_InputMessage">
+    <wsdl:part name="parameters" element="tns:getlistKhachHangbypass" />
+  </wsdl:message>
+  <wsdl:message name="IServiceKhachHang_getlistKhachHangbypass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getlistKhachHangbypassResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceKhachHang_getLikeKhachHangByID_InputMessage">
     <wsdl:part name="parameters" element="tns:getLikeKhachHangByID" />
   </wsdl:message>
@@ -87,6 +93,10 @@
     <wsdl:operation name="getListKhachHangByName">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceKhachHang/getListKhachHangByName" message="tns:IServiceKhachHang_getListKhachHangByName_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceKhachHang/getListKhachHangByNameResponse" message="tns:IServiceKhachHang_getListKhachHangByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getlistKhachHangbypass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypass" message="tns:IServiceKhachHang_getlistKhachHangbypass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypassResponse" message="tns:IServiceKhachHang_getlistKhachHangbypass_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="getLikeKhachHangByID">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceKhachHang/getLikeKhachHangByID" message="tns:IServiceKhachHang_getLikeKhachHangByID_InputMessage" />
@@ -149,6 +159,15 @@
     </wsdl:operation>
     <wsdl:operation name="getListKhachHangByName">
       <soap:operation soapAction="http://tempuri.org/IServiceKhachHang/getListKhachHangByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getlistKhachHangbypass">
+      <soap:operation soapAction="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypass" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

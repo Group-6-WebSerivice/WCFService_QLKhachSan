@@ -64,22 +64,8 @@
       <Column Name="makhachhang" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="username" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Association Name="hethong_hoadon" Member="hethong" ThisKey="username" OtherKey="username" Type="hethong" IsForeignKey="true" />
-      <Association Name="khachhang_hoadon" Member="khachhang" ThisKey="makhachhang" OtherKey="makhachhang" Type="khachhang" IsForeignKey="true" />
       <Association Name="phieuthuephong_hoadon" Member="phieuthuephong" ThisKey="maphieuthue" OtherKey="maphieuthue" Type="phieuthuephong" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.khachhang" Member="khachhangs">
-    <Type Name="khachhang">
-      <Column Name="makhachhang" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenkhachhang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="gioitinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="cmnd_passport" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="coquan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="sodienthoai" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
-      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Association Name="khachhang_hoadon" Member="hoadons" AccessModifier="Internal" ThisKey="makhachhang" OtherKey="makhachhang" Type="hoadon" />
-      <Association Name="khachhang_phieudatphong" Member="phieudatphongs" AccessModifier="Internal" ThisKey="makhachhang" OtherKey="makhachhang" Type="phieudatphong" />
+      <Association Name="khachhang_hoadon" Member="khachhang" ThisKey="makhachhang" OtherKey="makhachhang" Type="khachhang" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.nhanvien" Member="nhanviens">
@@ -147,6 +133,20 @@
       <Column Name="anhbia" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Association Name="loaiphong_chitietvattu" Member="chitietvattus" ThisKey="maloai" OtherKey="maloaiphong" Type="chitietvattu" />
       <Association Name="loaiphong_phong" Member="phongs" ThisKey="maloai" OtherKey="maloai" Type="phong" />
+    </Type>
+  </Table>
+  <Table Name="dbo.khachhang" Member="khachhangs">
+    <Type Name="khachhang">
+      <Column Name="makhachhang" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenkhachhang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gioitinh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="cmnd_passport" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="sodienthoai" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="khachhang_hoadon" Member="hoadons" ThisKey="makhachhang" OtherKey="makhachhang" Type="hoadon" />
+      <Association Name="khachhang_phieudatphong" Member="phieudatphongs" ThisKey="makhachhang" OtherKey="makhachhang" Type="phieudatphong" />
     </Type>
   </Table>
   <Function Name="dbo.InhoadonDichVu" Method="InhoadonDichVu">

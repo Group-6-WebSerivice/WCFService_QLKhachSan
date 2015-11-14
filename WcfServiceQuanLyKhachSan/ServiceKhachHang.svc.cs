@@ -33,7 +33,7 @@ namespace WcfServiceQuanLyKhachSan
                              Gioitinh = (Boolean)kh.gioitinh,
                              CMND_PASSPORT = kh.cmnd_passport,
                              Diachi = kh.diachi,
-                             Coquan = kh.coquan,
+                             Pass = kh.pass,
                              Sodienthoai = kh.sodienthoai,
                              Email = kh.email,
                          }).Distinct<KhachHangDTO>();
@@ -55,7 +55,7 @@ namespace WcfServiceQuanLyKhachSan
                              Gioitinh = (Boolean)kh.gioitinh,
                              CMND_PASSPORT = kh.cmnd_passport,
                              Diachi = kh.diachi,
-                             Coquan = kh.coquan,
+                             Pass = kh.pass,
                              Sodienthoai = kh.sodienthoai,
                              Email = kh.email,
                          }).Distinct<KhachHangDTO>();
@@ -76,7 +76,7 @@ namespace WcfServiceQuanLyKhachSan
                               Gioitinh = (Boolean)kh.gioitinh,
                               CMND_PASSPORT = kh.cmnd_passport,
                               Diachi = kh.diachi,
-                              Coquan = kh.coquan,
+                              Pass = kh.pass,
                               Sodienthoai = kh.sodienthoai,
                               Email = kh.email,
                           }).Distinct<KhachHangDTO>();
@@ -102,7 +102,7 @@ namespace WcfServiceQuanLyKhachSan
                               Gioitinh = (Boolean)kh.gioitinh,
                               CMND_PASSPORT = kh.cmnd_passport,
                               Diachi = kh.diachi,
-                              Coquan = kh.coquan,
+                              Pass = kh.pass,
                               Sodienthoai = kh.sodienthoai,
                               Email = kh.email,
                           }).Distinct<KhachHangDTO>();
@@ -115,7 +115,30 @@ namespace WcfServiceQuanLyKhachSan
                 return querry.ToList<KhachHangDTO>();
             }
         }
-
+        public IList<KhachHangDTO> getlistKhachHangbypass(string id, string pass)
+        {
+            var querry = (from kh in htDataContext.khachhangs
+                          where kh.makhachhang == id && kh.pass == pass
+                          select new KhachHangDTO
+                          {
+                              Makhachhang = kh.makhachhang,
+                              Tenkhachhang = kh.tenkhachhang,
+                              Gioitinh = (Boolean)kh.gioitinh,
+                              CMND_PASSPORT = kh.cmnd_passport,
+                              Diachi = kh.diachi,
+                              Pass = kh.pass,
+                              Sodienthoai = kh.sodienthoai,
+                              Email = kh.email,
+                          }).Distinct<KhachHangDTO>();
+            if (querry.Count() == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return querry.ToList<KhachHangDTO>();
+            }
+        }
         //Danh sách gần đúng các nhân viên có mã nhân viên được nhập vào
         public IList<KhachHangDTO> getLikeKhachHangByID(string id)
         {
@@ -128,7 +151,7 @@ namespace WcfServiceQuanLyKhachSan
                               Gioitinh = (Boolean)kh.gioitinh,
                               CMND_PASSPORT = kh.cmnd_passport,
                               Diachi = kh.diachi,
-                              Coquan = kh.coquan,
+                              Pass = kh.pass,
                               Sodienthoai = kh.sodienthoai,
                               Email = kh.email,
                           }).Distinct<KhachHangDTO>();
@@ -154,7 +177,7 @@ namespace WcfServiceQuanLyKhachSan
                               Gioitinh = (Boolean)kh.gioitinh,
                               CMND_PASSPORT = kh.cmnd_passport,
                               Diachi = kh.diachi,
-                              Coquan = kh.coquan,
+                              Pass = kh.pass,
                               Sodienthoai = kh.sodienthoai,
                               Email = kh.email,
                           }).Distinct<KhachHangDTO>();
@@ -179,7 +202,7 @@ namespace WcfServiceQuanLyKhachSan
                 kh.gioitinh = (Boolean)khDTO.Gioitinh;
                 kh.cmnd_passport = khDTO.CMND_PASSPORT;
                 kh.diachi = khDTO.Diachi;
-                kh.coquan = khDTO.Coquan;
+                kh.pass = khDTO.Pass;
                 kh.sodienthoai = khDTO.Sodienthoai;
                 kh.email = khDTO.Email;
                 htDataContext.khachhangs.InsertOnSubmit(kh);
@@ -222,7 +245,7 @@ namespace WcfServiceQuanLyKhachSan
                 querry.gioitinh = (Boolean)khDTO.Gioitinh;
                 querry.cmnd_passport = khDTO.CMND_PASSPORT;
                 querry.diachi = khDTO.Diachi;
-                querry.coquan = khDTO.Coquan;
+                querry.pass = khDTO.Pass;
                 querry.sodienthoai = khDTO.Sodienthoai;
                 querry.email = khDTO.Email;
                 htDataContext.SubmitChanges();
@@ -233,5 +256,5 @@ namespace WcfServiceQuanLyKhachSan
                 return 0;
             }
         }
-    }   
+    }
 }

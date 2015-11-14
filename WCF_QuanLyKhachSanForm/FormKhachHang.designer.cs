@@ -41,7 +41,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSoDT = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
-            this.txtCoquan = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.txtDiachi = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -117,7 +117,7 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Cơ quan";
+            this.columnHeader4.Text = "Mật khẩu";
             this.columnHeader4.Width = 86;
             // 
             // columnHeader6
@@ -157,14 +157,14 @@
             this.txtCMND.TabIndex = 5;
             this.txtCMND.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCMND_KeyDown);
             // 
-            // txtCoquan
+            // txtPass
             // 
-            this.txtCoquan.BackColor = System.Drawing.Color.AliceBlue;
-            this.txtCoquan.Location = new System.Drawing.Point(476, 48);
-            this.txtCoquan.Name = "txtCoquan";
-            this.txtCoquan.Size = new System.Drawing.Size(186, 20);
-            this.txtCoquan.TabIndex = 7;
-            this.txtCoquan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCoquan_KeyDown);
+            this.txtPass.BackColor = System.Drawing.Color.AliceBlue;
+            this.txtPass.Location = new System.Drawing.Point(476, 48);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(186, 20);
+            this.txtPass.TabIndex = 7;
+            this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCoquan_KeyDown);
             // 
             // txtDiachi
             // 
@@ -217,9 +217,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(385, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 27;
-            this.label4.Text = "Cơ quan:";
+            this.label4.Text = "Mật khẩu:";
             // 
             // label3
             // 
@@ -418,7 +418,7 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSoDT);
             this.Controls.Add(this.txtCMND);
-            this.Controls.Add(this.txtCoquan);
+            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtDiachi);
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.label7);
@@ -451,7 +451,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSoDT;
         private System.Windows.Forms.TextBox txtCMND;
-        private System.Windows.Forms.TextBox txtCoquan;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.TextBox txtDiachi;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label label7;

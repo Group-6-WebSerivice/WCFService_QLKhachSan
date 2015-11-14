@@ -21,7 +21,7 @@ namespace WCF_QuanLyKhachSanForm
     {
         
         public double tongtien;
-        //public FormPhieuThuePhong frmPThuePhong;
+        public FormPhieuThuePhong frmPThuePhong;
         public FormKhachHang frmKH;
         public FormMain frmMain;
         public SqlCommand com;
@@ -248,8 +248,8 @@ namespace WCF_QuanLyKhachSanForm
                 //Show danh sách theo tinh trạng phòng đang sử dụng(busy) hay phiếu đặt phòng đã bị hủy(cancel)
                 if (chkwait.Checked == false && chksub.Checked == true && chkcan.Checked == true && chkfin.Checked == false)
                 {
-                    button1_NhanPhong.Visible = true;
-                    btnHuy.Visible = true;
+                    button1_NhanPhong.Visible = false;
+                    btnHuy.Visible = false;
                     foreach (PhieuDatPhongDTO readpdp in list)
                     {
                         if ((readpdp.Tinhtrang == "busy") || (readpdp.Tinhtrang == "cancel"))
@@ -270,7 +270,7 @@ namespace WCF_QuanLyKhachSanForm
                 if (chkwait.Checked == false && chksub.Checked == false && chkcan.Checked == true && chkfin.Checked == true)
                 {
                     button1_NhanPhong.Visible = false;
-                    btnHuy.Visible = true;
+                    btnHuy.Visible = false;
                     foreach (PhieuDatPhongDTO readpdp in list)
                     {
                         if ((readpdp.Tinhtrang == "finish") || (readpdp.Tinhtrang == "cancel"))
@@ -292,7 +292,7 @@ namespace WCF_QuanLyKhachSanForm
                 if (chkwait.Checked == false && chksub.Checked == true && chkcan.Checked == false && chkfin.Checked == true)
                 {
                     button1_NhanPhong.Visible = false;
-                    btnHuy.Visible = true;
+                    btnHuy.Visible = false;
                     foreach (PhieuDatPhongDTO readpdp in list)
                     {
                         if ((readpdp.Tinhtrang == "finish") || (readpdp.Tinhtrang == "busy"))
@@ -402,7 +402,7 @@ namespace WCF_QuanLyKhachSanForm
                 if (chkwait.Checked == false && chksub.Checked == true && chkcan.Checked == true && chkfin.Checked == true)
                 {
                     button1_NhanPhong.Visible = false;
-                    btnHuy.Visible = true;
+                    btnHuy.Visible = false;
                     foreach (PhieuDatPhongDTO readpdp in list)
                     {
                         if ((readpdp.Tinhtrang == "busy") || (readpdp.Tinhtrang == "cancel") || (readpdp.Tinhtrang == "finish"))
@@ -456,6 +456,14 @@ namespace WCF_QuanLyKhachSanForm
             if (ktsonguoi() == false)
             {
                 MessageBox.Show("Quá số người quy định cho phòng!!!.Kiểm tra lại.");
+                return;
+            }
+            if (dtpNgayden.Value.Day < DateTime.Now.Day)
+            {
+                MessageBox.Show("Ngày đến không được nhỏ hơn ngày hiện tại!");
+                lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = "";
+                lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = "";
+                dtpNgayden.Value = DateTime.Now.Date;
                 return;
             }
             //Thêm phiếu đặt phòng
@@ -633,12 +641,12 @@ namespace WCF_QuanLyKhachSanForm
 
                         show_lsvPDP();
 
-                        //frmPThuePhong = new FormPhieuThuePhong();
-                        //frmPThuePhong.frmPDatPhong = this;
-                        //frmPThuePhong.frmMain = frmMain;                        
-                        //frmPThuePhong.maphieudat = maphieudat;
-                        //frmPThuePhong.ShowDialog();
-                        //chang = false;
+                        frmPThuePhong = new FormPhieuThuePhong();
+                        frmPThuePhong.frmPDatPhong = this;
+                        frmPThuePhong.frmMain = frmMain;                        
+                        frmPThuePhong.maphieudat = maphieudat;
+                        frmPThuePhong.ShowDialog();
+                        chang = false;
                         Nochangden = false;
                         Nochangdi = false;
                         labMaPD.Text = "PDP00" + newid();
@@ -712,7 +720,7 @@ namespace WCF_QuanLyKhachSanForm
                 }
                 lsvChiTiet.Items[3].SubItems[1].Text = drKH.CMND_PASSPORT;
                 lsvChiTiet.Items[4].SubItems[1].Text = drKH.Diachi;
-                lsvChiTiet.Items[5].SubItems[1].Text = drKH.Coquan;
+                lsvChiTiet.Items[5].SubItems[1].Text = drKH.Pass;
                 lsvChiTiet.Items[6].SubItems[1].Text = drKH.Sodienthoai;
                 lsvChiTiet.Items[7].SubItems[1].Text = drKH.Email;
             }
@@ -754,13 +762,13 @@ namespace WCF_QuanLyKhachSanForm
             {                
                 dtpNgaydi.Value = dtpNgayden.Value;               
             }
-            if (dtpNgayden.Value.Day < DateTime.Now.Day)
-            {
-                MessageBox.Show("Ngày đến không được nhỏ hơn ngày hiện tại!");
-                lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = "";
-                lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = "";
-                dtpNgayden.Value = DateTime.Now.Date;
-            }    
+            //if (dtpNgayden.Value.Day < DateTime.Now.Day)
+            //{
+            //    MessageBox.Show("Ngày đến không được nhỏ hơn ngày hiện tại!");
+            //    lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = "";
+            //    lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = "";
+            //    dtpNgayden.Value = DateTime.Now.Date;
+            //}    
             lsvChiTiet.Groups[1].Items[0].SubItems[1].Text = (dtpNgayden.Value.ToShortDateString());
             lsvChiTiet.Groups[1].Items[1].SubItems[1].Text = (dtpNgaydi.Value.ToShortDateString());
             lsvTimPhong.Items.Clear();

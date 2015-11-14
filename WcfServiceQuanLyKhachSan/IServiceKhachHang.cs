@@ -23,7 +23,7 @@ namespace WcfServiceQuanLyKhachSan
         [DataMember]
         public string Diachi;
         [DataMember]
-        public string Coquan;
+        public string Pass;
         [DataMember]
         public string Sodienthoai;
         [DataMember]
@@ -42,6 +42,8 @@ namespace WcfServiceQuanLyKhachSan
         KhachHangDTO getKhachHangByID(string id);
         [OperationContract]
         IList<KhachHangDTO> getListKhachHangByName(string name);
+        [OperationContract]
+        IList<KhachHangDTO> getlistKhachHangbypass(string id, string pass);
         [OperationContract]
         IList<KhachHangDTO> getLikeKhachHangByID(string id);
         [OperationContract]

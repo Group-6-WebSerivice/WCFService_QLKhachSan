@@ -65,7 +65,10 @@
     <Content Include="ServiceChiTietThuePhong.svc" />
     <Content Include="ServiceChiTietVatTu.svc" />
     <Content Include="ServiceDichVu.svc" />
+    <Content Include="ServiceHeThong.svc" />
     <Content Include="ServiceHoaDon.svc" />
+    <Content Include="ServiceInHoaDonDichVu.svc" />
+    <Content Include="ServiceInHoaDonPhong.svc" />
     <Content Include="ServiceKhachHang.svc" />
     <Content Include="ServiceKiemTraPhong.svc" />
     <Content Include="ServiceLoaiPhong.svc" />
@@ -88,7 +91,10 @@
     <Compile Include="IServiceChiTietThuePhong.cs" />
     <Compile Include="IServiceChiTietVatTu.cs" />
     <Compile Include="IServiceDichVu.cs" />
+    <Compile Include="IServiceHeThong.cs" />
     <Compile Include="IServiceHoaDon.cs" />
+    <Compile Include="IServiceInHoaDonDichVu.cs" />
+    <Compile Include="IServiceInHoaDonPhong.cs" />
     <Compile Include="IServiceKhachHang.cs" />
     <Compile Include="IServiceKiemTraPhong.cs" />
     <Compile Include="IServiceLoaiPhong.cs" />
@@ -114,8 +120,17 @@
     <Compile Include="ServiceDichVu.svc.cs">
       <DependentUpon>ServiceDichVu.svc</DependentUpon>
     </Compile>
+    <Compile Include="ServiceHeThong.svc.cs">
+      <DependentUpon>ServiceHeThong.svc</DependentUpon>
+    </Compile>
     <Compile Include="ServiceHoaDon.svc.cs">
       <DependentUpon>ServiceHoaDon.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInHoaDonDichVu.svc.cs">
+      <DependentUpon>ServiceInHoaDonDichVu.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInHoaDonPhong.svc.cs">
+      <DependentUpon>ServiceInHoaDonPhong.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceKhachHang.svc.cs">
       <DependentUpon>ServiceKhachHang.svc</DependentUpon>

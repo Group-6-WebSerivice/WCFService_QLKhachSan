@@ -17,7 +17,7 @@ namespace WCF_QuanLyKhachSanForm
     public partial class FormMain : Form
     {
         public FormLogin frmLogin;
-        //public FormDoiMatKhau frmDoimatkhau;
+        public FormDoiMatKhau frmDoimatkhau;
         public FormNhanVien frmNhanvien;
         public FormPhong frmPhong;
         public int CountList = 5;
@@ -79,8 +79,7 @@ namespace WCF_QuanLyKhachSanForm
                 foreach (PhieuDatPhongDTO pdp in listpdp)
                 {
                     if (pdp.Tinhtrang == "waitting")
-                    {
-
+                    {                        
                         IList<ChiTietDatPhongDTO> listctdp = client1.getChiTietDatPhongByID(pdp.Maphieudat);
                         foreach (ChiTietDatPhongDTO ctdp in listctdp)
                         {
@@ -98,9 +97,7 @@ namespace WCF_QuanLyKhachSanForm
                         }
                     }
                 }
-            }
-
-
+            }            
             IList<PhongDTO> listp = client.getListPhongAll();
             foreach (PhongDTO dread in listp)
             {
@@ -152,9 +149,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //frmDoimatkhau = new FormDoiMatKhau();
-            //frmDoimatkhau.frmMain = this;
-            //frmDoimatkhau.ShowDialog();
+            frmDoimatkhau = new FormDoiMatKhau();
+            frmDoimatkhau.frmMain = this;
+            frmDoimatkhau.ShowDialog();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -192,9 +189,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void ngườiDùngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormHeThong frmHeThong = new FormHeThong();
-            //frmHeThong.frmMain = this;
-            //frmHeThong.ShowDialog();
+            FormHeThong frmHeThong = new FormHeThong();
+            frmHeThong.frmMain = this;
+            frmHeThong.ShowDialog();
         }
 
         private void kháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -220,9 +217,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormHoaDon frmHoadon = new FormHoaDon();
-            //frmHoadon.frmMain = this;
-            //frmHoadon.ShowDialog();
+            FormHoaDon frmHoadon = new FormHoaDon();
+            frmHoadon.frmMain = this;
+            frmHoadon.ShowDialog();
         }
 
         private void MainEnabled()
@@ -354,9 +351,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void vậtTưToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-        //    FormBaoCaoVatTu frmBCVT = new FormBaoCaoVatTu();
-        //    frmBCVT.frmMain = this;
-        //    frmBCVT.ShowDialog();
+            //FormBaoCaoVatTu frmBCVT = new FormBaoCaoVatTu();
+            //frmBCVT.frmMain = this;
+            //frmBCVT.ShowDialog();
         }
 
         private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -368,132 +365,132 @@ namespace WCF_QuanLyKhachSanForm
 
         private void đạtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (lsvMain.SelectedItems.Count <= 0)
-            //{
-            //    MessageBox.Show("chon mot phong!!!");
-            //    return;
-            //}
+            if (lsvMain.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("chon mot phong!!!");
+                return;
+            }
 
-            //FormPhieuDatphong frmPDP = new FormPhieuDatphong();
-            //frmPDP.frmMain = this;
-            //frmPDP.ShowDialog();
+            FormPhieuDatphong frmPDP = new FormPhieuDatphong();
+            frmPDP.frmMain = this;
+            frmPDP.ShowDialog();
         }
         
         private void ặtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (lsvMain.SelectedItems.Count <= 0)
-            //{
-            //    MessageBox.Show("chon mot phong!!!");
-            //    return;
-            //}
-            //string maphieudat = "";
-
-            //PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
-            //if (pDTO.Dadat == true && pDTO.Danhan == false)
-            //{
-
-            //    IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
-            //    foreach (ChiTietDatPhongDTO ctdp in listctdp)
-            //    {
-            //        maphieudat = ctdp.Maphieudat;
-            //    }
-            //    FormPhieuDatphong frmPDP = new FormPhieuDatphong();
-            //    frmPDP.frmMain = this;
-            //    frmPDP.maphieudatT = maphieudat;
-            //    //MessageBox.Show(maphieudat);
-            //    //frmPDP.ShowDialog();
-            //}
-            //else if (pDTO.Dadat == true && pDTO.Danhan == true)
-            //{
-            //    MessageBox.Show("Phòng có người ở!");
-            //    return;
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Phòng chưa được thuê!");
-            //    return;
-            //}
+            if (lsvMain.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("chon mot phong!!!");
+                return;
+            }
+            string maphieudat="";
+            
+            PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
+            if (pDTO.Dadat == true && pDTO.Danhan==false)
+            {
+                
+                IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
+                foreach(ChiTietDatPhongDTO ctdp in listctdp)
+                {
+                    maphieudat=ctdp.Maphieudat;
+                }
+                FormPhieuDatphong frmPDP = new FormPhieuDatphong();
+                frmPDP.frmMain = this;
+                frmPDP.maphieudatT = maphieudat;
+                //MessageBox.Show(maphieudat);
+                frmPDP.ShowDialog();
+            }
+            else if (pDTO.Dadat == true && pDTO.Danhan == true)
+            {
+                MessageBox.Show("Phòng có người ở!");
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Phòng chưa được thuê!");
+                return;
+            }
         }
 
         private void dịchVụToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //if (lsvMain.SelectedItems.Count <= 0)
-            //{
-            //    MessageBox.Show("chon mot phong!!!");
-            //    return;
-            //}
+            if (lsvMain.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("chon mot phong!!!");
+                return;
+            }
+            
+            PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
+            if (pDTO.Danhan == true)
+            {
+                string mpt="";
+                
+                IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
+                foreach (ChiTietDatPhongDTO ctdp in listctdp)
+                {
+                    
+                    PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
+                    IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
+                    if (ptp != null)
+                    {
+                        foreach (PhieuThuePhongDTO pt in ptp)
+                        {
+                            mpt = pt.Maphieuthue;
+                        }
+                    }
+                }
+                FormPhieuThuePhong frmPTP = new FormPhieuThuePhong();
+                frmPTP.frmMain = this;
+                frmPTP.maphong = pDTO.Maphong;
+                frmPTP.maphieuthue = mpt;
+                frmPTP.ShowDialog();
 
-            //PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
-            //if (pDTO.Danhan == true)
-            //{
-            //    string mpt = "";
-
-            //    IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
-            //    foreach (ChiTietDatPhongDTO ctdp in listctdp)
-            //    {
-
-            //        PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
-            //        IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
-            //        if (ptp != null)
-            //        {
-            //            foreach (PhieuThuePhongDTO pt in ptp)
-            //            {
-            //                mpt = pt.Maphieuthue;
-            //            }
-            //        }
-            //    }
-            //    FormPhieuThuePhong frmPTP = new FormPhieuThuePhong();
-            //    frmPTP.frmMain = this;
-            //    frmPTP.maphong = pDTO.Maphong;
-            //    frmPTP.maphieuthue = mpt;
-            //    frmPTP.ShowDialog();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Phòng chưa có người!");
-            //    return;
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Phòng chưa có người!");
+                return;
+            }
         }
 
         private void trảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        //    if (lsvMain.SelectedItems.Count <= 0)
-        //    {
-        //        MessageBox.Show("chon mot phong!!!");
-        //        return;
-        //    }
+            if (lsvMain.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show("chon mot phong!!!");
+                return;
+            }
+            
+            PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
+            if (pDTO.Danhan == true)
+            {
+                string mpt = "";
+                
+                IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
+                foreach (ChiTietDatPhongDTO ctdp in listctdp)
+                {
+                    
+                    PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
+                    IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
+                    if (ptp != null)
+                    {
+                        foreach (PhieuThuePhongDTO pt in ptp)
+                        {
+                            mpt = pt.Maphieuthue;
+                        }
+                    }
+                }
+                FormHoaDon frmHD = new FormHoaDon();
+                frmHD.frmMain = this;
+                frmHD.maphieuthue = mpt;
+                frmHD.ShowDialog();
 
-        //    PhongDTO pDTO = client.getPhongByID(lsvMain.SelectedItems[0].Text);
-        //    if (pDTO.Danhan == true)
-        //    {
-        //        string mpt = "";
-
-        //        IList<ChiTietDatPhongDTO> listctdp = client1.getListChiTietDatPhongByName(pDTO.Maphong);
-        //        foreach (ChiTietDatPhongDTO ctdp in listctdp)
-        //        {
-
-        //            PhieuDatPhongDTO pdp = client2.getPhieuDatPhongByID(ctdp.Maphieudat);
-        //            IList<PhieuThuePhongDTO> ptp = client3.getListPhieuThuePhongByMaPhieuDat(pdp.Maphieudat);
-        //            if (ptp != null)
-        //            {
-        //                foreach (PhieuThuePhongDTO pt in ptp)
-        //                {
-        //                    mpt = pt.Maphieuthue;
-        //                }
-        //            }
-        //        }
-        //        //FormHoaDon frmHD = new FormHoaDon();
-        //        //frmHD.frmMain = this;
-        //        //frmHD.maphieuthue = mpt;
-        //        //frmHD.ShowDialog();
-
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Phòng chưa có người!");
-        //        return;
-        //    }
+            }
+            else
+            {
+                MessageBox.Show("Phòng chưa có người!");
+                return;
+            }
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)

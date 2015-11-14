@@ -102,7 +102,7 @@ namespace WCF_QuanLyKhachSanForm
             lsvKH.Items[1].SubItems[1].Text = listkh.Tenkhachhang;
             lsvKH.Items[2].SubItems[1].Text = listkh.CMND_PASSPORT;
             lsvKH.Items[3].SubItems[1].Text = listkh.Diachi;
-            lsvKH.Items[4].SubItems[1].Text = listkh.Coquan;
+            lsvKH.Items[4].SubItems[1].Text = listkh.Pass;
             lsvKH.Items[5].SubItems[1].Text = listkh.Sodienthoai;
             lsvKH.Items[6].SubItems[1].Text = listkh.Email;
 

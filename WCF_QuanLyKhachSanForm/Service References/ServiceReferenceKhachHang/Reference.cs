@@ -26,9 +26,6 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang {
         private string CMND_PASSPORTField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CoquanField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string DiachiField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -39,6 +36,9 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string MakhachhangField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PassField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SodienthoaiField;
@@ -65,19 +65,6 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang {
                 if ((object.ReferenceEquals(this.CMND_PASSPORTField, value) != true)) {
                     this.CMND_PASSPORTField = value;
                     this.RaisePropertyChanged("CMND_PASSPORT");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Coquan {
-            get {
-                return this.CoquanField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CoquanField, value) != true)) {
-                    this.CoquanField = value;
-                    this.RaisePropertyChanged("Coquan");
                 }
             }
         }
@@ -130,6 +117,19 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang {
                 if ((object.ReferenceEquals(this.MakhachhangField, value) != true)) {
                     this.MakhachhangField = value;
                     this.RaisePropertyChanged("Makhachhang");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Pass {
+            get {
+                return this.PassField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PassField, value) != true)) {
+                    this.PassField = value;
+                    this.RaisePropertyChanged("Pass");
                 }
             }
         }
@@ -203,6 +203,12 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceKhachHang/getListKhachHangByName", ReplyAction="http://tempuri.org/IServiceKhachHang/getListKhachHangByNameResponse")]
         System.Threading.Tasks.Task<WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[]> getListKhachHangByNameAsync(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypass", ReplyAction="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypassResponse")]
+        WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[] getlistKhachHangbypass(string id, string pass);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypass", ReplyAction="http://tempuri.org/IServiceKhachHang/getlistKhachHangbypassResponse")]
+        System.Threading.Tasks.Task<WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[]> getlistKhachHangbypassAsync(string id, string pass);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceKhachHang/getLikeKhachHangByID", ReplyAction="http://tempuri.org/IServiceKhachHang/getLikeKhachHangByIDResponse")]
         WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[] getLikeKhachHangByID(string id);
@@ -300,6 +306,14 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang {
         
         public System.Threading.Tasks.Task<WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[]> getListKhachHangByNameAsync(string name) {
             return base.Channel.getListKhachHangByNameAsync(name);
+        }
+        
+        public WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[] getlistKhachHangbypass(string id, string pass) {
+            return base.Channel.getlistKhachHangbypass(id, pass);
+        }
+        
+        public System.Threading.Tasks.Task<WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[]> getlistKhachHangbypassAsync(string id, string pass) {
+            return base.Channel.getlistKhachHangbypassAsync(id, pass);
         }
         
         public WCF_QuanLyKhachSanForm.ServiceReferenceKhachHang.KhachHangDTO[] getLikeKhachHangByID(string id) {
