@@ -82,15 +82,6 @@
       <Association Name="khachhang_phieudatphong" Member="phieudatphongs" AccessModifier="Internal" ThisKey="makhachhang" OtherKey="makhachhang" Type="phieudatphong" />
     </Type>
   </Table>
-  <Table Name="dbo.loaiphong" Member="loaiphongs">
-    <Type Name="loaiphong">
-      <Column Name="maloai" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="gia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Column Name="songuoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="loaiphong_chitietvattu" Member="chitietvattus" AccessModifier="Internal" ThisKey="maloai" OtherKey="maloaiphong" Type="chitietvattu" />
-      <Association Name="loaiphong_phong" Member="phongs" AccessModifier="Internal" ThisKey="maloai" OtherKey="maloai" Type="phong" />
-    </Type>
-  </Table>
   <Table Name="dbo.nhanvien" Member="nhanviens">
     <Type Name="nhanvien">
       <Column Name="manhanvien" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -148,6 +139,29 @@
       <Association Name="phong_trangthaiphong" Member="phong" ThisKey="maphong" OtherKey="maphong" Type="phong" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.loaiphong" Member="loaiphongs">
+    <Type Name="loaiphong">
+      <Column Name="maloai" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="songuoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="anhbia" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="loaiphong_chitietvattu" Member="chitietvattus" ThisKey="maloai" OtherKey="maloaiphong" Type="chitietvattu" />
+      <Association Name="loaiphong_phong" Member="phongs" ThisKey="maloai" OtherKey="maloai" Type="phong" />
+    </Type>
+  </Table>
+  <Function Name="dbo.InhoadonDichVu" Method="InhoadonDichVu">
+    <Parameter Name="mahoadon" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="InhoadonDichVuResult">
+      <Column Name="maphieuthue" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="tendichvu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="donvitinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="maphong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="mahoadon" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ngay" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.kiemtraphong" Method="kiemtraphong">
     <Parameter Name="ngayden" Type="System.DateTime" DbType="DateTime" />
     <Parameter Name="ngaydi" Type="System.DateTime" DbType="DateTime" />
@@ -167,7 +181,7 @@
       <Column Name="ngayo" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="cmnd_passport" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="diachi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="coquan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="sodienthoai" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
       <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="ngayden" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
@@ -177,19 +191,6 @@
       <Column Name="maphong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="tennhanvien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="tongtien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.InhoadonDichVu" Method="InhoadonDichVu">
-    <Parameter Name="mahoadon" Type="System.String" DbType="VarChar(10)" />
-    <ElementType Name="InhoadonDichVuResult">
-      <Column Name="maphieuthue" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="tendichvu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="gia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
-      <Column Name="donvitinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="maphong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="mahoadon" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="ngay" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

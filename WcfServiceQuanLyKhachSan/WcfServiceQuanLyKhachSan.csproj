@@ -61,10 +61,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ServiceChiTietDatPhong.svc" />
+    <Content Include="ServiceChiTietPhong.svc" />
     <Content Include="ServiceChiTietThuePhong.svc" />
     <Content Include="ServiceChiTietVatTu.svc" />
     <Content Include="ServiceDichVu.svc" />
+    <Content Include="ServiceHeThong.svc" />
     <Content Include="ServiceHoaDon.svc" />
+    <Content Include="ServiceInHoaDonDichVu.svc" />
+    <Content Include="ServiceInHoaDonPhong.svc" />
     <Content Include="ServiceKhachHang.svc" />
     <Content Include="ServiceKiemTraPhong.svc" />
     <Content Include="ServiceLoaiPhong.svc" />
@@ -83,10 +87,14 @@
       <DependentUpon>Hotel.dbml</DependentUpon>
     </Compile>
     <Compile Include="IServiceChiTietDatPhong.cs" />
+    <Compile Include="IServiceChiTietPhong.cs" />
     <Compile Include="IServiceChiTietThuePhong.cs" />
     <Compile Include="IServiceChiTietVatTu.cs" />
     <Compile Include="IServiceDichVu.cs" />
+    <Compile Include="IServiceHeThong.cs" />
     <Compile Include="IServiceHoaDon.cs" />
+    <Compile Include="IServiceInHoaDonDichVu.cs" />
+    <Compile Include="IServiceInHoaDonPhong.cs" />
     <Compile Include="IServiceKhachHang.cs" />
     <Compile Include="IServiceKiemTraPhong.cs" />
     <Compile Include="IServiceLoaiPhong.cs" />
@@ -100,6 +108,9 @@
     <Compile Include="ServiceChiTietDatPhong.svc.cs">
       <DependentUpon>ServiceChiTietDatPhong.svc</DependentUpon>
     </Compile>
+    <Compile Include="ServiceChiTietPhong.svc.cs">
+      <DependentUpon>ServiceChiTietPhong.svc</DependentUpon>
+    </Compile>
     <Compile Include="ServiceChiTietThuePhong.svc.cs">
       <DependentUpon>ServiceChiTietThuePhong.svc</DependentUpon>
     </Compile>
@@ -109,8 +120,17 @@
     <Compile Include="ServiceDichVu.svc.cs">
       <DependentUpon>ServiceDichVu.svc</DependentUpon>
     </Compile>
+    <Compile Include="ServiceHeThong.svc.cs">
+      <DependentUpon>ServiceHeThong.svc</DependentUpon>
+    </Compile>
     <Compile Include="ServiceHoaDon.svc.cs">
       <DependentUpon>ServiceHoaDon.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInHoaDonDichVu.svc.cs">
+      <DependentUpon>ServiceInHoaDonDichVu.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInHoaDonPhong.svc.cs">
+      <DependentUpon>ServiceInHoaDonPhong.svc</DependentUpon>
     </Compile>
     <Compile Include="ServiceKhachHang.svc.cs">
       <DependentUpon>ServiceKhachHang.svc</DependentUpon>
