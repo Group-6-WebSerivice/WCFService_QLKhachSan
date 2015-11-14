@@ -351,16 +351,16 @@ namespace WCF_QuanLyKhachSanForm
 
         private void vậtTưToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //FormBaoCaoVatTu frmBCVT = new FormBaoCaoVatTu();
-            //frmBCVT.frmMain = this;
-            //frmBCVT.ShowDialog();
+            FormBaoCaoVatTu frmBCVT = new FormBaoCaoVatTu();
+            frmBCVT.frmMain = this;
+            frmBCVT.ShowDialog();
         }
 
         private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //FormBaoCaoNhanVien frmBCNV = new FormBaoCaoNhanVien();
-            //frmBCNV.frmMain = this;
-            //frmBCNV.ShowDialog();
+            FormBaoCaoNhanVien frmBCNV = new FormBaoCaoNhanVien();
+            frmBCNV.frmMain = this;
+            frmBCNV.ShowDialog();
         }
 
         private void đạtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -502,9 +502,9 @@ namespace WCF_QuanLyKhachSanForm
 
         private void thongToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FormThongKeDatPhong frm = new FormThongKeDatPhong();
-            //frm.frmMain = this;
-            //frm.ShowDialog();
+            FormThongKeDatPhong frm = new FormThongKeDatPhong();
+            frm.frmMain = this;
+            frm.ShowDialog();
         }
     }
 }

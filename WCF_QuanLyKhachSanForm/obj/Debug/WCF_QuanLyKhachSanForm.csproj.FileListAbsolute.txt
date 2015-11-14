@@ -25,12 +25,12 @@ D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLy
 D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.exe
 D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.pdb
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.exe.config
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.exe
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.pdb
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.exe
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.pdb
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csprojResolveAssemblyReference.cache
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormAbout.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormBaoCaoNhanVien.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormBaoCaoVatTu.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormCRThongKeDatPhong.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormDichVu.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormDoiMatKhau.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormHeThong.resources
@@ -42,6 +42,10 @@ D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhach
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormPhieuDatphong.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormPhieuThuePhong.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormPhong.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormThongKeDatPhong.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.FormVatTu.resources
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.InHoaDon.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.Properties.Resources.resources
 D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csproj.GenerateResource.Cache
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.exe
+D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.pdb

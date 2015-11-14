@@ -259,10 +259,10 @@ namespace WCF_QuanLyKhachSanForm
                 {
                     dtp.Rows.Add(hdp.Mahoadon, hdp.Tenkhachhang, hdp.Songayo, hdp.CMND, hdp.Diachi, hdp.Pass, hdp.Sodienthoai, hdp.Email, hdp.Ngayden, hdp.Ngaydi, hdp.Sotiendatcoc, hdp.Gia, hdp.Maphong, hdp.Tennhanvien, hdp.Tongtien);
                 }
-                //InHoaDon frmInHoaDon = new InHoaDon();
-                //frmInHoaDon.dtdv = dtdv;
-                //frmInHoaDon.dtp = dtp;
-                //frmInHoaDon.ShowDialog();
+                InHoaDon frmInHoaDon = new InHoaDon();
+                frmInHoaDon.dtdv = dtdv;
+                frmInHoaDon.dtp = dtp;
+                frmInHoaDon.ShowDialog();
                 //show_MaPT();
             }
             else MessageBox.Show("Thanh toán trước khi in hóa đơn");
