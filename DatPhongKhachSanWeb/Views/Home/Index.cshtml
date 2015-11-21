@@ -1,0 +1,69 @@
+﻿@using DatPhongKhachSanWeb.ChiTietPhongServiceReference;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<ChiTietPhongDTO>
+
+<link href="~/Content/TrangChuCss.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+<h1 style="margin-left:2%;font-weight:bolder;color:black">Phòng: </h1>
+<hr />
+<div id="divBody" style="background:White;">
+    @{int i = 0;}
+    @foreach (var item in Model)
+    {
+        i++;
+        <div id="SanPham">
+            <div id="AnhBia"><img src="@Url.Content("~/HinhAnhP/"+item.Anhbia)" width="100" height="150" /></div>
+            <div id="ThongTin">                               
+
+                <div id="MaPhong">Phòng: @item.Maphong</div> 
+                <div id="LoaiPhong" >Loại: @item.Maloai</div> 
+                <div id="SoNguoi">Số người: @item.Songuoi</div>       
+               
+                @*Dịch dấu chấm động đơn giá sử dụng string.Format("{0:0,0}", tham số)*@
+                <div id="DonGia" style="color:orange"><font color="Green">Giá:</font> @String.Format("{0:0,0}", item.Gia) VNĐ</div>
+            </div>
+            <div id="GioHang">
+                @using (Html.BeginForm("ThemGioDatHang", "GioDatHang", new { @sMaPhong = item.Maphong, @strURL = Request.Url.ToString() }))
+                {
+                    <input type="submit" style="cursor:pointer" value="Đặt phòng &#xf07a;" id="btnGioHang" class="btn btn-primary">
+                }
+            </div>
+        </div>
+        if (i % 3 == 0)
+        {
+            <div style="clear:both"></div>
+        }
+    }
+
+</div>
+<div style="clear:both"></div>
+@* Tạo link liên kết các trang*@
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+        
+    }
+    .MenuTrang li:hover {        
+        background:#ff6a00;
+    }
+    .active{
+    background:red;
+    }
+    .MenuTrang li:active {       
+        
+       background:red;
+    }    
+    /*jQuery(".MenuTrang li").click(function(){
+        jQuery(".MenuTrang li").removeClass('active');
+        jQuery(this).toggleClass('active');
+    });*/
+</style>
+
+

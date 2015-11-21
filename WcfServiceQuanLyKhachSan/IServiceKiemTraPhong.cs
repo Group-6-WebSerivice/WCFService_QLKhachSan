@@ -29,5 +29,6 @@ namespace WcfServiceQuanLyKhachSan
     {
         [OperationContract]
         List<KiemTraPhongDTO> KiemTraPhong(DateTime ngayden, DateTime ngaydi);
+        
     }
 }

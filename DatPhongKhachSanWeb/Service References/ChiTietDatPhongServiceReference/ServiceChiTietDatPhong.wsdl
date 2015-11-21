@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceChiTietDatPhong" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServiceChiTietDatPhong.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceChiTietDatPhong.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceChiTietDatPhong.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceChiTietDatPhong_CountListctdp_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListctdp" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_CountListctdp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListctdpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListChiTietDatPhongAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietDatPhongAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListChiTietDatPhongAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietDatPhongAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListChiTietDatPhongLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietDatPhongLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListChiTietDatPhongLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietDatPhongLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getChiTietDatPhongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getChiTietDatPhongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getChiTietDatPhongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getChiTietDatPhongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListChiTietDatPhongByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietDatPhongByName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListChiTietDatPhongByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietDatPhongByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getLikeChiTietDatPhongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeChiTietDatPhongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getLikeChiTietDatPhongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeChiTietDatPhongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListLikeChiTietDatPhongByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeChiTietDatPhongByName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_getListLikeChiTietDatPhongByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeChiTietDatPhongByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_insertChiTietDatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertChiTietDatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_insertChiTietDatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertChiTietDatPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_deleteChiTietDatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteChiTietDatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_deleteChiTietDatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteChiTietDatPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_updateChiTietDatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateChiTietDatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietDatPhong_updateChiTietDatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateChiTietDatPhongResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceChiTietDatPhong">
+    <wsdl:operation name="CountListctdp">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/CountListctdp" message="tns:IServiceChiTietDatPhong_CountListctdp_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/CountListctdpResponse" message="tns:IServiceChiTietDatPhong_CountListctdp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietDatPhongAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongAll" message="tns:IServiceChiTietDatPhong_getListChiTietDatPhongAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongAllResponse" message="tns:IServiceChiTietDatPhong_getListChiTietDatPhongAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietDatPhongLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongLMAll" message="tns:IServiceChiTietDatPhong_getListChiTietDatPhongLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongLMAllResponse" message="tns:IServiceChiTietDatPhong_getListChiTietDatPhongLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getChiTietDatPhongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getChiTietDatPhongByID" message="tns:IServiceChiTietDatPhong_getChiTietDatPhongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getChiTietDatPhongByIDResponse" message="tns:IServiceChiTietDatPhong_getChiTietDatPhongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietDatPhongByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongByName" message="tns:IServiceChiTietDatPhong_getListChiTietDatPhongByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongByNameResponse" message="tns:IServiceChiTietDatPhong_getListChiTietDatPhongByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikeChiTietDatPhongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getLikeChiTietDatPhongByID" message="tns:IServiceChiTietDatPhong_getLikeChiTietDatPhongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getLikeChiTietDatPhongByIDResponse" message="tns:IServiceChiTietDatPhong_getLikeChiTietDatPhongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeChiTietDatPhongByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListLikeChiTietDatPhongByName" message="tns:IServiceChiTietDatPhong_getListLikeChiTietDatPhongByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/getListLikeChiTietDatPhongByNameResponse" message="tns:IServiceChiTietDatPhong_getListLikeChiTietDatPhongByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertChiTietDatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/insertChiTietDatPhong" message="tns:IServiceChiTietDatPhong_insertChiTietDatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/insertChiTietDatPhongResponse" message="tns:IServiceChiTietDatPhong_insertChiTietDatPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteChiTietDatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/deleteChiTietDatPhong" message="tns:IServiceChiTietDatPhong_deleteChiTietDatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/deleteChiTietDatPhongResponse" message="tns:IServiceChiTietDatPhong_deleteChiTietDatPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateChiTietDatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/updateChiTietDatPhong" message="tns:IServiceChiTietDatPhong_updateChiTietDatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietDatPhong/updateChiTietDatPhongResponse" message="tns:IServiceChiTietDatPhong_updateChiTietDatPhong_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceChiTietDatPhong" type="tns:IServiceChiTietDatPhong">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListctdp">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/CountListctdp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietDatPhongAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietDatPhongLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getChiTietDatPhongByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/getChiTietDatPhongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietDatPhongByName">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/getListChiTietDatPhongByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikeChiTietDatPhongByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/getLikeChiTietDatPhongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeChiTietDatPhongByName">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/getListLikeChiTietDatPhongByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertChiTietDatPhong">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/insertChiTietDatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteChiTietDatPhong">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/deleteChiTietDatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateChiTietDatPhong">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietDatPhong/updateChiTietDatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceChiTietDatPhong">
+    <wsdl:port name="BasicHttpBinding_IServiceChiTietDatPhong" binding="tns:BasicHttpBinding_IServiceChiTietDatPhong">
+      <soap:address location="http://localhost:7429/ServiceChiTietDatPhong.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

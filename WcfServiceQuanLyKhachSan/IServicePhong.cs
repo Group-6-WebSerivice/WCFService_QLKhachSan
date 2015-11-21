@@ -30,7 +30,7 @@ namespace WcfServiceQuanLyKhachSan
         [OperationContract]
         IList<PhongDTO> getListPhongAll();
         [OperationContract]
-        IList<PhongDTO> getListPhongLMAll(int a);
+        IList<PhongDTO> getListPhongLMAll(int a);        
         [OperationContract]
         PhongDTO getPhongByID(string id);
         [OperationContract]

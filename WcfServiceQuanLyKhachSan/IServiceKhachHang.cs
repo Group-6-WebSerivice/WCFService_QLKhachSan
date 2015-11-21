@@ -12,7 +12,7 @@ namespace WcfServiceQuanLyKhachSan
     [DataContract]
     public class KhachHangDTO
     {
-        [DataMember]
+        [DataMember]       
         public string Makhachhang;
         [DataMember]
         public string Tenkhachhang;

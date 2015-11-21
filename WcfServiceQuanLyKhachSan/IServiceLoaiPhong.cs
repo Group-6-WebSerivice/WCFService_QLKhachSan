@@ -17,7 +17,10 @@ namespace WcfServiceQuanLyKhachSan
         [DataMember]
         public decimal Gia;
         [DataMember]
-        public int Songuoi;        
+        public int Songuoi;
+        [DataMember]
+        public string Anhbia;   
+     
     }
     [ServiceContract]
     public interface IServiceLoaiPhong

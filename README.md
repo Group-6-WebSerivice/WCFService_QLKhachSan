@@ -1,2 +1,0 @@
-# WCFService_QLKhachSan
-WCFService

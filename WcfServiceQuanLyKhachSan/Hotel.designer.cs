@@ -223,18 +223,18 @@ namespace WcfServiceQuanLyKhachSan
 			return ((ISingleResult<InhoadonDichVuResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.kiemtraphong")]
-		public ISingleResult<kiemtraphongResult> kiemtraphong([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> ngayden, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> ngaydi)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ngayden, ngaydi);
-			return ((ISingleResult<kiemtraphongResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InhoadonPhong")]
 		public ISingleResult<InhoadonPhongResult> InhoadonPhong([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(10)")] string mahoadon)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mahoadon);
 			return ((ISingleResult<InhoadonPhongResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.kiemtraphong")]
+		public ISingleResult<kiemtraphongResult> kiemtraphong([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> ngayden, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> ngaydi)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ngayden, ngaydi);
+			return ((ISingleResult<kiemtraphongResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -3490,104 +3490,6 @@ namespace WcfServiceQuanLyKhachSan
 		}
 	}
 	
-	public partial class kiemtraphongResult
-	{
-		
-		private string _maphieudat;
-		
-		private string _maphong;
-		
-		private System.Nullable<System.DateTime> _ngayden;
-		
-		private System.Nullable<System.DateTime> _ngaydi;
-		
-		private string _tinhtrang;
-		
-		public kiemtraphongResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maphieudat", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string maphieudat
-		{
-			get
-			{
-				return this._maphieudat;
-			}
-			set
-			{
-				if ((this._maphieudat != value))
-				{
-					this._maphieudat = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maphong", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string maphong
-		{
-			get
-			{
-				return this._maphong;
-			}
-			set
-			{
-				if ((this._maphong != value))
-				{
-					this._maphong = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayden", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ngayden
-		{
-			get
-			{
-				return this._ngayden;
-			}
-			set
-			{
-				if ((this._ngayden != value))
-				{
-					this._ngayden = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngaydi", DbType="DateTime")]
-		public System.Nullable<System.DateTime> ngaydi
-		{
-			get
-			{
-				return this._ngaydi;
-			}
-			set
-			{
-				if ((this._ngaydi != value))
-				{
-					this._ngaydi = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tinhtrang", DbType="VarChar(10)")]
-		public string tinhtrang
-		{
-			get
-			{
-				return this._tinhtrang;
-			}
-			set
-			{
-				if ((this._tinhtrang != value))
-				{
-					this._tinhtrang = value;
-				}
-			}
-		}
-	}
-	
 	public partial class InhoadonPhongResult
 	{
 		
@@ -3861,6 +3763,104 @@ namespace WcfServiceQuanLyKhachSan
 				if ((this._tongtien != value))
 				{
 					this._tongtien = value;
+				}
+			}
+		}
+	}
+	
+	public partial class kiemtraphongResult
+	{
+		
+		private string _maphieudat;
+		
+		private string _maphong;
+		
+		private System.Nullable<System.DateTime> _ngayden;
+		
+		private System.Nullable<System.DateTime> _ngaydi;
+		
+		private string _tinhtrang;
+		
+		public kiemtraphongResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maphieudat", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string maphieudat
+		{
+			get
+			{
+				return this._maphieudat;
+			}
+			set
+			{
+				if ((this._maphieudat != value))
+				{
+					this._maphieudat = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maphong", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string maphong
+		{
+			get
+			{
+				return this._maphong;
+			}
+			set
+			{
+				if ((this._maphong != value))
+				{
+					this._maphong = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayden", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ngayden
+		{
+			get
+			{
+				return this._ngayden;
+			}
+			set
+			{
+				if ((this._ngayden != value))
+				{
+					this._ngayden = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngaydi", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ngaydi
+		{
+			get
+			{
+				return this._ngaydi;
+			}
+			set
+			{
+				if ((this._ngaydi != value))
+				{
+					this._ngaydi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tinhtrang", DbType="VarChar(10)")]
+		public string tinhtrang
+		{
+			get
+			{
+				return this._tinhtrang;
+			}
+			set
+			{
+				if ((this._tinhtrang != value))
+				{
+					this._tinhtrang = value;
 				}
 			}
 		}

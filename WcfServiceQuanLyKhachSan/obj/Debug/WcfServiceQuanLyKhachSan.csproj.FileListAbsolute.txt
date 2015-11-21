@@ -4,14 +4,3 @@ D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\bin\WcfServiceQuan
 D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
 D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb
 D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
-D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll.config
-D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll
-D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
-D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache
-D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
-D:\GITHUB\WCFService_HotelManager\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb
-D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll.config
-D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.dll
-D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
-D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
-D:\GITHUB\WCFService_QLKhachSan\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb

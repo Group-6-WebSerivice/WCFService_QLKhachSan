@@ -64,6 +64,7 @@ namespace WcfServiceQuanLyKhachSan
                               Maloai = lp.maloai,
                               Gia = (decimal)lp.gia,
                               Songuoi = (int)lp.songuoi,
+                              Anhbia=lp.anhbia,
                           }).Distinct<LoaiPhongDTO>();
             if (querry.Count() == 0)
             {

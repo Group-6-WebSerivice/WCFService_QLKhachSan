@@ -10,7 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_QuanLyKhachSanForm", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceQuanLyKhachSan", "WcfServiceQuanLyKhachSan\WcfServiceQuanLyKhachSan.csproj", "{1339F8AD-2940-4BE8-A51B-3ABC8B5A1F15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyKhachSanWeb", "QuanLyKhachSanWeb\QuanLyKhachSanWeb.csproj", "{AA88CFA8-15BD-4B5E-9BD4-A29118E9E61F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatPhongKhachSanWeb", "DatPhongKhachSanWeb\DatPhongKhachSanWeb.csproj", "{D05584BE-2590-4D2D-B1E9-0A5E7EEEBB98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1339F8AD-2940-4BE8-A51B-3ABC8B5A1F15} = {1339F8AD-2940-4BE8-A51B-3ABC8B5A1F15}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +29,10 @@ Global
 		{1339F8AD-2940-4BE8-A51B-3ABC8B5A1F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1339F8AD-2940-4BE8-A51B-3ABC8B5A1F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1339F8AD-2940-4BE8-A51B-3ABC8B5A1F15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA88CFA8-15BD-4B5E-9BD4-A29118E9E61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA88CFA8-15BD-4B5E-9BD4-A29118E9E61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA88CFA8-15BD-4B5E-9BD4-A29118E9E61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA88CFA8-15BD-4B5E-9BD4-A29118E9E61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05584BE-2590-4D2D-B1E9-0A5E7EEEBB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05584BE-2590-4D2D-B1E9-0A5E7EEEBB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05584BE-2590-4D2D-B1E9-0A5E7EEEBB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05584BE-2590-4D2D-B1E9-0A5E7EEEBB98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

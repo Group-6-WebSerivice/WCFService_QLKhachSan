@@ -162,17 +162,6 @@
       <Column Name="ngay" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.kiemtraphong" Method="kiemtraphong">
-    <Parameter Name="ngayden" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="ngaydi" Type="System.DateTime" DbType="DateTime" />
-    <ElementType Name="kiemtraphongResult">
-      <Column Name="maphieudat" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="maphong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="ngayden" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ngaydi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="tinhtrang" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.InhoadonPhong" Method="InhoadonPhong">
     <Parameter Name="mahoadon" Type="System.String" DbType="VarChar(10)" />
     <ElementType Name="InhoadonPhongResult">
@@ -191,6 +180,17 @@
       <Column Name="maphong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="tennhanvien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="tongtien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.kiemtraphong" Method="kiemtraphong">
+    <Parameter Name="ngayden" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ngaydi" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="kiemtraphongResult">
+      <Column Name="maphieudat" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maphong" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ngayden" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ngaydi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tinhtrang" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

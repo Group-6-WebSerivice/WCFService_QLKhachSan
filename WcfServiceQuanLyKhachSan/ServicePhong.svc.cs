@@ -38,7 +38,6 @@ namespace WcfServiceQuanLyKhachSan
             return query.ToList<PhongDTO>();
         }
 
-
         //Lấy danh sách tất cả các phòng mỗi lần lấy 10 phần tử
         public IList<PhongDTO> getListPhongLMAll(int a)
         {
@@ -55,7 +54,7 @@ namespace WcfServiceQuanLyKhachSan
             query = query.Skip(a).Take(ServiceLogin.limitList);
             return query.ToList<PhongDTO>();
         }
-
+        
         //Danh sách các phòng có mã phòng được nhập vào
         public PhongDTO getPhongByID(string id)
         {

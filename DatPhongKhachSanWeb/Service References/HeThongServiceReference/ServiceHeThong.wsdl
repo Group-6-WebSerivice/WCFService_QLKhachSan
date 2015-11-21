@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceHeThong" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7429/ServiceHeThong.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceHeThong.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7429/ServiceHeThong.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceHeThong_CountListHT_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountListHT" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_CountListHT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountListHTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListHethongAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListHethongAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListHethongAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListHethongAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListHethongLMAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListHethongLMAll" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListHethongLMAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListHethongLMAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getHeThongByUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHeThongByUserName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getHeThongByUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHeThongByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListHeThongByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListHeThongByID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListHeThongByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListHeThongByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getLikeHeThongByUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeHeThongByUserName" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getLikeHeThongByUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLikeHeThongByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListLikeHeThongByMaNV_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeHeThongByMaNV" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_getListLikeHeThongByMaNV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListLikeHeThongByMaNVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_insertHeThong_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertHeThong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_insertHeThong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertHeThongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_deleteHeThong_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteHeThong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_deleteHeThong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteHeThongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_updateHeThong_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateHeThong" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHeThong_updateHeThong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateHeThongResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceHeThong">
+    <wsdl:operation name="CountListHT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/CountListHT" message="tns:IServiceHeThong_CountListHT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/CountListHTResponse" message="tns:IServiceHeThong_CountListHT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListHethongAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/getListHethongAll" message="tns:IServiceHeThong_getListHethongAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/getListHethongAllResponse" message="tns:IServiceHeThong_getListHethongAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListHethongLMAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/getListHethongLMAll" message="tns:IServiceHeThong_getListHethongLMAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/getListHethongLMAllResponse" message="tns:IServiceHeThong_getListHethongLMAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHeThongByUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/getHeThongByUserName" message="tns:IServiceHeThong_getHeThongByUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/getHeThongByUserNameResponse" message="tns:IServiceHeThong_getHeThongByUserName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListHeThongByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/getListHeThongByID" message="tns:IServiceHeThong_getListHeThongByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/getListHeThongByIDResponse" message="tns:IServiceHeThong_getListHeThongByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLikeHeThongByUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/getLikeHeThongByUserName" message="tns:IServiceHeThong_getLikeHeThongByUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/getLikeHeThongByUserNameResponse" message="tns:IServiceHeThong_getLikeHeThongByUserName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeHeThongByMaNV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/getListLikeHeThongByMaNV" message="tns:IServiceHeThong_getListLikeHeThongByMaNV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/getListLikeHeThongByMaNVResponse" message="tns:IServiceHeThong_getListLikeHeThongByMaNV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertHeThong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/insertHeThong" message="tns:IServiceHeThong_insertHeThong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/insertHeThongResponse" message="tns:IServiceHeThong_insertHeThong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteHeThong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/deleteHeThong" message="tns:IServiceHeThong_deleteHeThong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/deleteHeThongResponse" message="tns:IServiceHeThong_deleteHeThong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateHeThong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHeThong/updateHeThong" message="tns:IServiceHeThong_updateHeThong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHeThong/updateHeThongResponse" message="tns:IServiceHeThong_updateHeThong_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceHeThong" type="tns:IServiceHeThong">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountListHT">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/CountListHT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListHethongAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/getListHethongAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListHethongLMAll">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/getListHethongLMAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHeThongByUserName">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/getHeThongByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListHeThongByID">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/getListHeThongByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLikeHeThongByUserName">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/getLikeHeThongByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListLikeHeThongByMaNV">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/getListLikeHeThongByMaNV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHeThong">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/insertHeThong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHeThong">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/deleteHeThong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHeThong">
+      <soap:operation soapAction="http://tempuri.org/IServiceHeThong/updateHeThong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceHeThong">
+    <wsdl:port name="BasicHttpBinding_IServiceHeThong" binding="tns:BasicHttpBinding_IServiceHeThong">
+      <soap:address location="http://localhost:7429/ServiceHeThong.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

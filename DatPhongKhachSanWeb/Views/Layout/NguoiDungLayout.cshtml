@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/NguoiDungCssLayout/fonts.css" rel="stylesheet" />
+    <link href="~/Content/NguoiDungCssLayout/screen.css" rel="stylesheet" />
+    <link href="~/Content/NguoiDungCssLayout/NguoiDungCssLayout.css" rel="stylesheet" />
+    
+    <link href="~/Content/themes/base/datepicker.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    
+</head>
+<body>
+    <div id="ToanTrang">
+        <section class="blank">
+            <div class="flash">
+                <div class="icDienThoai">
+                    <i class="fa fa-phone"></i>
+                    (08) 1900-1560
+                </div>
+                @*Tạo div đăng ký đăng nhập*@
+                <div class="DangKyDangNhap">
+                    @Html.Action("GioDatHangPartial", "GioDatHang")
+                    <i class="fa fa-sign-in"></i>
+                    @Html.ActionLink("Đăng ký", "DangKy", "NguoiDung", null, htmlAttributes: new { @class = "DangKy" })
+                    <i class="fa fa-unlock"></i>
+                    @Html.ActionLink("Đăng nhập", "DangNhap", "NguoiDung",null , htmlAttributes: new { @class = "DangNhap" })
+                </div>
+            </div>
+
+            @*Xây dựng div menu header*@
+
+            <div style="background-color: #426db5" class="flash success" id="divDanhMuc">
+                @*Menu bên phải header*@
+                <ul class="navMenu">
+                    <li>
+                        <a href="@Url.Action("Index","Home")">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                </ul>
+            </div>
+        </section>
+            <section id="divMenuSlider">
+                @*Chèn div tìm kiếm phòng*@
+                <div id="slider" class="nivoSlider" style="background-image:url(/HinhAnh/Anh1.jpg)">                    
+                    <div id="roomtitle">
+                        <h1 style="color:white">Tôi chọn [ Agoda ]</h1>
+                        <h2 style="color:white">750.000+ khách sạn, resort, nhà nghỉ trên toàn thế giới</h2>
+                    </div>
+                     
+                            <div id="txtTimKiem">
+                                @using (Html.BeginForm("KetQuaTimKiem", "TimKiem", FormMethod.Post))
+                                {
+                                    <div id="title_nhanphong">
+                                        <h3>Ngày nhận phòng: </h3>
+                                        @Html.TextBox("date", "", htmlAttributes: new { @class = "date-picker", @placeholder = "Nhập ngày nhận phòng ..." })                                        
+                                    </div>
+                                   <div id="title_traphong">
+                                       <h3>Ngày trả phòng: </h3>
+                                       @Html.TextBox("date2", "", htmlAttributes: new { @class = "date-picker", @placeholder = "Nhập ngày đi ..." })                                       
+                                   </div>
+                                    <div id="title_khach">
+                                        <h3>Khách :</h3>
+                                        @Html.TextBox("txtTimKiem1", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập vào số khách..." })
+                                    </div>
+                                    
+                                    @*Chèn vào image button hình ảnh*@
+                                    <div id="divHinhAnhTimKiem">
+                                        <button type="submit"><img src="~/HinhAnh/imgSearch.png" /></button>
+                                    </div>
+                                }
+
+                            </div>                        
+                    
+                </div>
+                    <div style="clear:both"></div>
+                </section>
+            
+
+            @*Div body *@
+        <div id="NoiDung">
+            @RenderBody()
+
+        </div>
+        <div style="clear:both"></div>
+        <div>
+            <a href="#" class="button button-buy">Chào mừng các bạn đã đến với Web đặt phòng khách sạn của chúng tôi</a>
+        </div>
+                    </div>
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+    $(function () {
+        // This will make every element with the class "date-picker" into a DatePicker element
+        $('.date-picker').datepicker({
+            dateFormat: "yy-mm-dd", minDate: Date.now(), changeYear: true
+        });
+    })
+</script>

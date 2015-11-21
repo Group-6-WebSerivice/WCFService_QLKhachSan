@@ -165,6 +165,7 @@ namespace WcfServiceQuanLyKhachSan
                               where cttp.maphieuthue == IDChiTietThuePhong && cttp.maphong == maphong &&
                               cttp.ngay == ngay && cttp.madichvu == madichvu
                               select cttp).FirstOrDefault<chitietthuephong>();
+                querry.madichvu = madichvu;
                 htDataContext.chitietthuephongs.DeleteOnSubmit(querry);
                 htDataContext.SubmitChanges();
                 return 1;
@@ -183,8 +184,8 @@ namespace WcfServiceQuanLyKhachSan
                 var querry = (from cttp in htDataContext.chitietthuephongs
                               where cttp.maphieuthue == cttpDTO.Maphieuthue && cttp.maphong == cttpDTO.Maphong &&
                               cttp.ngay == cttpDTO.Ngay && cttp.madichvu == cttpDTO.Madichvu
-                              select cttp).FirstOrDefault<chitietthuephong>();
-                querry.soluong = cttpDTO.Soluong;
+                              select cttp).FirstOrDefault<chitietthuephong>();                
+                querry.soluong = cttpDTO.Soluong;                
                 htDataContext.SubmitChanges();
                 return 1;
             }

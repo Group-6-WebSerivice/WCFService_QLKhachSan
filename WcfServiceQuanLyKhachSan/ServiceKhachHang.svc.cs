@@ -118,7 +118,7 @@ namespace WcfServiceQuanLyKhachSan
         public IList<KhachHangDTO> getlistKhachHangbypass(string id, string pass)
         {
             var querry = (from kh in htDataContext.khachhangs
-                          where kh.makhachhang == id && kh.pass == pass
+                          where kh.makhachhang == id && kh.pass==pass
                           select new KhachHangDTO
                           {
                               Makhachhang = kh.makhachhang,
@@ -256,5 +256,5 @@ namespace WcfServiceQuanLyKhachSan
                 return 0;
             }
         }
-    }
+    }   
 }

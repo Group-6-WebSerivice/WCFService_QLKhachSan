@@ -1,0 +1,67 @@
+﻿@using DatPhongKhachSanWeb.Models
+@model List<GioDatHang>
+@{
+    ViewBag.Title = "SuaGioDatHang";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+
+<h2>Giỏ hàng của bạn</h2>
+<table id="divGioHang">
+    <tr>
+        <td>Mã phòng</td>
+
+        <td>Ảnh bìa</td>
+
+        <td>Ngày đến</td>
+
+        <td>Ngày đi</td>
+
+        <td>Loại</td>
+
+        <td>Số người</td>
+
+        <td>Giá</td>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.sMaphong</td>
+
+            <td><img src="@Url.Content("~/HinhAnhP/"+item.sAnhbia)" width="50" height="50" /></a></td>
+
+            <td>
+                @String.Format("yy-mm-dd", item.dNgayden)
+            </td>
+
+            <td>@String.Format("yy-mm-dd", item.dNgaydi)</td>
+
+            <td>@item.sLoai</td>
+
+            <td>@item.iSonguoi</td>
+
+            <td>@item.iGia</td>
+            <td>
+                 @Html.ActionLink("Xóa", "XoaGioDatHang", new { @sMaP = item.sMaphong })
+             </td>
+
+            <td></td>
+        </tr>
+
+    }
+</table>
+@*Css giỏ hàng*@
+<style>
+    #divGioHang {
+        border: 1px solid #EEEEEE;
+        margin-left: 10%;
+    }
+
+        #divGioHang td {
+            padding: 10px;
+            border: 1px solid #EEEEEE;
+        }
+</style>
+
