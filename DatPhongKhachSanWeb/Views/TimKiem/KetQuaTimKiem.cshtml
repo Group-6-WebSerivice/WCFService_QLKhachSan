@@ -2,9 +2,10 @@
 @using PagedList;
 @model IPagedList<DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO>
 <link href="~/Content/TrangChuCss.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
 @{
     ViewBag.Title = "KetQuaTimKiem";
-    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+    //Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
 }
 <h2 style="margin-left:2%;font-weight:normal;color:black">Kết quả tìm kiếm</h2>
 <div>@ViewBag.ThongBao</div>
@@ -15,10 +16,10 @@
     {
         i++;
         <div id="SanPham">
-            @*<a href="@Url.Action("XemChiTiet", "Phong", new { @MaPhong=item.Maphong })">*@  
-            <div id="AnhBia"><img src="@Url.Content("~/HinhAnhP/"+item.Anhbia)" width="100" height="150" /></div>
+            @*<a href="@Url.Action("XemChiTiet", "Phong", new { @MaPhong=item.Maphong })">*@
+            <a href="@Url.Action("XemChiTiet", "ChiTietPhong", new { @Loai = item.Maloai, @MaPhong=item.Maphong })"> <div id="AnhBia"><img src="@Url.Content("~/HinhAnhP/"+item.Anhbia)" width="100" height="150" /></div></a>
             <div id="ThongTin">
-                
+
                 <div id="MaPhong">Phòng: @item.Maphong</div>
                 <div id="LoaiPhong">Loại: @item.Maloai</div>
                 <div id="SoNguoi">Số người: @item.Songuoi</div>
@@ -42,16 +43,8 @@
 </div>
 <div style="clear:both"></div>
 @* Tạo link liên kết các trang*@
-Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount
-<div class="MenuTrang">
-    @Html.PagedListPager(Model, page => Url.Action("KetQuaTimKiem", new { page = page, @sDateCome = Session["DateCome"], @sDateLeave = Session["DateLeave"] }))
+<div class="btn-group pull-right">
+    @*Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/ @Model.PageCount*@
+    @*@Html.PagedListPager(Model, page => Url.Action("KetQuaTimKiem", new { page = page}))*@
+    @Html.PagedListPager(Model, page => Url.Action("KetQuaTimKiem", new { page = page, @sDateCome = ViewBag.DateCome, @sDateLeave = ViewBag.DateLeave, @sPeople = ViewBag.People }))
 </div>
-<style>
-    .MenuTrang li {
-        display: inline;
-    }
-    .MenuTrang li:hover {        
-        color:red;
-    }
-</style>
-

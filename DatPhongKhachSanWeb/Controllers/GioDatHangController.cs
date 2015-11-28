@@ -22,7 +22,7 @@ namespace DatPhongKhachSanWeb.Controllers
         ServiceLoaiPhongClient lp = new ServiceLoaiPhongClient();
         ServicePhieuDatPhongClient pdp = new ServicePhieuDatPhongClient();
         ServicePhongClient p = new ServicePhongClient();
-
+        qlks3lopEntities entity = new qlks3lopEntities();
         // GET: GioDatHang
         #region Giỏ hàng
         //Lấy giỏ hàng 
@@ -76,14 +76,27 @@ namespace DatPhongKhachSanWeb.Controllers
             //Lấy giỏ hàng ra từ session
             List<GioDatHang> lstGioDatHang = LayGioDatHang();
             GioDatHang sanpham = lstGioDatHang.SingleOrDefault(n => n.sMaphong == sMaP);
+            
             //Nếu mà tồn tại thì chúng ta cho sửa số lượng
             if (sanpham != null)
             {
                 lstGioDatHang.RemoveAll(n => n.sMaphong == sMaP);
+                DateTime ngayd = DateTime.Parse(sanpham.dNgayden);
+                DateTime ngayi = DateTime.Parse(sanpham.dNgaydi);
+                var query = (from dv in entity.ngaydatphongs
+                             where dv.ngayden == ngayd && dv.ngaydi == ngayi
+                             select dv);
+                entity.ngaydatphongs.RemoveRange(query);
+                entity.SaveChanges();
 
             }
             if (lstGioDatHang.Count == 0)
             {
+                var query = (from dv in entity.ngaydatphongs
+                             select dv);
+
+                entity.ngaydatphongs.RemoveRange(query);
+                entity.SaveChanges();
                 return RedirectToAction("Index", "Home");
             }
             return RedirectToAction("GioDatHang");
@@ -102,10 +115,12 @@ namespace DatPhongKhachSanWeb.Controllers
         private int TongSoLuong()
         {
             int iTongSoLuong = 0;
+            
             List<GioDatHang> lstGioDatHang = Session["GioDatHang"] as List<GioDatHang>;
             if (lstGioDatHang != null)
             {
-                iTongSoLuong = lstGioDatHang.Sum(n => n.iSonguoi);
+                var number = (from gdh in lstGioDatHang orderby gdh.sMaphong select gdh).Count();
+                iTongSoLuong = number;
             }
             return iTongSoLuong;
         }
@@ -136,8 +151,7 @@ namespace DatPhongKhachSanWeb.Controllers
         {
             return pdp.CountListPDP() + 1;
 
-        }    
-        
+        }        
         //Xây dựng chức năng đặt hàng
         [HttpPost]
         public ActionResult DatHang()
@@ -152,37 +166,48 @@ namespace DatPhongKhachSanWeb.Controllers
             {
                 RedirectToAction("Index", "Home");
             }
-            //Thêm đơn hàng
-            PhieuDatPhongDTO pdpDTO = new PhieuDatPhongDTO();
-            KhachHangDTO kh = (KhachHangDTO)Session["TaiKhoan"];
-            List<GioDatHang> gh = LayGioDatHang();
-            foreach (var item in gh)
+            else
             {
-                pdpDTO.Maphieudat = "PDP00" + newid();
-                pdpDTO.Makhachhang = kh.Makhachhang;
-                pdpDTO.Username = "";
-                pdpDTO.Ngayden = item.dNgayden;
-                pdpDTO.Ngaydi = item.dNgaydi;
-                pdpDTO.Sotiendatcoc = 0;
-                pdpDTO.Tinhtrang = "waitting";
-                pdpDTO.Songuoi = item.iSonguoi;
-                if (pdp.insertPhieuDatPhong(pdpDTO) == 1)
+                //Thêm đơn hàng
+                PhieuDatPhongDTO pdpDTO = new PhieuDatPhongDTO();
+                KhachHangDTO[] kh = (KhachHangDTO[])Session["TaiKhoan"];
+                List<GioDatHang> gh = LayGioDatHang();
+                foreach (var item in gh)
                 {
-                    ChiTietDatPhongDTO ctdpDTO = new ChiTietDatPhongDTO();
-                    ctdpDTO.Maphieudat = pdpDTO.Maphieudat;
-                    ctdpDTO.Maphong = item.sMaphong;
-                    ctdp.insertChiTietDatPhong(ctdpDTO);
+                    pdpDTO.Maphieudat = "PDP00" + newid();
+                    foreach (var itum in kh)
+                    { 
+                        pdpDTO.Makhachhang = itum.Makhachhang;
+                    }
+                    pdpDTO.Username = "";
+                    pdpDTO.Ngayden = DateTime.Parse(item.dNgayden);
+                    pdpDTO.Ngaydi = DateTime.Parse(item.dNgaydi);
+                    pdpDTO.Sotiendatcoc = 0;
+                    pdpDTO.Tinhtrang = "waitting";
+                    pdpDTO.Songuoi = item.iSonguoi;
+                    if (pdp.insertPhieuDatPhong(pdpDTO) == 1)
+                    {
+                        ChiTietDatPhongDTO ctdpDTO = new ChiTietDatPhongDTO();
+                        ctdpDTO.Maphieudat = pdpDTO.Maphieudat;
+                        ctdpDTO.Maphong = item.sMaphong;
+                        ctdp.insertChiTietDatPhong(ctdpDTO);
 
-                    //Cập nhật trạng thái phòng
-                    PhongDTO pDTO = new PhongDTO();
-                    pDTO.Maphong = ctdpDTO.Maphong;
-                    PhongDTO ptemp = p.getPhongByID(ctdpDTO.Maphong);
-                    pDTO.Maloai = ptemp.Maloai;
-                    pDTO.Dadat = true;
-                    pDTO.Danhan = ptemp.Danhan;
-                    p.updatePhong(pDTO);
+                        //Cập nhật trạng thái phòng
+                        PhongDTO pDTO = new PhongDTO();
+                        pDTO.Maphong = ctdpDTO.Maphong;
+                        PhongDTO ptemp = p.getPhongByID(ctdpDTO.Maphong);
+                        pDTO.Maloai = ptemp.Maloai;
+                        pDTO.Dadat = true;
+                        pDTO.Danhan = ptemp.Danhan;
+                        p.updatePhong(pDTO);
+                    }
                 }
             }
+            var query = (from dv in entity.ngaydatphongs
+                         select dv);
+
+            entity.ngaydatphongs.RemoveRange(query);
+            entity.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
         #endregion

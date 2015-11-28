@@ -17,24 +17,21 @@ namespace DatPhongKhachSanWeb.Controllers
     {
         ServiceChiTietPhongClient ctp = new ServiceChiTietPhongClient();
         ServiceKiemTraPhongClient ktphong = new ServiceKiemTraPhongClient();
-        ServicePhongClient phong = new ServicePhongClient();        
-        
-        //string sSoNguoi;
+        ServicePhongClient phong = new ServicePhongClient();             
+        qlks3lopEntities entity = new qlks3lopEntities();
         // GET: TimKiem
         [HttpPost]
         public ActionResult KetQuaTimKiem(FormCollection f, int? page)
         {
             string sDateCome = f["date"].ToString() + " 00:00:00";
-            string sDateLeave = f["date2"].ToString() + " 23:59:59";            
-            //ViewBag.DateCome = sDateCome;
-            //ViewBag.DateLeave = sDateLeave;
-            Session["DateCome"] = sDateCome;
-            Session["DateLeave"] = sDateLeave;
-            //sSoNguoi = f["txtTimKiem1"];
-            //ViewBag.SoNguoi = sSoNguoi;
+            string sDateLeave = f["date2"].ToString() + " 23:59:59";
+            int sPeople = int.Parse(f["txtTimKiem1"].ToString());
+            ViewBag.DateCome = sDateCome;
+            ViewBag.DateLeave = sDateLeave;
+            ViewBag.People = sPeople; 
             //Phân trang
             int pageNumber = (page ?? 1);
-            int pageSize = 9;
+            int pageSize = 6;
             IList<PhongDTO> lstKQTK = phong.getListPhongAll();
             IList<ChiTietPhongDTO> listctp = new List<ChiTietPhongDTO>();
             if (lstKQTK.Count == 0)
@@ -44,31 +41,33 @@ namespace DatPhongKhachSanWeb.Controllers
             }
             else
             {
-                int i = 0;
+                
                 foreach (PhongDTO p in lstKQTK)
                 {
                     if (kiemtraphong(p.Maphong, sDateCome, sDateLeave))
                     {
-
-                        i++;
                         ChiTietPhongDTO lsctp = ctp.getListChiTietPhongById(p.Maphong);
-                        listctp.Add(lsctp);
-                    }
+                        if (lsctp.Songuoi >= sPeople)
+                        {
+                            listctp.Add(lsctp);
+                        }
+                    }                    
                 }
-            }            
+            }
+           
+            ViewBag.ThongBao = "Đã tìm thấy " + listctp.Count + " kết quả!";
             return View(listctp.ToPagedList(pageNumber, pageSize));
         }
         [HttpGet]
-        public ActionResult KetQuaTimKiem(int? page, string sDateCome, string sDateLeave)
+        public ActionResult KetQuaTimKiem(int? page, string sDateCome, string sDateLeave, int sPeople)
         {
-            Session["DateCome"] = sDateCome;
-            Session["DateLeave"] = sDateLeave;
-            //ViewBag.DateCome = sDateCome;
-            //ViewBag.DateLeave = sDateLeave;            
-            //ViewBag.SoNguoi = sSoNguoi;
+            
+            ViewBag.DateCome = sDateCome;
+            ViewBag.DateLeave = sDateLeave;
+            ViewBag.People = sPeople; 
             //Phân trang
             int pageNumber = (page ?? 1);
-            int pageSize = 9;
+            int pageSize = 6;
             IList<PhongDTO> lstKQTK = phong.getListPhongAll();
             IList<ChiTietPhongDTO> listctp = new List<ChiTietPhongDTO>();
             if (lstKQTK.Count == 0)
@@ -78,21 +77,26 @@ namespace DatPhongKhachSanWeb.Controllers
             }
             else
             {
-                int i = 0;
                 foreach (PhongDTO p in lstKQTK)
                 {
                     if (kiemtraphong(p.Maphong, sDateCome, sDateLeave))
                     {
-                        i++;
                         ChiTietPhongDTO lsctp = ctp.getListChiTietPhongById(p.Maphong);
-                        listctp.Add(lsctp);
+                        if (lsctp.Songuoi >= sPeople)
+                        {
+                            listctp.Add(lsctp);
+                        }
                     }
                 }
 
             }
-            //DateSearch datesearch = new DateSearch();
-            //datesearch.daNgayden = DateTime.Parse(sDateLeave);
-            //datesearch.daNgaydi = DateTime.Parse(sDateLeave);
+                   
+            ngaydatphong date = new ngaydatphong();
+            date.ngayden = DateTime.Parse(sDateCome);
+            date.ngaydi = DateTime.Parse(sDateLeave);
+            entity.ngaydatphongs.Add(date);
+            entity.SaveChanges();
+
             ViewBag.ThongBao = "Đã tìm thấy " + listctp.Count + " kết quả!";
             return View(listctp.ToPagedList(pageNumber, pageSize));
         }
@@ -109,15 +113,7 @@ namespace DatPhongKhachSanWeb.Controllers
             }
             return true;
         }
-        //private DateSearch date(FormCollection ff)
-        //{
-        //    string sDateCo = ff["date"].ToString() + " 00:00:00";
-        //    string sDateLea = ff["date2"].ToString() + " 23:59:59";
-        //    DateSearch datesearch = new DateSearch();
-        //    datesearch.daNgayden=DateTime.Parse(sDateCo);
-        //    datesearch.daNgaydi = DateTime.Parse(sDateLea);
-        //    return datesearch;
-        //}
+       
 
     }
 }

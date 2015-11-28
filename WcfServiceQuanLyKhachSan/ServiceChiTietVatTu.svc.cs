@@ -111,6 +111,7 @@ namespace WcfServiceQuanLyKhachSan
                 return querry.ToList<ChiTietVatTuDTO>();
             }
         }
+
         //Lấy danh sách gần đúng tất cả các chi tiết vật tư có mã loại phòng được nhập vào
         public IList<ChiTietVatTuDTO> getListLikeChiTietVatTuByMaLP(string name)
         {

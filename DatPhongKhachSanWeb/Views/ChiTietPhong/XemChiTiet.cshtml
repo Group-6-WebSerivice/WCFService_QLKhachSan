@@ -1,0 +1,71 @@
+﻿@using DatPhongKhachSanWeb.VatTuServiceReference
+@model IEnumerable<VatTuDTO>
+@{
+    ViewBag.Title = "XemChiTiet";
+    //Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+<h1 style="margin-left:2%;font-weight:bolder;color:black">Chi Tiết Phòng @ViewBag.maphong : </h1>
+<div id="divform">
+    <div id="HinhAnh">
+        <img src="@Url.Content("~/HinhAnhP/"+ @ViewBag.Pic)" />
+    </div>
+    @*Thông tin*@
+    <div id="ThongTin">
+        <div id="Phong">Phòng: @ViewBag.maphong</div>
+        <div id="So">Số người: @ViewBag.songuoi</div>
+        <div id="Loai">Loại: @ViewBag.maloai</div>
+        @*Dịch dấu chấm động đơn giá sử dụng string.Format("{0:0,0}", tham số)*@
+        <div id="Gia"><span style="color: green; font-weight: normal;">Đơn giá:</span><br /><span id="Gia"> @string.Format("{0:0,0}", @ViewBag.gia) VNĐ</span></div>
+        <div id="vattu">
+            Phòng có:
+            @foreach (var item in Model)
+            {
+                <br /><a>- </a>@item.Tenvattu
+
+            }
+        </div>
+    </div>
+    <div style="clear:both"></div>
+
+</div>
+@*Css Thông tin sách*@
+<style>
+    #divform{
+        margin-top:2%;
+        margin-left:10%
+        
+    }
+    #HinhAnh {
+        float: left;
+    }
+
+    #ThongTin {
+        
+        margin-left:2%;
+        float: left;
+        width: 600px;
+    }
+
+    #Phong {
+        font-weight: normal;
+        font-size: 20pt;
+        height: auto;
+        word-wrap: break-word; /*Canh nội dung tự xuống dòng */
+        color: red;
+    }
+
+    #Gia, #So,#Loai,#vattu {
+        font-size: 15pt;
+        font-weight: normal;
+        color: black;
+        height: auto;
+    }   
+
+    #Gia span#Gia {
+        font-weight: normal;
+        color: orange;
+        font-size: 25pt;
+        height: auto;
+    }    
+</style>
+

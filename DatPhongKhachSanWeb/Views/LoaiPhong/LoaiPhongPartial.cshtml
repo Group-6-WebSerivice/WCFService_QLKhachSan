@@ -1,0 +1,11 @@
+﻿@using DatPhongKhachSanWeb.LoaiPhongServiceReference
+@model IEnumerable<LoaiPhongDTO>
+<hr />
+<h2 style="margin-left:2%;font-weight:normal;color:black">Danh mục loại phòng</h2>
+<hr />
+@foreach (var item in Model)
+{
+    <a id="btnLoaiPhong" style="width: 250px; font-size: 11pt; color: aliceblue; background-color:#0855bd; text-decoration: none" href="@Url.Action("PhongTheoLoai", new {@Loai=item.Maloai })" class="button button-submit"> @item.Maloai</a>
+}
+<br />
+<div style="clear:both"></div>

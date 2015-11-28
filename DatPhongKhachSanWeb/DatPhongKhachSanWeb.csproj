@@ -52,6 +52,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -167,15 +168,34 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ChiTietPhongController.cs" />
     <Compile Include="Controllers\GioDatHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoaiPhongController.cs" />
     <Compile Include="Controllers\NguoiDungController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DateSearch.cs" />
     <Compile Include="Models\GioDatHang.cs" />
+    <Compile Include="Models\ModelPatial.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelPatial.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelPatial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelPatial.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelPatial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelPatial.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ngaydatphong.cs">
+      <DependentUpon>ModelPatial.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ChiTietDatPhongServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -272,6 +292,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="Content\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\NguoiDungCssLayout\fonts.css" />
     <Content Include="Content\NguoiDungCssLayout\NguoiDungCssLayout.css" />
     <Content Include="Content\NguoiDungCssLayout\screen.css" />
@@ -326,8 +349,55 @@
     <Content Include="HinhAnhP\000004.jpg" />
     <Content Include="HinhAnh\Anh1.jpg" />
     <Content Include="HinhAnh\imgSearch.png" />
+    <Content Include="Models\ModelPatial.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelPatial.edmx</DependentUpon>
+      <LastGenOutput>ModelPatial.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModelPatial.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelPatial.edmx</DependentUpon>
+      <LastGenOutput>ModelPatial.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome-4.2.0\less\bordered-pulled.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\core.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\fixed-width.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\font-awesome.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\icons.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\larger.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\list.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\mixins.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\path.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\rotated-flipped.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\spinning.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\stacked.less" />
+    <Content Include="Content\font-awesome-4.2.0\less\variables.less" />
+    <Content Include="Content\font-awesome-4.2.0\scss\font-awesome.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_bordered-pulled.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_core.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_fixed-width.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_icons.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_larger.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_list.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_mixins.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_path.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_rotated-flipped.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_spinning.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_stacked.scss" />
+    <Content Include="Content\font-awesome-4.2.0\scss\_variables.scss" />
+    <EntityDeploy Include="Models\ModelPatial.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelPatial.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModelPatial.edmx.diagram">
+      <DependentUpon>ModelPatial.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -554,7 +624,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layout\NguoiDungLayout.cshtml" />
-    <Content Include="Views\TimKiem\KetQuaTimKiem.cshtml" />
     <None Include="Service References\ChiTietDatPhongServiceReference\ServiceChiTietDatPhong.wsdl" />
     <None Include="Service References\ChiTietDatPhongServiceReference\ServiceChiTietDatPhong.xsd">
       <SubType>Designer</SubType>
@@ -721,6 +790,10 @@
     <Content Include="Views\GioDatHang\GioDatHang.cshtml" />
     <Content Include="Views\GioDatHang\SuaGioDatHang.cshtml" />
     <Content Include="Views\GioDatHang\GioDatHangPartial.cshtml" />
+    <Content Include="Views\ChiTietPhong\XemChiTiet.cshtml" />
+    <Content Include="Views\LoaiPhong\LoaiPhongPartial.cshtml" />
+    <Content Include="Views\LoaiPhong\PhongTheoLoai.cshtml" />
+    <Content Include="Views\TimKiem\KetQuaTimKiem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -760,6 +833,9 @@
     <WCFMetadataStorage Include="Service References\PhieuThuePhongServiceReference\" />
     <WCFMetadataStorage Include="Service References\PhongServiceReference\" />
     <WCFMetadataStorage Include="Service References\VatTuServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

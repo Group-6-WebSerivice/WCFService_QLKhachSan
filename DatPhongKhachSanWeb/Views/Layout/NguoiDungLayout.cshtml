@@ -7,10 +7,12 @@
     <link href="~/Content/NguoiDungCssLayout/fonts.css" rel="stylesheet" />
     <link href="~/Content/NguoiDungCssLayout/screen.css" rel="stylesheet" />
     <link href="~/Content/NguoiDungCssLayout/NguoiDungCssLayout.css" rel="stylesheet" />
-    
+    <link href="~/Content/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/themes/base/datepicker.css" rel="stylesheet" />
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>    
     <script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <link href="~/Content/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
     
 </head>
 <body>
@@ -24,10 +26,20 @@
                 @*Tạo div đăng ký đăng nhập*@
                 <div class="DangKyDangNhap">
                     @Html.Action("GioDatHangPartial", "GioDatHang")
+                     @if(Session["User"]==null)
+                     {
                     <i class="fa fa-sign-in"></i>
                     @Html.ActionLink("Đăng ký", "DangKy", "NguoiDung", null, htmlAttributes: new { @class = "DangKy" })
-                    <i class="fa fa-unlock"></i>
+                    <i class="fa fa-lock"></i>
                     @Html.ActionLink("Đăng nhập", "DangNhap", "NguoiDung",null , htmlAttributes: new { @class = "DangNhap" })
+                     }
+                     else
+                     {
+                        <i class="fa fa-user"></i>
+                        <a>Chào: @Session["User"]</a>
+                        <i class="fa fa-unlock"></i>
+                        @Html.ActionLink("Logout", "Logout", "NguoiDung")
+                    }
                 </div>
             </div>
 
@@ -70,7 +82,7 @@
                                     
                                     @*Chèn vào image button hình ảnh*@
                                     <div id="divHinhAnhTimKiem">
-                                        <button type="submit"><img src="~/HinhAnh/imgSearch.png" /></button>
+                                        <button type="submit" id="btdp"><img src="~/HinhAnh/imgSearch.png" /></button>
                                     </div>
                                 }
 
@@ -80,7 +92,14 @@
                     <div style="clear:both"></div>
                 </section>
             
+        <section>
+            @*Phần chủ đề*@
+            <div id="divChuDe" style="margin-left:2%">
+                @Html.Action("LoaiPhongPartial", "LoaiPhong")
 
+            </div>
+        </section>
+        <hr />
             @*Div body *@
         <div id="NoiDung">
             @RenderBody()
@@ -90,7 +109,7 @@
         <div>
             <a href="#" class="button button-buy">Chào mừng các bạn đã đến với Web đặt phòng khách sạn của chúng tôi</a>
         </div>
-                    </div>
+</div>
 
 </body>
 
@@ -100,7 +119,7 @@
     $(function () {
         // This will make every element with the class "date-picker" into a DatePicker element
         $('.date-picker').datepicker({
-            dateFormat: "yy-mm-dd", minDate: Date.now(), changeYear: true
+            dateFormat:"yy-mm-dd", minDate: Date.now(), changeYear: true
         });
     })
 </script>

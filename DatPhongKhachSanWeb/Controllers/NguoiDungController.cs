@@ -59,11 +59,23 @@ namespace DatPhongKhachSanWeb.Controllers
                 {
                     ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
                     Session["TaiKhoan"] = kh;
+                    foreach (KhachHangDTO khDTO in kh)
+                    {
+                        Session["User"] = khDTO.Tenkhachhang;
+                    }
                     return View();
                 }
                 ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
             }
             return View();
+        }
+        public ActionResult Logout()
+        {
+            Session["User"] = null;
+            Session["TaiKhoan"] = null;
+            Session.Abandon();////
+            return Redirect("/Home/Index");
+            //return View("/Home/Index");
         }
     }
 }

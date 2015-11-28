@@ -4,14 +4,15 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace WcfServiceQuanLyKhachSan
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IServiceKhachHang" in both code and config file together.
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IServiceKhachHang" in both code and config file together.    
     [DataContract]
     public class KhachHangDTO
-    {
+    {        
         [DataMember]       
         public string Makhachhang;
         [DataMember]

@@ -7,11 +7,11 @@ div#SanPham {
 }
 /*Div hình ảnh của sp*/
     div#SanPham img {
-        width:200px;
-        height:200px;
+        width:250px;
+        height:250px;
         padding-top:15px;
         padding-bottom:15px;
-        margin-left:25px;
+        margin-left:2px;
     }
     #ThongTin {
         border:1px solid rgba(0,0,0,.2);

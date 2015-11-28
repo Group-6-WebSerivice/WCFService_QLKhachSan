@@ -1,8 +1,9 @@
 ﻿@using DatPhongKhachSanWeb.Models
 @model List<GioDatHang>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
 @{
     ViewBag.Title = "SuaGioDatHang";
-    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+    //Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
 }
 
 <h2>Giỏ hàng của bạn</h2>
@@ -30,13 +31,13 @@
         <tr>
             <td>@item.sMaphong</td>
 
-            <td><img src="@Url.Content("~/HinhAnhP/"+item.sAnhbia)" width="50" height="50" /></a></td>
+            <td><img src="@Url.Content("~/HinhAnhP/"+item.sAnhbia)" width="50" height="50" /></td>
 
             <td>
-                @String.Format("yy-mm-dd", item.dNgayden)
+                @item.dNgayden
             </td>
 
-            <td>@String.Format("yy-mm-dd", item.dNgaydi)</td>
+            <td>@item.dNgaydi</td>
 
             <td>@item.sLoai</td>
 

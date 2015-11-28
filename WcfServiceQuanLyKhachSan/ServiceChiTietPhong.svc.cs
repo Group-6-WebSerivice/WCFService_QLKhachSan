@@ -56,5 +56,26 @@ namespace WcfServiceQuanLyKhachSan
                 return querry.Single<ChiTietPhongDTO>();
             }
         }
+
+
+        public IList<ChiTietPhongDTO> getListChiTietPhongByLoai(string loai)
+        {
+            var query = (from p in htDataContext.phongs
+                         join lp in htDataContext.loaiphongs on p.maloai equals lp.maloai
+                         where p.maloai == loai
+                         orderby p.maphong descending
+                         select new ChiTietPhongDTO
+                         {
+                             Maphong = p.maphong,
+                             Maloai = p.maloai,
+                             Dadat = (bool)p.dadat,
+                             Danhan = (bool)p.danhan,
+                             Gia = (decimal)lp.gia,
+                             Songuoi = (int)lp.songuoi,
+                             Anhbia = lp.anhbia,
+                         }).Distinct<ChiTietPhongDTO>();
+
+            return query.ToList<ChiTietPhongDTO>();
+        }
     }
 }

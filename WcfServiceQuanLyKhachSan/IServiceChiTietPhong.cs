@@ -35,6 +35,8 @@ namespace WcfServiceQuanLyKhachSan
         IList<ChiTietPhongDTO> getListChiTietPhongAll();
         [OperationContract]
         ChiTietPhongDTO getListChiTietPhongById(string id);
+        [OperationContract]
+        IList<ChiTietPhongDTO> getListChiTietPhongByLoai(string loai);
         
     }
 }

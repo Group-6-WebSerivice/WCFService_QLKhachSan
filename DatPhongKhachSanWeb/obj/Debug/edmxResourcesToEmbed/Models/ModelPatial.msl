@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="qlks3lopModelStoreContainer" CdmEntityContainer="qlks3lopEntities">
+    <EntitySetMapping Name="ngaydatphongs">
+      <EntityTypeMapping TypeName="qlks3lopModel.ngaydatphong">
+        <MappingFragment StoreEntitySet="ngaydatphong">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ngayden" ColumnName="ngayden" />
+          <ScalarProperty Name="ngaydi" ColumnName="ngaydi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

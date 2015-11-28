@@ -6,9 +6,7 @@ using DatPhongKhachSanWeb.ChiTietDatPhongServiceReference;
 using DatPhongKhachSanWeb.ChiTietPhongServiceReference;
 using DatPhongKhachSanWeb.PhieuDatPhongServiceReference;
 using DatPhongKhachSanWeb.KiemTraPhongServiceReference;
-//using DatPhongKhachSanWeb.Controllers;
 using System.Web.Mvc;
-using DatPhongKhachSanWeb.Models;
 using System.ComponentModel.DataAnnotations;
 
 
@@ -20,15 +18,13 @@ namespace DatPhongKhachSanWeb.Models
         ServiceChiTietPhongClient ctp = new ServiceChiTietPhongClient();
         ServicePhieuDatPhongClient pdp = new ServicePhieuDatPhongClient();
         ServiceKiemTraPhongClient ktphong = new ServiceKiemTraPhongClient();
-        DateSearch dsearch;
+        qlks3lopEntities entity = new qlks3lopEntities();
+        
         public string sMaphong { get; set; }        
-        public string sAnhbia { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{yy-MM-dd:0}")]
-        public DateTime dNgayden { get; set; }
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{yy-MM-dd:0}")]
-        public DateTime dNgaydi { get; set; }
+        public string sAnhbia { get; set; }        
+        public string dNgayden { get; set; }
+       
+        public string dNgaydi { get; set; }
         public string sLoai { get; set; }
         public int iSonguoi { get; set; }
         public decimal iGia { get; set; }
@@ -38,19 +34,13 @@ namespace DatPhongKhachSanWeb.Models
 
             sMaphong = Maphong;
             ChiTietPhongDTO ctptemp = ctp.getListChiTietPhongById(sMaphong);            
-            sAnhbia = ctptemp.Anhbia;
-            //var otherController = DependencyResolver.Current.GetService<TimKiemController>();
-            //var result = otherController.date();
-            //for (int i = 0; i < result.Count; i++)
-            //{
-            //    if (i == 0)
-            //        dNgayden = DateTime.Parse(result[i].ToString());
-            //    if(i==1)
-            //        dNgaydi = DateTime.Parse(result[i].ToString());               
-            //}   
-            dsearch = new DateSearch();
-            dNgayden = dsearch.daNgayden;
-            dNgaydi = dsearch.daNgaydi;
+            sAnhbia = ctptemp.Anhbia;           
+            var lstngaydatphong = entity.ngaydatphongs.ToList();
+            foreach( ngaydatphong dd in lstngaydatphong)
+            {
+                dNgayden = dd.ngayden.Value.Year + "-" + dd.ngayden.Value.Month + "-" + dd.ngayden.Value.Day + " 00:00:00";
+                dNgaydi = dd.ngaydi.Value.Year + "-" + dd.ngaydi.Value.Month + "-" + dd.ngaydi.Value.Day + " 23:59:59";
+            }
             iSonguoi = ctptemp.Songuoi;
             sLoai = ctptemp.Maloai;
             iGia = ctptemp.Gia;

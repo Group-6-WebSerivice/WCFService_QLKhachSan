@@ -169,6 +169,12 @@ namespace DatPhongKhachSanWeb.ChiTietPhongServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongById", ReplyAction="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByIdResponse")]
         System.Threading.Tasks.Task<DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO> getListChiTietPhongByIdAsync(string id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoai", ReplyAction="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoaiResponse")]
+        DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO[] getListChiTietPhongByLoai(string loai);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoai", ReplyAction="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoaiResponse")]
+        System.Threading.Tasks.Task<DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO[]> getListChiTietPhongByLoaiAsync(string loai);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -212,6 +218,14 @@ namespace DatPhongKhachSanWeb.ChiTietPhongServiceReference {
         
         public System.Threading.Tasks.Task<DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO> getListChiTietPhongByIdAsync(string id) {
             return base.Channel.getListChiTietPhongByIdAsync(id);
+        }
+        
+        public DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO[] getListChiTietPhongByLoai(string loai) {
+            return base.Channel.getListChiTietPhongByLoai(loai);
+        }
+        
+        public System.Threading.Tasks.Task<DatPhongKhachSanWeb.ChiTietPhongServiceReference.ChiTietPhongDTO[]> getListChiTietPhongByLoaiAsync(string loai) {
+            return base.Channel.getListChiTietPhongByLoaiAsync(loai);
         }
     }
 }

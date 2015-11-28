@@ -24,6 +24,3 @@ D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLy
 D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.csproj.GenerateResource.Cache
 D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.exe
 D:\Webservice\WCF_QuanLyKhachSanForm\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.pdb
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\bin\Debug\WCF_QuanLyKhachSanForm.exe.config
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.exe
-D:\GITHUB\WCFService_QLKhachSan\WCF_QuanLyKhachSanForm\obj\Debug\WCF_QuanLyKhachSanForm.pdb

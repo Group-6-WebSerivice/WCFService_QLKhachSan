@@ -19,6 +19,12 @@
   <wsdl:message name="IServiceChiTietPhong_getListChiTietPhongById_OutputMessage">
     <wsdl:part name="parameters" element="tns:getListChiTietPhongByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceChiTietPhong_getListChiTietPhongByLoai_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietPhongByLoai" />
+  </wsdl:message>
+  <wsdl:message name="IServiceChiTietPhong_getListChiTietPhongByLoai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListChiTietPhongByLoaiResponse" />
+  </wsdl:message>
   <wsdl:portType name="IServiceChiTietPhong">
     <wsdl:operation name="getListChiTietPhongAll">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongAll" message="tns:IServiceChiTietPhong_getListChiTietPhongAll_InputMessage" />
@@ -27,6 +33,10 @@
     <wsdl:operation name="getListChiTietPhongById">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongById" message="tns:IServiceChiTietPhong_getListChiTietPhongById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByIdResponse" message="tns:IServiceChiTietPhong_getListChiTietPhongById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietPhongByLoai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoai" message="tns:IServiceChiTietPhong_getListChiTietPhongByLoai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoaiResponse" message="tns:IServiceChiTietPhong_getListChiTietPhongByLoai_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IServiceChiTietPhong" type="tns:IServiceChiTietPhong">
@@ -42,6 +52,15 @@
     </wsdl:operation>
     <wsdl:operation name="getListChiTietPhongById">
       <soap:operation soapAction="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListChiTietPhongByLoai">
+      <soap:operation soapAction="http://tempuri.org/IServiceChiTietPhong/getListChiTietPhongByLoai" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
