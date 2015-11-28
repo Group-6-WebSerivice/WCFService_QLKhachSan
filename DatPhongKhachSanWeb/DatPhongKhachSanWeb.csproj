@@ -170,6 +170,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChiTietPhongController.cs" />
     <Compile Include="Controllers\GioDatHangController.cs" />
+    <Compile Include="Controllers\GioiThieuController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoaiPhongController.cs" />
     <Compile Include="Controllers\NguoiDungController.cs" />
@@ -612,7 +613,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -794,6 +797,7 @@
     <Content Include="Views\LoaiPhong\LoaiPhongPartial.cshtml" />
     <Content Include="Views\LoaiPhong\PhongTheoLoai.cshtml" />
     <Content Include="Views\TimKiem\KetQuaTimKiem.cshtml" />
+    <Content Include="Views\GioiThieu\GioiThieu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
