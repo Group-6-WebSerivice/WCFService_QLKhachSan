@@ -81,7 +81,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomFaultMsg.cs" />
     <Compile Include="Hotel.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

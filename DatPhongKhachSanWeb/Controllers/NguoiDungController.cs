@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DatPhongKhachSanWeb.KhachHangServiceReference;
-using DatPhongKhachSanWeb.Models;
+
 
 namespace DatPhongKhachSanWeb.Controllers
 {

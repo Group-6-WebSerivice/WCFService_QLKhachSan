@@ -18,7 +18,7 @@
 <body>
     <div id="ToanTrang">
         <section class="blank">
-            <div class="flash">
+            <div class="navbar navbar-inverse">
                 <div class="icDienThoai">
                     <i class="fa fa-phone"></i>
                     (08) 1900-1560
@@ -26,15 +26,15 @@
                 @*Tạo div đăng ký đăng nhập*@
                 <div class="DangKyDangNhap">
                     @Html.Action("GioDatHangPartial", "GioDatHang")
-                     @if(Session["User"]==null)
-                     {
-                    <i class="fa fa-sign-in"></i>
-                    @Html.ActionLink("Đăng ký", "DangKy", "NguoiDung", null, htmlAttributes: new { @class = "DangKy" })
-                    <i class="fa fa-lock"></i>
-                    @Html.ActionLink("Đăng nhập", "DangNhap", "NguoiDung",null , htmlAttributes: new { @class = "DangNhap" })
-                     }
-                     else
-                     {
+                    @if (Session["User"] == null)
+                    {
+                        <i class="fa fa-sign-in"></i>
+                        @Html.ActionLink("Đăng ký", "DangKy", "NguoiDung", null, htmlAttributes: new { @class = "DangKy" })
+                        <i class="fa fa-lock"></i>
+                        @Html.ActionLink("Đăng nhập", "DangNhap", "NguoiDung", null, htmlAttributes: new { @class = "DangNhap" })
+                    }
+                    else
+                    {
                         <i class="fa fa-user"></i>
                         <a>Chào: @Session["User"]</a>
                         <i class="fa fa-unlock"></i>
@@ -42,6 +42,7 @@
                     }
                 </div>
             </div>
+
 
             @*Xây dựng div menu header*@
 
@@ -58,7 +59,7 @@
         </section>
             <section id="divMenuSlider">
                 @*Chèn div tìm kiếm phòng*@
-                <div id="slider" class="nivoSlider" style="background-image:url(/HinhAnh/Anh1.jpg)">                    
+                <div id="slider">                    
                     <div id="roomtitle">
                         <h1 style="color:white">Tôi chọn [ Agoda ]</h1>
                         <h2 style="color:white">750.000+ khách sạn, resort, nhà nghỉ trên toàn thế giới</h2>
@@ -94,14 +95,14 @@
             
         <section>
             @*Phần chủ đề*@
-            <div id="divChuDe" style="margin-left:2%">
+            <div class="divChuDe" style="margin-left:2%">
                 @Html.Action("LoaiPhongPartial", "LoaiPhong")
 
             </div>
         </section>
         <hr />
             @*Div body *@
-        <div id="NoiDung">
+        <div id="col-xs-12 col-sm-8">
             @RenderBody()
 
         </div>

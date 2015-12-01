@@ -20,6 +20,8 @@ namespace WcfServiceQuanLyKhachSan
 	using System.Linq.Expressions;
 	using System.ComponentModel;
 	using System;
+    using System.ComponentModel.DataAnnotations;
+    
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="qlks3lop")]
@@ -3050,12 +3052,10 @@ namespace WcfServiceQuanLyKhachSan
 			this.SendPropertyChanging();
 			entity.loaiphong = null;
 		}
-	}
-	
+	}	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.khachhang")]
 	public partial class khachhang : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
+	{		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _makhachhang;

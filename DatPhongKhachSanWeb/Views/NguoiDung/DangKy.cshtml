@@ -1,19 +1,23 @@
 ﻿@model DatPhongKhachSanWeb.KhachHangServiceReference.KhachHangDTO
 
 <link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
 @{
-    ViewBag.Title = "DangKy";
-}
 
-<div style="padding-left:400px; background-color:#d7d1d4">
+    ViewBag.Title = "DangKy";
+    HtmlHelper.ClientValidationEnabled = false;
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+}
+<div class="panel" style="background-color:#d7d1d4">
 
     @using (Html.BeginForm())
     {
         @*@Html.AntiForgeryToken()*@
 
-        <div class="form-horizontal"> 
-            <h2>Đăng ký</h2>    
-            <h4 style="color:red">*  Không được bỏ trống</h4>       
+        <div class="panel-body">
+            <h2>Đăng ký</h2>
             <h3 style="color:#164bdd">@ViewBag.ThongBao</h3>
             <hr />
             @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
@@ -22,8 +26,8 @@
                 @Html.Label("Mã khách hàng: ", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.Makhachhang, new { htmlAttributes = new { @class = "form-control" } })
-                    <span id="loimakhach"></span>
-                    @*@Html.ValidationMessageFor(model => model.Makhachhang, "*", new { @class = "text-danger" })*@
+                    <span id="loimakhach" style="color:#ff0000"></span>
+                    @*@Html.ValidationMessageFor(model => model.Makhachhang, "", new { @class = "text-danger" })*@
                 </div>
             </div>
 
@@ -31,27 +35,29 @@
                 @Html.Label("Tên khách hàng: ", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.Tenkhachhang, new { htmlAttributes = new { @class = "form-control" } })
-                    <span id="loitenkh"></span>
-                    @*@Html.ValidationMessageFor(model => model.Tenkhachhang, "*", new { @class = "text-danger" })*@
+                    <span id="loitenkh" style="color:#ff0000"></span>
+                    @*@Html.ValidationMessageFor(model => model.Tenkhachhang, "", new { @class = "text-danger" })*@
                 </div>
             </div>
 
             <div class="form-group">
                 @Html.Label("Mật khẩu: ", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control" } })
-                    <span id="loipass"></span>
-                    @*@Html.ValidationMessageFor(model => model.Pass, "*", new { @class = "text-danger" })*@
+                    @Html.PasswordFor(model => model.Pass, new { htmlAttributes = new { @class = "form-control" } })
+                    <span id="loipass" style="color:#ff0000"></span>
+                   @* @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })*@
                 </div>
             </div>
 
             <div class="form-group">
                 @Html.Label("Giới tính: ", htmlAttributes: new { @class = "control-label col-md-2" })
-                                <div class="col-md-10">
+                <div class="col-md-10">
                     <div class="checkbox">
-                       @Html.EditorFor(model => model.Gioitinh)
-                        <span id="loisex"></span>
-                        @*@Html.ValidationMessageFor(model => model.Gioitinh, "*", new { @class = "text-danger" })*@
+                        <label>
+                            @Html.EditorFor(model => model.Gioitinh)
+                            Nam
+                        </label>                        
+                        @*@Html.ValidationMessageFor(model => model.Gioitinh, "", new { @class = "text-danger" })*@
                     </div>
                 </div>
             </div>
@@ -60,8 +66,8 @@
                 @Html.Label("CMND or Passport: ", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.CMND_PASSPORT, new { htmlAttributes = new { @class = "form-control" } })
-                    <span id="loicmnd"></span>
-                   @* @Html.ValidationMessageFor(model => model.CMND_PASSPORT, "*", new { @class = "text-danger" })*@
+                    <span id="loicmnd" style="color:#ff0000"></span>
+                    @*@Html.ValidationMessageFor(model => model.CMND_PASSPORT, "", new { @class = "text-danger" })*@
                 </div>
             </div>
 
@@ -77,89 +83,84 @@
                 @Html.Label("Số điện thoại: ", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.Sodienthoai, new { htmlAttributes = new { @class = "form-control" } })
-                    <span id="loisdt"></span>
-                    @*@Html.ValidationMessageFor(model => model.Sodienthoai, "*", new { @class = "text-danger" })*@
+                    <span id="loisdt" style="color:#ff0000"></span>
+                    @*@Html.ValidationMessageFor(model => model.Sodienthoai, "", new { @class = "text-danger" })*@
                 </div>
-            </div>            
+            </div>
 
             <div class="form-group">
                 @Html.Label("Email: ", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                    <span id="loiemail"></span>
-                    @*@Html.ValidationMessageFor(model => model.Email, "*", new { @class = "text-danger" })*@
+                    <span id="loiemail" style="color:#ff0000"></span>
+                    @*@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })*@
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input id="btnSubmit" type="submit" value="Đăng ký" class="btn btn-primary" />                                       
+                    <input id="btnSubmit" type="submit" value="Đăng ký" class="btn btn-primary" />
                 </div>
             </div>
-            
+
         </div>
     }
-   
-</div>
-<script type="text/javascript">    
-    $("#btnSubmit").click(function ()
-        {
-            var loi = 0;
-            if ($('#Makhachhang').val() == "") {
-                $('#loimakhach').text('Bạn chưa nhập mã cũng như tên tài khoản');
-                loi++;
-            }
-            else {
-                $('#loimakhach').text('');
-            }
-            if ($('#Tenkhachhang').val() == "") {
-                $('#loitenkh').text('Bạn chưa nhập tên của bạn');
-                loi++;
-            }
-            else {
-                $('#loitenkh').text('');
-            }
-            if ($('#Pass').val() == "") {
-                $('#loipass').text('Bạn chưa nhập password');
-                loi++;
-            }
-            else {
-                $('#loipass').text('');
-            }
-            if ($('#Gioitinh').val() == "") {
-                $('#loisex').text('Bạn chưa check giới tính');
-                loi++;
-            }
-            else {
-                $('#loisex').text('');
-            }
-            if ($('#CMND_PASSPORT').val() == "") {
-                $('#loicmnd').text('Bạn chưa nhập CMND or Passport');
-                loi++;
-            }
-            else {
-                $('#loicmnd').text('');
-            }
-            if ($('#Sodienthoai').val() == "") {
-                $('#loisdt').text('Bạn chưa nhập số điện thoại');
-                loi++;
-            }
-            else {
-                $('#loisdt').text('');
-            }
-            if ($('#Email').val() == "") {
-                $('#loiemail').text('Bạn chưa nhập Email');
-                loi++;
-            }
-            else {
-                $('#loiemail').text('');
-            }
-            if(loi!=0)
-            {
-                return false;
-            }
-            return true;
-        });
 
+</div>
+<script type="text/javascript">
+    $("#btnSubmit").click(function ()
+    {        
+        var loi = 0;
+        if ($('#Makhachhang').val() == "") {
+            $('#loimakhach').text('Bạn chưa nhập mã cũng như tên tài khoản');
+            loi++;
+        }
+        else {
+            $('#loimakhach').text('');
+        }
+        if ($('#Tenkhachhang').val() == "") {
+            $('#loitenkh').text('Bạn chưa nhập tên của bạn');
+            loi++;
+        }
+        else {
+            $('#loitenkh').text('');
+        }
+        if ($('#Pass').val() == "") {
+            $('#loipass').text('Bạn chưa nhập password');
+            loi++;
+        }
+        else {
+            $('#loipass').text('');
+        }
+        if ($('#CMND_PASSPORT').val() == "") {
+            $('#loicmnd').text('Bạn chưa nhập CMND');
+            loi++;
+        }
+        else {
+            $('#loicmnd').text('');
+        }
+        if ($('#Sodienthoai').val() == "") {
+            $('#loisdt').text('Bạn chưa nhập số điện thoại');
+            loi++;
+        }
+        else {
+            $('#loisdt').text('');
+        }
+        if ($('#Email').val() == "") {
+            $('#loiemail').text('Bạn chưa nhập Email');
+            loi++;
+        }
+        else {
+            $('#loiemail').text('');
+        }        
+        if(loi!=0)
+        {
+            return false;
+        }
+        return true;
+        
+    });
     
+
+
 </script>

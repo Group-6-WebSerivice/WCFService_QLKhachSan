@@ -30,6 +30,7 @@ namespace WcfServiceQuanLyKhachSan
         [DataMember]
         public string Email;
     }
+
     [ServiceContract]
     public interface IServiceKhachHang
     {
