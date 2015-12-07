@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using DatPhongKhachSanWeb.KhachHangServiceReference;
 
 
@@ -43,29 +44,32 @@ namespace DatPhongKhachSanWeb.Controllers
 
             return View();
         }
-        [HttpPost]
-        public ActionResult DangNhap(FormCollection f)
+        [HttpPost]        
+        public ActionResult DangNhap(string username, string password)
         {
             if (Session["TaiKhoan"] != null)
             {
-                ViewBag.ThongBao = "Bạn đã đăng nhập !";                
+                //ViewBag.ThongBao = "Bạn đã đăng nhập !";
+                ModelState.AddModelError("", "Bạn đã đăng nhập !");
             }
             else
             {
-                string sTaiKhoan = f["txtTaiKhoan"].ToString();
-                string sMatKhau = f.Get("txtMatKhau").ToString();
-                KhachHangDTO[] kh = db.getlistKhachHangbypass(sTaiKhoan, sMatKhau);
+                KhachHangDTO[] kh = db.getlistKhachHangbypass(username, password);
                 if (kh != null)
                 {
-                    ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
+                    FormsAuthentication.SetAuthCookie(username, false);
+                    ModelState.AddModelError("", "Chúc mừng bạn đăng nhập thành công !");
+                    //ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
                     Session["TaiKhoan"] = kh;
                     foreach (KhachHangDTO khDTO in kh)
                     {
                         Session["User"] = khDTO.Tenkhachhang;
                     }
                     return View();
+                    
                 }
-                ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
+                ModelState.AddModelError("", "Tên tài khoản hoặc mật khẩu không đúng!");
+                //ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
             }
             return View();
         }
@@ -74,6 +78,7 @@ namespace DatPhongKhachSanWeb.Controllers
             Session["User"] = null;
             Session["TaiKhoan"] = null;
             Session.Abandon();////
+            FormsAuthentication.SignOut();
             return Redirect("/Home/Index");
             //return View("/Home/Index");
         }

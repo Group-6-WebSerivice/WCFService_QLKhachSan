@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7d6c1e36-96e9-4d27-91b3-5a56bccb0a86" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2739d44f-41ec-4d00-a435-d16aac894468" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -9,9 +9,7 @@
     <GenerateInternalTypes>false</GenerateInternalTypes>
     <GenerateMessageContracts>false</GenerateMessageContracts>
     <NamespaceMappings />
-    <CollectionMappings>
-      <CollectionMapping TypeName="System.Collections.ArrayList" Category="List" />
-    </CollectionMappings>
+    <CollectionMappings />
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <UseSerializerForFaults>true</UseSerializerForFaults>
@@ -21,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceKiemTraPhong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceKiemTraPhong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceKiemTraPhong.disco" MetadataType="Disco" ID="b085110b-cd75-42e1-92f3-8d9bdf07fb34" SourceId="1" SourceUrl="http://localhost:7429/ServiceKiemTraPhong.svc?disco" />
-    <MetadataFile FileName="ServiceKiemTraPhong.xsd" MetadataType="Schema" ID="9fc33c8e-dade-44e6-8a48-3f15551839b9" SourceId="1" SourceUrl="http://localhost:7429/ServiceKiemTraPhong.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceKiemTraPhong1.xsd" MetadataType="Schema" ID="daf4d0af-910b-414e-84d5-d445c52f9412" SourceId="1" SourceUrl="http://localhost:7429/ServiceKiemTraPhong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceKiemTraPhong.wsdl" MetadataType="Wsdl" ID="edad14d7-f930-4e27-b844-e941b68e58f3" SourceId="1" SourceUrl="http://localhost:7429/ServiceKiemTraPhong.svc?wsdl" />
-    <MetadataFile FileName="ServiceKiemTraPhong2.xsd" MetadataType="Schema" ID="65e41bb4-ca69-48ca-b674-e789c6e51e00" SourceId="1" SourceUrl="http://localhost:7429/ServiceKiemTraPhong.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceKiemTraPhong.xsd" MetadataType="Schema" ID="7e93880e-fdb0-4602-af1f-297a763e7cc7" SourceId="1" SourceUrl="http://localhost:7428/ServiceKiemTraPhong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceKiemTraPhong1.xsd" MetadataType="Schema" ID="a090fc65-ab0f-4d4a-8367-03a6ada80c3c" SourceId="1" SourceUrl="http://localhost:7428/ServiceKiemTraPhong.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceKiemTraPhong2.xsd" MetadataType="Schema" ID="5ae475a9-489b-40b8-9181-eb023f08eb4c" SourceId="1" SourceUrl="http://localhost:7428/ServiceKiemTraPhong.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceKiemTraPhong.disco" MetadataType="Disco" ID="b79d6069-1ed3-4e78-a817-fede98bc2625" SourceId="1" SourceUrl="http://localhost:7428/ServiceKiemTraPhong.svc?disco" />
+    <MetadataFile FileName="ServiceKiemTraPhong.wsdl" MetadataType="Wsdl" ID="746dcbcc-21cc-4c39-b6a0-aa7d76aae1e7" SourceId="1" SourceUrl="http://localhost:7428/ServiceKiemTraPhong.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

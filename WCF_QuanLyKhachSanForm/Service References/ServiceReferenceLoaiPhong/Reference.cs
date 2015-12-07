@@ -23,6 +23,9 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceLoaiPhong {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AnhbiaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private decimal GiaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -38,6 +41,19 @@ namespace WCF_QuanLyKhachSanForm.ServiceReferenceLoaiPhong {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Anhbia {
+            get {
+                return this.AnhbiaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AnhbiaField, value) != true)) {
+                    this.AnhbiaField = value;
+                    this.RaisePropertyChanged("Anhbia");
+                }
             }
         }
         

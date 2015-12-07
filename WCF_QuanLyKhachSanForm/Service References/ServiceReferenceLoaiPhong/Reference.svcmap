@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e0eb957a-4c01-4783-a4c8-0bc12d7beacc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e4101d4-8ecf-411e-84e7-1cf410176031" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceLoaiPhong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceLoaiPhong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceLoaiPhong.xsd" MetadataType="Schema" ID="989c40a4-29dc-46f1-a5d7-3475fda2127c" SourceId="1" SourceUrl="http://localhost:7429/ServiceLoaiPhong.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceLoaiPhong1.xsd" MetadataType="Schema" ID="b78299ef-8ed5-4918-afca-b1e67d542c1a" SourceId="1" SourceUrl="http://localhost:7429/ServiceLoaiPhong.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceLoaiPhong2.xsd" MetadataType="Schema" ID="e6035cd3-a0f8-4f6f-a9f4-d5ca1cf9db54" SourceId="1" SourceUrl="http://localhost:7429/ServiceLoaiPhong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceLoaiPhong.wsdl" MetadataType="Wsdl" ID="5e52783a-248c-4609-9212-650f6046f593" SourceId="1" SourceUrl="http://localhost:7429/ServiceLoaiPhong.svc?wsdl" />
-    <MetadataFile FileName="ServiceLoaiPhong.disco" MetadataType="Disco" ID="ce5b045f-a3d5-4bca-9d5b-25fa7831792c" SourceId="1" SourceUrl="http://localhost:7429/ServiceLoaiPhong.svc?disco" />
+    <MetadataFile FileName="ServiceLoaiPhong.disco" MetadataType="Disco" ID="9b7f5144-6d16-4ff6-a786-ad78675c13fe" SourceId="1" SourceUrl="http://localhost:7428/ServiceLoaiPhong.svc?disco" />
+    <MetadataFile FileName="ServiceLoaiPhong.xsd" MetadataType="Schema" ID="5fe96da3-e5aa-4566-918c-f0caa9e0f3af" SourceId="1" SourceUrl="http://localhost:7428/ServiceLoaiPhong.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceLoaiPhong1.xsd" MetadataType="Schema" ID="add68bed-281a-4bda-a1a0-bee85bd65c92" SourceId="1" SourceUrl="http://localhost:7428/ServiceLoaiPhong.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceLoaiPhong.wsdl" MetadataType="Wsdl" ID="a73a6a71-e6ea-4bc6-9c8f-de2cebd05e26" SourceId="1" SourceUrl="http://localhost:7428/ServiceLoaiPhong.svc?wsdl" />
+    <MetadataFile FileName="ServiceLoaiPhong2.xsd" MetadataType="Schema" ID="8a94d4ec-972f-4ace-be66-d9c6ec9400a1" SourceId="1" SourceUrl="http://localhost:7428/ServiceLoaiPhong.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

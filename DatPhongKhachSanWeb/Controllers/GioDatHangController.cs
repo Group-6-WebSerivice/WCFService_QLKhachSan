@@ -14,6 +14,7 @@ using DatPhongKhachSanWeb.Controllers;
 
 namespace DatPhongKhachSanWeb.Controllers
 {
+    //[Authorize]
     public class GioDatHangController : Controller
     {
         ServiceChiTietDatPhongClient ctdp = new ServiceChiTietDatPhongClient();

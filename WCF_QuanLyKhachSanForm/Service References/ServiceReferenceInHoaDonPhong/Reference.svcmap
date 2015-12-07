@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ffcd1c1-e3e1-488c-a532-0a1c62234763" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="01773ef0-4f75-4359-948c-ff359b7f42c5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceInHoaDonPhong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceInHoaDonPhong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceInHoaDonPhong.xsd" MetadataType="Schema" ID="9c85ade2-9beb-479a-97d8-7e0e69956352" SourceId="1" SourceUrl="http://localhost:7429/ServiceInHoaDonPhong.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceInHoaDonPhong.disco" MetadataType="Disco" ID="77fa9b29-68ee-4dbf-a844-8e60772c6605" SourceId="1" SourceUrl="http://localhost:7429/ServiceInHoaDonPhong.svc?disco" />
-    <MetadataFile FileName="ServiceInHoaDonPhong1.xsd" MetadataType="Schema" ID="eb96843e-a9fc-401a-83c2-360fa3b3304e" SourceId="1" SourceUrl="http://localhost:7429/ServiceInHoaDonPhong.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceInHoaDonPhong2.xsd" MetadataType="Schema" ID="b4246ff5-96e7-4eca-bf20-0a03fea4699a" SourceId="1" SourceUrl="http://localhost:7429/ServiceInHoaDonPhong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceInHoaDonPhong.wsdl" MetadataType="Wsdl" ID="9ad20ed0-6490-470e-b63d-952555ccf03c" SourceId="1" SourceUrl="http://localhost:7429/ServiceInHoaDonPhong.svc?wsdl" />
+    <MetadataFile FileName="ServiceInHoaDonPhong.xsd" MetadataType="Schema" ID="1207c7b7-b9bd-4faa-9eb4-00a512ce0d8e" SourceId="1" SourceUrl="http://localhost:7428/ServiceInHoaDonPhong.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceInHoaDonPhong.disco" MetadataType="Disco" ID="46d53988-98fd-400f-ada6-3f045a0a8ab8" SourceId="1" SourceUrl="http://localhost:7428/ServiceInHoaDonPhong.svc?disco" />
+    <MetadataFile FileName="ServiceInHoaDonPhong1.xsd" MetadataType="Schema" ID="e8ed2bc4-1600-4dce-8317-a9d2b02d49d0" SourceId="1" SourceUrl="http://localhost:7428/ServiceInHoaDonPhong.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceInHoaDonPhong.wsdl" MetadataType="Wsdl" ID="83f7bd05-5509-4837-93b2-104e51a92684" SourceId="1" SourceUrl="http://localhost:7428/ServiceInHoaDonPhong.svc?wsdl" />
+    <MetadataFile FileName="ServiceInHoaDonPhong2.xsd" MetadataType="Schema" ID="a59546c7-7bb1-4e64-bfc9-134f7c67a949" SourceId="1" SourceUrl="http://localhost:7428/ServiceInHoaDonPhong.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

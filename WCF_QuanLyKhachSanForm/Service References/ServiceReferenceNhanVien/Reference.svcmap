@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e44ab0f5-0c40-4ff4-9bc8-5ea53ea68ce2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a98ad659-045f-4d5b-995e-df54821a5d81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceNhanVien.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceNhanVien.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceNhanVien.xsd" MetadataType="Schema" ID="21a6903a-d36d-4c42-b932-ec0355a6e41a" SourceId="1" SourceUrl="http://localhost:7429/ServiceNhanVien.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceNhanVien1.xsd" MetadataType="Schema" ID="e018e158-bbb2-4b22-a9bc-ee56f331fd8e" SourceId="1" SourceUrl="http://localhost:7429/ServiceNhanVien.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceNhanVien.disco" MetadataType="Disco" ID="a01525f9-8814-4fc4-9ed6-d1962af95487" SourceId="1" SourceUrl="http://localhost:7429/ServiceNhanVien.svc?disco" />
-    <MetadataFile FileName="ServiceNhanVien2.xsd" MetadataType="Schema" ID="d619480d-7fb9-4b90-ac1e-1d6f6760650c" SourceId="1" SourceUrl="http://localhost:7429/ServiceNhanVien.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceNhanVien.wsdl" MetadataType="Wsdl" ID="1f063519-5d28-4b2a-88ae-e956a78f2b72" SourceId="1" SourceUrl="http://localhost:7429/ServiceNhanVien.svc?wsdl" />
+    <MetadataFile FileName="ServiceNhanVien.wsdl" MetadataType="Wsdl" ID="f6abdb5b-8260-4b32-af7a-81c4fe27bc84" SourceId="1" SourceUrl="http://localhost:7428/ServiceNhanVien.svc?wsdl" />
+    <MetadataFile FileName="ServiceNhanVien.disco" MetadataType="Disco" ID="b62487ff-dcae-4d92-917d-b9f1eaa52aa2" SourceId="1" SourceUrl="http://localhost:7428/ServiceNhanVien.svc?disco" />
+    <MetadataFile FileName="ServiceNhanVien.xsd" MetadataType="Schema" ID="2971006d-8698-48e9-a9da-e1aa882b22dd" SourceId="1" SourceUrl="http://localhost:7428/ServiceNhanVien.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceNhanVien1.xsd" MetadataType="Schema" ID="6441197f-35e1-49c5-af38-17048f87a9c5" SourceId="1" SourceUrl="http://localhost:7428/ServiceNhanVien.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceNhanVien2.xsd" MetadataType="Schema" ID="9756b9bb-c2d5-4144-8963-fe5498f004c5" SourceId="1" SourceUrl="http://localhost:7428/ServiceNhanVien.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

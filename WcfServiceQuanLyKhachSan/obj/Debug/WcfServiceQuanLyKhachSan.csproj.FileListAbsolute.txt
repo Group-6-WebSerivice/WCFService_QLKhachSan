@@ -3,4 +3,3 @@ D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\bin\WcfServiceQuan
 D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\bin\WcfServiceQuanLyKhachSan.pdb
 D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.dll
 D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.pdb
-D:\Webservice\WCF_QuanLyKhachSanForm\WcfServiceQuanLyKhachSan\obj\Debug\WcfServiceQuanLyKhachSan.csprojResolveAssemblyReference.cache

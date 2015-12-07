@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="5lapfKYo24sZ7Sy8TpUrMR+gt7c=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="tpD/C2s/EmIdvKADpnVgGNIaI/M=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServiceKiemTraPhong">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServiceKiemTraPhong" contract="KiemTraPhongServiceReference.IServiceKiemTraPhong" bindingType="basicHttpBinding" address="http://localhost:7429/ServiceKiemTraPhong.svc" bindingConfiguration="BasicHttpBinding_IServiceKiemTraPhong">
+    <endpoint name="BasicHttpBinding_IServiceKiemTraPhong" contract="KiemTraPhongServiceReference.IServiceKiemTraPhong" bindingType="basicHttpBinding" address="http://localhost:7428/ServiceKiemTraPhong.svc" bindingConfiguration="BasicHttpBinding_IServiceKiemTraPhong">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:7429/ServiceKiemTraPhong.svc</serializedValue>
+          <serializedValue>http://localhost:7428/ServiceKiemTraPhong.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

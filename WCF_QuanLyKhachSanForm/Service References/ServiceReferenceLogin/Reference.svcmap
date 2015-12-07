@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="28fa702d-0eaf-423e-a047-a97defa89834" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f3e64f10-f607-4e16-9a00-8bdbc685cb7b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceLogin.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceLogin.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceLogin.xsd" MetadataType="Schema" ID="cc2a6ded-41d0-40e8-b674-760ea6fb8c6c" SourceId="1" SourceUrl="http://localhost:7429/ServiceLogin.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceLogin1.xsd" MetadataType="Schema" ID="fc02f627-9b5d-4f4f-bd88-04b65f6d426c" SourceId="1" SourceUrl="http://localhost:7429/ServiceLogin.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceLogin.wsdl" MetadataType="Wsdl" ID="ad6928e8-930e-46be-b064-c13878ce1c55" SourceId="1" SourceUrl="http://localhost:7429/ServiceLogin.svc?wsdl" />
-    <MetadataFile FileName="ServiceLogin.disco" MetadataType="Disco" ID="244aecd1-ca4c-4723-a169-30a4d58d9516" SourceId="1" SourceUrl="http://localhost:7429/ServiceLogin.svc?disco" />
-    <MetadataFile FileName="ServiceLogin2.xsd" MetadataType="Schema" ID="c2f360c6-91e4-4e7b-9598-1f36ac3e8b0a" SourceId="1" SourceUrl="http://localhost:7429/ServiceLogin.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceLogin.xsd" MetadataType="Schema" ID="747a2bc2-02c0-407a-aa03-bff54175fbee" SourceId="1" SourceUrl="http://localhost:7428/ServiceLogin.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceLogin.wsdl" MetadataType="Wsdl" ID="07c35db8-ce4c-4b3c-a67c-09480cf16f5a" SourceId="1" SourceUrl="http://localhost:7428/ServiceLogin.svc?wsdl" />
+    <MetadataFile FileName="ServiceLogin1.xsd" MetadataType="Schema" ID="bf6fa27a-53f1-41bb-9794-5426c7f5015f" SourceId="1" SourceUrl="http://localhost:7428/ServiceLogin.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceLogin2.xsd" MetadataType="Schema" ID="d00610d0-d19a-491b-ae1a-705c84983137" SourceId="1" SourceUrl="http://localhost:7428/ServiceLogin.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceLogin.disco" MetadataType="Disco" ID="1ca1c888-a51f-4967-aec8-c2797b8b5ff8" SourceId="1" SourceUrl="http://localhost:7428/ServiceLogin.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

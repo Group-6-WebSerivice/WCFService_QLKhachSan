@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="04cbecb3-3272-4940-978d-6ff825687062" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="130feb45-0683-4814-98f8-db6322ab36c3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceHeThong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceHeThong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceHeThong.disco" MetadataType="Disco" ID="dd65a4ba-4ffd-4517-a021-444f3bf2e9ec" SourceId="1" SourceUrl="http://localhost:7429/ServiceHeThong.svc?disco" />
-    <MetadataFile FileName="ServiceHeThong.xsd" MetadataType="Schema" ID="5e7a6e04-dedb-47f1-9475-b0e9551de1dc" SourceId="1" SourceUrl="http://localhost:7429/ServiceHeThong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceHeThong.wsdl" MetadataType="Wsdl" ID="e6dcb916-9bc7-4858-8ebd-44e49f4aee83" SourceId="1" SourceUrl="http://localhost:7429/ServiceHeThong.svc?wsdl" />
-    <MetadataFile FileName="ServiceHeThong1.xsd" MetadataType="Schema" ID="92fdbb98-25bd-412b-8726-934dd003f94c" SourceId="1" SourceUrl="http://localhost:7429/ServiceHeThong.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceHeThong2.xsd" MetadataType="Schema" ID="b4a70ef0-3d01-418e-928b-9b54371f85e5" SourceId="1" SourceUrl="http://localhost:7429/ServiceHeThong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceHeThong.xsd" MetadataType="Schema" ID="654372d7-87cb-4661-bd95-5045135bb6ef" SourceId="1" SourceUrl="http://localhost:7428/ServiceHeThong.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceHeThong1.xsd" MetadataType="Schema" ID="50b10751-d79e-42a0-9ae7-7fcd0fe0faff" SourceId="1" SourceUrl="http://localhost:7428/ServiceHeThong.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceHeThong2.xsd" MetadataType="Schema" ID="cf8a2026-8dbf-412b-b654-259d3e3276ee" SourceId="1" SourceUrl="http://localhost:7428/ServiceHeThong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceHeThong.disco" MetadataType="Disco" ID="78e0b323-944a-4f12-9ca6-bd5757641d89" SourceId="1" SourceUrl="http://localhost:7428/ServiceHeThong.svc?disco" />
+    <MetadataFile FileName="ServiceHeThong.wsdl" MetadataType="Wsdl" ID="35feb1a1-b7e6-4804-805a-f7ddbdc203ad" SourceId="1" SourceUrl="http://localhost:7428/ServiceHeThong.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

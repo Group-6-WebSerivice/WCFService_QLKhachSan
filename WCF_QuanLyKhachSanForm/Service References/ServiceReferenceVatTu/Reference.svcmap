@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bde42d60-1157-4cfb-9834-cbb4234ccff2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d089adc8-5d4d-4692-a7ff-f388bc59f6aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceVatTu.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceVatTu.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceVatTu.disco" MetadataType="Disco" ID="651cf027-5743-404f-8ec5-dbe9f662764b" SourceId="1" SourceUrl="http://localhost:7429/ServiceVatTu.svc?disco" />
-    <MetadataFile FileName="ServiceVatTu.xsd" MetadataType="Schema" ID="5bea3f91-0692-42f5-9308-0c1bac70a50b" SourceId="1" SourceUrl="http://localhost:7429/ServiceVatTu.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceVatTu1.xsd" MetadataType="Schema" ID="38365450-3b64-4ab1-88b0-0a5898977a87" SourceId="1" SourceUrl="http://localhost:7429/ServiceVatTu.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceVatTu.wsdl" MetadataType="Wsdl" ID="60a67357-3fa1-42b3-8d42-f394b41c2c86" SourceId="1" SourceUrl="http://localhost:7429/ServiceVatTu.svc?wsdl" />
-    <MetadataFile FileName="ServiceVatTu2.xsd" MetadataType="Schema" ID="78799ca5-4e27-467f-8160-b075bf8a992e" SourceId="1" SourceUrl="http://localhost:7429/ServiceVatTu.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceVatTu.disco" MetadataType="Disco" ID="43c4b9b7-046b-453b-8404-84d9ea5a9433" SourceId="1" SourceUrl="http://localhost:7428/ServiceVatTu.svc?disco" />
+    <MetadataFile FileName="ServiceVatTu.xsd" MetadataType="Schema" ID="fe3b10c7-65ec-48d3-8421-4262104b71b7" SourceId="1" SourceUrl="http://localhost:7428/ServiceVatTu.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceVatTu1.xsd" MetadataType="Schema" ID="9ccca4e8-8a5a-4ecb-a3d6-2cf1a4ee83f2" SourceId="1" SourceUrl="http://localhost:7428/ServiceVatTu.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceVatTu2.xsd" MetadataType="Schema" ID="c0f4bc87-ebb7-43b3-8cc9-4d82f8f29303" SourceId="1" SourceUrl="http://localhost:7428/ServiceVatTu.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceVatTu.wsdl" MetadataType="Wsdl" ID="bcd7ee1d-8ffd-470b-9095-f06b33d48c3d" SourceId="1" SourceUrl="http://localhost:7428/ServiceVatTu.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

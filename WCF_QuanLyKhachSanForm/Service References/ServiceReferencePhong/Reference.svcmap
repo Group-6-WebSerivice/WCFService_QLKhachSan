@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="560350d5-290a-4dc1-a457-d789ff206e0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="719166e1-1bc5-4be2-be3b-34f3c8d8d03f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServicePhong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServicePhong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicePhong.wsdl" MetadataType="Wsdl" ID="1363a7e1-7bb7-4102-bae5-736420df0b64" SourceId="1" SourceUrl="http://localhost:7429/ServicePhong.svc?wsdl" />
-    <MetadataFile FileName="ServicePhong.xsd" MetadataType="Schema" ID="f83af2ea-fc41-4a38-81c3-103d4edc60b5" SourceId="1" SourceUrl="http://localhost:7429/ServicePhong.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServicePhong1.xsd" MetadataType="Schema" ID="a304ad9a-af00-48f5-9fc3-1341efa81fba" SourceId="1" SourceUrl="http://localhost:7429/ServicePhong.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServicePhong2.xsd" MetadataType="Schema" ID="198d994c-29e2-48b9-aae9-ba120f7ff88e" SourceId="1" SourceUrl="http://localhost:7429/ServicePhong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServicePhong.disco" MetadataType="Disco" ID="8d49cd72-8f82-43eb-b557-31d5f6883c1b" SourceId="1" SourceUrl="http://localhost:7429/ServicePhong.svc?disco" />
+    <MetadataFile FileName="ServicePhong.xsd" MetadataType="Schema" ID="2662654b-01fe-406c-9a2e-3fe77b3567d8" SourceId="1" SourceUrl="http://localhost:7428/ServicePhong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicePhong.disco" MetadataType="Disco" ID="754b1c84-9271-4684-9fe2-d820e1a91bb0" SourceId="1" SourceUrl="http://localhost:7428/ServicePhong.svc?disco" />
+    <MetadataFile FileName="ServicePhong.wsdl" MetadataType="Wsdl" ID="c4d76a99-5584-4a8b-90e5-cae5dde8cc2a" SourceId="1" SourceUrl="http://localhost:7428/ServicePhong.svc?wsdl" />
+    <MetadataFile FileName="ServicePhong1.xsd" MetadataType="Schema" ID="57e358a1-95e4-4ec0-8bc5-599ddb37bd0b" SourceId="1" SourceUrl="http://localhost:7428/ServicePhong.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicePhong2.xsd" MetadataType="Schema" ID="21f0deb1-4206-45e1-8ee9-54496acbdffd" SourceId="1" SourceUrl="http://localhost:7428/ServicePhong.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

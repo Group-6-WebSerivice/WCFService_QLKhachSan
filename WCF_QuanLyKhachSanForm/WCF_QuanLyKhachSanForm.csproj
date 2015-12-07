@@ -637,6 +637,28 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:7429/ServiceLogin.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:7429/ServiceLogin.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WCF_QuanLyKhachSanForm_localhost_ServiceLogin</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\localhost\ServiceLogin.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietDatPhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietThuePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceChiTietVatTu\" />
@@ -654,21 +676,6 @@
     <WCFMetadataStorage Include="Service References\ServiceReferencePhieuThuePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferencePhong\" />
     <WCFMetadataStorage Include="Service References\ServiceReferenceVatTu\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceNhanVien\ServiceNhanVien.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceNhanVien\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceNhanVien\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceNhanVien\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceChiTietDatPhong\ServiceChiTietDatPhong.disco" />
@@ -761,23 +768,34 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WebReferences Include="Web References\" />
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu.disco" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:7429/ServiceLogin.svc">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\localhost\</RelPath>
-      <UpdateFromURL>http://localhost:7429/ServiceLogin.svc</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>WCF_QuanLyKhachSanForm_localhost_ServiceLogin</CachedSettingsPropName>
-    </WebReferenceUrl>
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\localhost\ServiceLogin.disco" />
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceInHoaDonDichVu\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceInHoaDonPhong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceKhachHang\ServiceKhachHang.disco" />
@@ -790,6 +808,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceKhachHang\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceKiemTraPhong\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -820,6 +853,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\ServiceReferenceLogin\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceNhanVien\ServiceNhanVien.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceNhanVien\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceNhanVien\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceNhanVien\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -883,54 +931,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonDichVu\ServiceInHoaDonDichVu.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonDichVu\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonDichVu\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonDichVu\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonPhong\ServiceInHoaDonPhong.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonPhong\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonPhong\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceInHoaDonPhong\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceKiemTraPhong\ServiceKiemTraPhong.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceKiemTraPhong\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceKiemTraPhong\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ServiceReferenceKiemTraPhong\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

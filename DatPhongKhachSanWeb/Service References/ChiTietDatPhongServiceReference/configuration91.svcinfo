@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="T9VJB/8sN4Pw+0zNTZWALeIa258=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="+JAUnAkW29yg3nmaRw9ZT7/YgAc=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServiceChiTietDatPhong">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServiceChiTietDatPhong" contract="ChiTietDatPhongServiceReference.IServiceChiTietDatPhong" bindingType="basicHttpBinding" address="http://localhost:7429/ServiceChiTietDatPhong.svc" bindingConfiguration="BasicHttpBinding_IServiceChiTietDatPhong">
+    <endpoint name="BasicHttpBinding_IServiceChiTietDatPhong" contract="ChiTietDatPhongServiceReference.IServiceChiTietDatPhong" bindingType="basicHttpBinding" address="http://localhost:7428/ServiceChiTietDatPhong.svc" bindingConfiguration="BasicHttpBinding_IServiceChiTietDatPhong">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:7429/ServiceChiTietDatPhong.svc</serializedValue>
+          <serializedValue>http://localhost:7428/ServiceChiTietDatPhong.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

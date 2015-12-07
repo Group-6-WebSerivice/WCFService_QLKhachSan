@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7385c6c0-640d-4a29-8c15-cb75e4f16a41" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d765a95a-e0d6-4dc3-9d52-520aad1c6e3d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServicePhieuThuePhong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServicePhieuThuePhong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServicePhieuThuePhong.xsd" MetadataType="Schema" ID="abccfb14-3176-47cc-a94d-429a6599137c" SourceId="1" SourceUrl="http://localhost:7429/ServicePhieuThuePhong.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServicePhieuThuePhong.disco" MetadataType="Disco" ID="27e62c5f-8e0b-4020-aca3-f7d60e5ac22f" SourceId="1" SourceUrl="http://localhost:7429/ServicePhieuThuePhong.svc?disco" />
-    <MetadataFile FileName="ServicePhieuThuePhong1.xsd" MetadataType="Schema" ID="d86bdd99-d3b3-401f-b318-54456be6786d" SourceId="1" SourceUrl="http://localhost:7429/ServicePhieuThuePhong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServicePhieuThuePhong.wsdl" MetadataType="Wsdl" ID="3bd196d4-a21b-4b4e-b570-cd1c407ab36d" SourceId="1" SourceUrl="http://localhost:7429/ServicePhieuThuePhong.svc?wsdl" />
-    <MetadataFile FileName="ServicePhieuThuePhong2.xsd" MetadataType="Schema" ID="ea141bfc-f6e0-4dfb-8938-1216b5034403" SourceId="1" SourceUrl="http://localhost:7429/ServicePhieuThuePhong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicePhieuThuePhong.disco" MetadataType="Disco" ID="8d2aea68-1c38-49f2-a478-c0178c962d97" SourceId="1" SourceUrl="http://localhost:7428/ServicePhieuThuePhong.svc?disco" />
+    <MetadataFile FileName="ServicePhieuThuePhong.xsd" MetadataType="Schema" ID="f2a9ea7f-535b-4626-8e40-d029eab44b0f" SourceId="1" SourceUrl="http://localhost:7428/ServicePhieuThuePhong.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicePhieuThuePhong1.xsd" MetadataType="Schema" ID="f6486c04-f3ce-482f-b971-2e7b5966b5bc" SourceId="1" SourceUrl="http://localhost:7428/ServicePhieuThuePhong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicePhieuThuePhong.wsdl" MetadataType="Wsdl" ID="c73e740d-9fe0-446d-a048-de0819cdf77f" SourceId="1" SourceUrl="http://localhost:7428/ServicePhieuThuePhong.svc?wsdl" />
+    <MetadataFile FileName="ServicePhieuThuePhong2.xsd" MetadataType="Schema" ID="9e43f8fb-b843-48f5-b3ea-93f627a2318a" SourceId="1" SourceUrl="http://localhost:7428/ServicePhieuThuePhong.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

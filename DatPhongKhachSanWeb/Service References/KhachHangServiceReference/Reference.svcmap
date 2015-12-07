@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e1d0df8-6be4-46bd-b5fa-e4b6ff78480f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="66b8ee8e-2d9a-4683-ad9e-ee282f462cae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceKhachHang.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceKhachHang.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceKhachHang.disco" MetadataType="Disco" ID="5d61d464-521f-4737-b3bd-5fa495156e43" SourceId="1" SourceUrl="http://localhost:7429/ServiceKhachHang.svc?disco" />
-    <MetadataFile FileName="ServiceKhachHang.wsdl" MetadataType="Wsdl" ID="828adf09-80f6-41d0-93e8-bbdadb5d9d22" SourceId="1" SourceUrl="http://localhost:7429/ServiceKhachHang.svc?wsdl" />
-    <MetadataFile FileName="ServiceKhachHang.xsd" MetadataType="Schema" ID="b1d878a8-7956-47fe-b36a-4e8eece6f83e" SourceId="1" SourceUrl="http://localhost:7429/ServiceKhachHang.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceKhachHang1.xsd" MetadataType="Schema" ID="26cbf6c5-19a9-4822-9c37-c8761c4e8e82" SourceId="1" SourceUrl="http://localhost:7429/ServiceKhachHang.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceKhachHang2.xsd" MetadataType="Schema" ID="0ed6669d-9609-4a64-9bac-e1c0742b23fb" SourceId="1" SourceUrl="http://localhost:7429/ServiceKhachHang.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceKhachHang.xsd" MetadataType="Schema" ID="3db22d0b-377b-4db8-8ed2-af2998ebaeb0" SourceId="1" SourceUrl="http://localhost:7428/ServiceKhachHang.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceKhachHang.wsdl" MetadataType="Wsdl" ID="12300d6b-db79-4e66-860d-21eda78fa993" SourceId="1" SourceUrl="http://localhost:7428/ServiceKhachHang.svc?wsdl" />
+    <MetadataFile FileName="ServiceKhachHang1.xsd" MetadataType="Schema" ID="cd5ea698-7ee0-49eb-97d9-2749695af814" SourceId="1" SourceUrl="http://localhost:7428/ServiceKhachHang.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceKhachHang.disco" MetadataType="Disco" ID="924394b3-574b-4906-bc7c-158614259986" SourceId="1" SourceUrl="http://localhost:7428/ServiceKhachHang.svc?disco" />
+    <MetadataFile FileName="ServiceKhachHang2.xsd" MetadataType="Schema" ID="2703326c-c659-4200-9450-fb2274d0e113" SourceId="1" SourceUrl="http://localhost:7428/ServiceKhachHang.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

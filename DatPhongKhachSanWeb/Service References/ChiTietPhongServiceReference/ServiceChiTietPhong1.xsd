@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:complexType name="ArrayOfChiTietPhongDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChiTietPhongDTO" nillable="true" type="tns:ChiTietPhongDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfChiTietPhongDTO" nillable="true" type="tns:ArrayOfChiTietPhongDTO" />
-  <xs:complexType name="ChiTietPhongDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Anhbia" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Dadat" type="xs:boolean" />
-      <xs:element minOccurs="0" name="Danhan" type="xs:boolean" />
-      <xs:element minOccurs="0" name="Gia" type="xs:decimal" />
-      <xs:element minOccurs="0" name="Maloai" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Maphong" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Songuoi" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ChiTietPhongDTO" nillable="true" type="tns:ChiTietPhongDTO" />
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7428/ServiceChiTietPhong.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" />
+  <xs:element name="getListChiTietPhongAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListChiTietPhongAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" minOccurs="0" name="getListChiTietPhongAllResult" nillable="true" type="q1:ArrayOfChiTietPhongDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListChiTietPhongById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListChiTietPhongByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" minOccurs="0" name="getListChiTietPhongByIdResult" nillable="true" type="q2:ChiTietPhongDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListChiTietPhongByLoai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loai" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListChiTietPhongByLoaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfServiceQuanLyKhachSan" minOccurs="0" name="getListChiTietPhongByLoaiResult" nillable="true" type="q3:ArrayOfChiTietPhongDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

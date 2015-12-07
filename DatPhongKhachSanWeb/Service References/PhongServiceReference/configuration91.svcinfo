@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="nTRz3xzcVJ/hSUCSV10NWAzGNkI=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="eWYflWEqtMQ1g39I44qzsrY6VbI=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_IServicePhong">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_IServicePhong" contract="PhongServiceReference.IServicePhong" bindingType="basicHttpBinding" address="http://localhost:7429/ServicePhong.svc" bindingConfiguration="BasicHttpBinding_IServicePhong">
+    <endpoint name="BasicHttpBinding_IServicePhong" contract="PhongServiceReference.IServicePhong" bindingType="basicHttpBinding" address="http://localhost:7428/ServicePhong.svc" bindingConfiguration="BasicHttpBinding_IServicePhong">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:7429/ServicePhong.svc</serializedValue>
+          <serializedValue>http://localhost:7428/ServicePhong.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

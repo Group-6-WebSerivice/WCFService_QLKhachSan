@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8597d8b6-c02f-41b0-a8b4-683be8004c1d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9c6f4eea-c9a4-466c-87aa-bdbdb91231f9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceChiTietDatPhong.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceChiTietDatPhong.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceChiTietDatPhong.disco" MetadataType="Disco" ID="bb0f3b13-3806-4915-aa7f-fed69e01e7a8" SourceId="1" SourceUrl="http://localhost:7429/ServiceChiTietDatPhong.svc?disco" />
-    <MetadataFile FileName="ServiceChiTietDatPhong.xsd" MetadataType="Schema" ID="53724f87-44ca-4f70-aec6-14e746ff18fc" SourceId="1" SourceUrl="http://localhost:7429/ServiceChiTietDatPhong.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceChiTietDatPhong1.xsd" MetadataType="Schema" ID="2149ce1c-dfa3-42ae-ba39-76b1c3790d79" SourceId="1" SourceUrl="http://localhost:7429/ServiceChiTietDatPhong.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceChiTietDatPhong2.xsd" MetadataType="Schema" ID="f098b2d7-e2ee-4211-a979-9d0a92c3019a" SourceId="1" SourceUrl="http://localhost:7429/ServiceChiTietDatPhong.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceChiTietDatPhong.wsdl" MetadataType="Wsdl" ID="9e44c67b-2806-44a4-934f-b81591828440" SourceId="1" SourceUrl="http://localhost:7429/ServiceChiTietDatPhong.svc?wsdl" />
+    <MetadataFile FileName="ServiceChiTietDatPhong.xsd" MetadataType="Schema" ID="6be7965e-6634-4809-a509-0b41971f5d65" SourceId="1" SourceUrl="http://localhost:7428/ServiceChiTietDatPhong.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceChiTietDatPhong1.xsd" MetadataType="Schema" ID="3c28f899-0e6e-4b90-b199-72163bad79c9" SourceId="1" SourceUrl="http://localhost:7428/ServiceChiTietDatPhong.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceChiTietDatPhong.disco" MetadataType="Disco" ID="8cf9a7f6-7bf5-4a49-b6df-f9dc942bcd31" SourceId="1" SourceUrl="http://localhost:7428/ServiceChiTietDatPhong.svc?disco" />
+    <MetadataFile FileName="ServiceChiTietDatPhong.wsdl" MetadataType="Wsdl" ID="df34e4d1-7774-4c98-957f-c3456d278105" SourceId="1" SourceUrl="http://localhost:7428/ServiceChiTietDatPhong.svc?wsdl" />
+    <MetadataFile FileName="ServiceChiTietDatPhong2.xsd" MetadataType="Schema" ID="6f68dad5-0f90-486a-9fed-9fe6a93bc37d" SourceId="1" SourceUrl="http://localhost:7428/ServiceChiTietDatPhong.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

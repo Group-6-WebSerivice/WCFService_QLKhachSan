@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="56d21227-0f9d-4a43-ac54-dd6cf111158a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5cec040b-3773-4e26-93fc-13e6022956b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:7429/ServiceDichVu.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:7428/ServiceDichVu.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceDichVu.xsd" MetadataType="Schema" ID="527faac2-236a-43cc-b8a4-d3987ebc1af1" SourceId="1" SourceUrl="http://localhost:7429/ServiceDichVu.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceDichVu1.xsd" MetadataType="Schema" ID="ec1951d4-b8aa-4a6d-8752-d66c1fd65564" SourceId="1" SourceUrl="http://localhost:7429/ServiceDichVu.svc?xsd=xsd2" />
-    <MetadataFile FileName="ServiceDichVu.wsdl" MetadataType="Wsdl" ID="394da976-0a47-4ca6-a37f-8d7982e6f1ba" SourceId="1" SourceUrl="http://localhost:7429/ServiceDichVu.svc?wsdl" />
-    <MetadataFile FileName="ServiceDichVu.disco" MetadataType="Disco" ID="7e954c21-7c25-41c1-a950-c68000c70a56" SourceId="1" SourceUrl="http://localhost:7429/ServiceDichVu.svc?disco" />
-    <MetadataFile FileName="ServiceDichVu2.xsd" MetadataType="Schema" ID="1cbbb932-fadf-4937-be72-b5e33c1bdf1c" SourceId="1" SourceUrl="http://localhost:7429/ServiceDichVu.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceDichVu.disco" MetadataType="Disco" ID="855d5450-a33f-4837-a8f6-95f49b5d9d66" SourceId="1" SourceUrl="http://localhost:7428/ServiceDichVu.svc?disco" />
+    <MetadataFile FileName="ServiceDichVu.xsd" MetadataType="Schema" ID="d027a2f7-9394-45fc-9752-ddee0eda28a2" SourceId="1" SourceUrl="http://localhost:7428/ServiceDichVu.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceDichVu1.xsd" MetadataType="Schema" ID="841c9c77-b198-476c-99af-89edc832f3c8" SourceId="1" SourceUrl="http://localhost:7428/ServiceDichVu.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceDichVu.wsdl" MetadataType="Wsdl" ID="806d1463-2e09-41b1-93cc-16a17e0658fa" SourceId="1" SourceUrl="http://localhost:7428/ServiceDichVu.svc?wsdl" />
+    <MetadataFile FileName="ServiceDichVu2.xsd" MetadataType="Schema" ID="196d40ed-3b31-48ee-87f0-a39c2a2b72ca" SourceId="1" SourceUrl="http://localhost:7428/ServiceDichVu.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

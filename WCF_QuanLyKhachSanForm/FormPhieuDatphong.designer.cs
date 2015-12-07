@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("KHÁCH HÀNG", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ĐẶT PHÒNG", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Mã Khách Hàng");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Tên Khách hàng");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Giới tính");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("CMND/Passport");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Địa chỉ");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Mật khẩu");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Điện thoại");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("E-mail");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Ngày đến");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("Ngày đi");
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("Số người");
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("KHÁCH HÀNG", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ĐẶT PHÒNG", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("Mã Khách Hàng");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Tên Khách hàng");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("Giới tính");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("CMND/Passport");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("Địa chỉ");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("Mật khẩu");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("Điện thoại");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("E-mail");
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("Ngày đến");
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("Ngày đi");
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("Số người");
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dtpNgayden = new System.Windows.Forms.DateTimePicker();
@@ -393,8 +393,8 @@
             // 
             this.tabPage1.Controls.Add(this.btnSua);
             this.tabPage1.Controls.Add(this.lsvViewPhong);
-            this.tabPage1.Controls.Add(this.lsvChiTiet);
             this.tabPage1.Controls.Add(this.button1_datphong);
+            this.tabPage1.Controls.Add(this.lsvChiTiet);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -462,48 +462,48 @@
             this.columnHeader3});
             this.lsvChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvChiTiet.FullRowSelect = true;
-            listViewGroup1.Header = "KHÁCH HÀNG";
-            listViewGroup1.Name = "listViewGroupKHACHHANG";
-            listViewGroup2.Header = "ĐẶT PHÒNG";
-            listViewGroup2.Name = "listViewGroupDATPHONG";
+            listViewGroup3.Header = "KHÁCH HÀNG";
+            listViewGroup3.Name = "listViewGroupKHACHHANG";
+            listViewGroup4.Header = "ĐẶT PHÒNG";
+            listViewGroup4.Name = "listViewGroupDATPHONG";
             this.lsvChiTiet.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2});
+            listViewGroup3,
+            listViewGroup4});
             this.lsvChiTiet.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            listViewItem1.Group = listViewGroup1;
-            listViewItem2.Group = listViewGroup1;
-            listViewItem2.StateImageIndex = 0;
-            listViewItem3.Group = listViewGroup1;
-            listViewItem3.StateImageIndex = 0;
-            listViewItem4.Group = listViewGroup1;
-            listViewItem4.StateImageIndex = 0;
-            listViewItem5.Group = listViewGroup1;
-            listViewItem5.StateImageIndex = 0;
-            listViewItem6.Group = listViewGroup1;
-            listViewItem6.StateImageIndex = 0;
-            listViewItem7.Group = listViewGroup1;
-            listViewItem7.StateImageIndex = 0;
-            listViewItem8.Group = listViewGroup1;
-            listViewItem8.StateImageIndex = 0;
-            listViewItem9.Group = listViewGroup2;
-            listViewItem9.StateImageIndex = 0;
-            listViewItem10.Group = listViewGroup2;
-            listViewItem10.StateImageIndex = 0;
-            listViewItem11.Group = listViewGroup2;
-            listViewItem11.StateImageIndex = 0;
+            listViewItem12.Group = listViewGroup3;
+            listViewItem13.Group = listViewGroup3;
+            listViewItem13.StateImageIndex = 0;
+            listViewItem14.Group = listViewGroup3;
+            listViewItem14.StateImageIndex = 0;
+            listViewItem15.Group = listViewGroup3;
+            listViewItem15.StateImageIndex = 0;
+            listViewItem16.Group = listViewGroup3;
+            listViewItem16.StateImageIndex = 0;
+            listViewItem17.Group = listViewGroup3;
+            listViewItem17.StateImageIndex = 0;
+            listViewItem18.Group = listViewGroup3;
+            listViewItem18.StateImageIndex = 0;
+            listViewItem19.Group = listViewGroup3;
+            listViewItem19.StateImageIndex = 0;
+            listViewItem20.Group = listViewGroup4;
+            listViewItem20.StateImageIndex = 0;
+            listViewItem21.Group = listViewGroup4;
+            listViewItem21.StateImageIndex = 0;
+            listViewItem22.Group = listViewGroup4;
+            listViewItem22.StateImageIndex = 0;
             this.lsvChiTiet.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11});
-            this.lsvChiTiet.Location = new System.Drawing.Point(25, 6);
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16,
+            listViewItem17,
+            listViewItem18,
+            listViewItem19,
+            listViewItem20,
+            listViewItem21,
+            listViewItem22});
+            this.lsvChiTiet.Location = new System.Drawing.Point(25, 3);
             this.lsvChiTiet.MultiSelect = false;
             this.lsvChiTiet.Name = "lsvChiTiet";
             this.lsvChiTiet.Scrollable = false;
@@ -610,6 +610,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1034, 528);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.txt_NVien);
             this.Controls.Add(this.label_NVien);
             this.Controls.Add(this.labMaPD);
@@ -623,7 +624,6 @@
             this.Controls.Add(this.dtpNgayden);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormPhieuDatphong";
             this.Text = "Phiếu Đặt Phòng";
